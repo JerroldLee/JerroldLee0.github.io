@@ -5859,12 +5859,11 @@ h1[id] {
   margin: 0;
 }
 .ih-item.square.effect9 .info p {
-  font-style: italic;
   font-size: 12px;
   position: relative;
   color: #bbb;
   padding: 20px 20px 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .ih-item.square.effect9.left_to_right .img {
