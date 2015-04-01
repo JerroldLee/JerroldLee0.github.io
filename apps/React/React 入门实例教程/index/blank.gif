@@ -1,0 +1,2782 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head id="ctl00_Head1"><title>
+	Murphy's Magic Supplies, Inc. - Wholesale Magic
+</title><meta http-equiv="X-UA-Compatible" content="IE=10" /><link rel="stylesheet" type="text/css" href="CSS/Main.css" media="screen" /><link type="text/css" rel="Stylesheet" href="/assets/styles/mms-layout.css" media="screen" /><link type="text/css" rel="Stylesheet" href="/assets/styles/mms-theme.css" media="screen" /><link id="ctl00_Link2" href="Skins/White/Menu.White.css" rel="stylesheet" type="text/css" /><link rel="Stylesheet" href="CSS/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+
+    <!-- Feeds -->
+    <link rel="SHORTCUT ICON" href="/favicon1.ico" />
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/JavaScript/jquery-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="/JavaScript/stepcarousel.js"></script>
+    <script type="text/javascript" src="/assets/scripts/jquery-1.10.2.min.js"></script>
+    <script src="/js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+    
+    
+    
+    
+
+
+    <script type="text/javascript" src="/mmspopuprsc/js/mmspopup-internal-min.js"></script>
+    <link rel="Stylesheet" type="text/css" href="mmspopuprsc/css/mmspopup-internal-min.css" />
+
+
+    <style type="text/css">
+    
+
+    @media print
+    {
+    .mms-page-header {display:none;}
+    body{display:block;}
+  
+    #mmsContainer {display:none;}
+
+    }
+
+    
+    </style>
+    
+
+<link href="App_Themes/Default/combobox.css" type="text/css" rel="stylesheet" /><link href="App_Themes/Default/gridStyle.css" type="text/css" rel="stylesheet" /><link href="App_Themes/Default/menuStyle.css" type="text/css" rel="stylesheet" /><link href="App_Themes/Default/RadComboBox.css" type="text/css" rel="stylesheet" /><link href="App_Themes/Default/simpleComboBox.css" type="text/css" rel="stylesheet" /></head>
+
+<body>
+
+
+    <form name="aspnetForm" method="post" action="" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_RadScript_TSM" id="ctl00_RadScript_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTIxMzM1MDQ3NGQYBAUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFF2N0bDAwJExvZ2luU3RhdHVzJGN0bDAxBRdjdGwwMCRMb2dpblN0YXR1cyRjdGwwMwUtY3RsMDAkQ29udGVudCROZXdTdHJlYW1pbmdQcm9kdWN0cyRUb3BUZW5HcmlkDxQrAA5kZGRkZGRkPCsABQACBWRkZGYC/////w9kBSNjdGwwMCRDb250ZW50JFByZXNhbGVzJFByZXNhbGVzTGlzdA8UKwAOZGRkZGRkZDwrAAYAAgZkZGRmAv////8PZAUuY3RsMDAkQ29udGVudCROZXdFeGNsdXNpdmVQcm9kdWN0cyROZXdQcm9kdWN0cw8UKwAOZGRkZGRkZDwrAAoAAgpkZGRmAv////8PZOYbJZLxzJ/1irZuIX2wJdltWq/L" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=wL7KU-oJcJhvyipyR1ESpWbV3A4T5TnH128UcjGbVFfo2SmnmkkK74TxQgiVE2Af-vXbwlPYayyGLNTK8eRsu_g43ZE1&amp;t=635195457660000000" type="text/javascript"></script>
+
+
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_RadScript_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3afa6755fd-da1a-49d3-9eb4-1e473e780ecd%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAMu3ey32r4KBmuWaT1zii0X+OmHZgSMqPVenyjUbVGLwTgsbs7ZIC4xZgQyEJllHkSav6PIqUD0e4ETmXJyN43PmbPIBA==" />
+</div>
+
+    
+    
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$RadScript', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    
+
+    <div id="AlertMessages">
+        
+
+        
+
+        
+        
+
+    </div>
+    <span id="ctl00_DeveloperTools"></span>
+
+
+
+   <div class="mms-master">
+        <div class="mms-page-header">
+        <table align="center" cellpadding="0" cellspacing="0" style="color: #FFFFFF; right: auto; left: auto; width: 980px; position: relative; text-align:center;">
+        <tr>
+            <td >
+                <table>
+                    <tr>
+                        <td><a href="/" style="font-size: 11px; color: #ffffff;">Home</a></td>
+                        <td width="10" style="color: #ffffff;">&nbsp;|&nbsp;</td>
+                         <td><a href="/newproducts/" style="font-size: 11px; color: #ffffff;">Dealer Center</a></td>
+                        <td width="10" style="color: #ffffff;">&nbsp;|&nbsp;</td>
+                        <td><a href="http://vendor.murphysmagic.com" style="font-size: 11px; color: #ffffff;">Vendor Center</a></td>
+                        <td width="10" style="color: #ffffff;">&nbsp;|&nbsp;</td>
+                        
+                        <td><a href="http://developer.murphysmagic.com" style="font-size: 11px; color: #ffffff;">Developer Center</a></td>
+                    </tr>
+                </table>
+
+            </td>
+
+            <td align="right">
+                <table cellpadding="0" cellspacing="0" style="width: 316px">
+                    <tr>
+                        <td style="font-size: 11px; color: #ffffff;">
+                            <a href="Account/Default.aspx" id="ctl00_A3">My&nbsp;Account</a>
+                        </td>
+                        <td width="10" style="color: #ffffff;">&nbsp;|&nbsp;</td>
+
+                        <td style="font-size: 11px; color: #ffffff;">
+
+                            
+
+                            <a id="ctl00_LoginStatus" href="javascript:__doPostBack(&#39;ctl00$LoginStatus$ctl02&#39;,&#39;&#39;)" style="display:inline-block;border-width:0px;color: #FFFFFF">Dealer Login</a>
+                        </td>
+
+                        <td width="10" style="color: #ffffff;">&nbsp;|&nbsp;</td>
+                        <td style="font-size: 11px; color: #ffffff;" text-align="right"  rowspan="2">
+                            <div id="CartUpdatePanel">
+                                
+
+<div class="cart">
+    <a href="/cart.aspx">
+        <div class="cartContainer">
+            <div class="cartCount">0</div>
+        </div>
+
+        &nbsp;<div class="cartTotal">$0.00</div>
+    </a>
+</div>
+
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="left" style="font-size: 11px; color: #ffffff;" colspan="100%">Time at Murphy's (PST): 9:18 PM
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+          <header>
+            
+                                                                  <a href="/" class="mms-logo-main">
+                                    <img src="/assets/images/mms-logo-lg.png" alt="Murphy's Magic" title="Murphy's Magic" />
+                                </a> 
+                <div class="mms-social-module">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/MurphysMagicSupplies" target="_blank">
+                                <img src="/assets/images/social/mms-social-facebook.png" alt="Visit Murphy's Magic on FaceBook" title="Visit Murphy's Magic on FaceBook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com/murphysmagic" target="_blank">
+                                <img src="/assets/images/social/mms-social-twitter.png" alt="Visit Murphy's Magic on Twitter" title="Visit Murphy's Magic on Twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.youtube.com/user/murphysmagic" target="_blank">
+                                <img src="/assets/images/social/mms-social-youtube.png" alt="Visit Murphy's Magic on YouTube" title="Visit Murphy's Magic on YouTube" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/MurphysMagic" target="_blank">
+                                <img src="/assets/images/social/mms-social-instagram1.png" alt="Visit Murphy's Magic on Instagram" title="Visit Murphy's Magic on Instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mms-search-module">
+                
+
+<script type="text/javascript" language="javascript">
+function searchEnter(e)
+{ 
+var evt = e ? e : window.event;
+
+    if (evt.keyCode == 13)
+    {
+        var criteria = document.getElementById("ctl00_SearchModule_Criteria").value;
+
+        if (criteria == "holey")
+            criteria += " holely";
+
+        //    var isStreaming = false;
+        //    if (criteria.toLowerCase() == "live lecture" || criteria.toLowerCase() == "live lectures" || criteria.toLowerCase() == "at the table" ||
+        //        criteria.toLowerCase() == "livelecture" || criteria.toLowerCase() == "livelectures" || criteria.toLowerCase() == "atthetable")
+        //        isStreaming = true;
+        
+        criteria = escape(criteria);
+
+        var CurrentURL = document.URL;
+        if (CurrentURL.indexOf("Streaming") == -1)
+            location.href = "/Search.aspx?q=" + criteria;
+        else
+            location.href = "/Streaming/Search.aspx?q=" + criteria;
+        
+        return false; 
+    } 
+}
+
+function Search()
+{
+    var criteria = document.getElementById("ctl00_SearchModule_Criteria").value;
+
+    if (criteria == "holey")
+        criteria += " holely";
+
+//    var isStreaming = false;
+//    if (criteria.toLowerCase() == "live lecture" || criteria.toLowerCase() == "live lectures" || criteria.toLowerCase() == "at the table" ||
+//        criteria.toLowerCase() == "livelecture" || criteria.toLowerCase() == "livelectures" || criteria.toLowerCase() == "atthetable")
+//        isStreaming = true;
+        
+    criteria = escape(criteria);
+
+    var CurrentURL = document.URL;
+    if (CurrentURL.indexOf("Streaming") == -1)
+        location.href = "/Search.aspx?q=" + criteria;
+    else
+        location.href = "/Streaming/Search.aspx?q=" + criteria;
+}
+</script>
+
+   <table cellpadding="0" cellspacing="0" style="height:50px; width: 250px; margin-top:-20px;">
+     
+        <tr>
+               
+            <td width="10px"></td>
+            <td><input name="ctl00$SearchModule$Criteria" type="text" id="ctl00_SearchModule_Criteria" class="SearchBox" onkeypress="return searchEnter(event)" style="color:White;background-color:#3B5565;font-family:Tahoma;font-size:Small;font-style:italic;width:165px;" />
+            </td>
+
+
+
+
+
+            <td width="10px"></td>
+            <td><input type="button" onclick="return Search()" id="SearchButton" value="Search" 
+                    
+                    style="border: thin solid #FFFFFF; color: #FFFFFF; background-color: #ECB01E; font-size: small; font-family: Tahoma; font-weight: bold;" /></td>
+        </tr>
+
+    </table>
+                       
+                </div>
+                <!-- Start PureCSSMenu.com STYLE -->
+<style>
+#pcm{display:none;}
+ul.pureCssMenu ul{display:none}
+ul.pureCssMenu li:hover>ul{display:block}
+ul.pureCssMenu ul{position: absolute;left:-1px;top:98%;}
+ul.pureCssMenu ul ul{position: absolute;left:30%;top:-2px;}
+ul.pureCssMenu,ul.pureCssMenu ul {
+    margin:0px;
+    list-style:none;
+    padding:0px 2px 2px 0px;
+    background-color:transparent;
+    background-repeat:repeat;
+    border-color:transparent;
+    border-width:0px;
+    border-style:none;
+}
+ul.pureCssMenu table {border-collapse:collapse}ul.pureCssMenu {
+    display:block;
+    padding-top:124px;
+    z-index:5;
+    width:980px;
+}
+ul.pureCssMenu ul{
+    width:300px;
+    background-color:#fff;
+    background-image:none;
+    background-repeat: repeat-x;
+    background-position: center 160px;
+        z-index:5;
+        border-color:#ecb01e;
+        border-width:1px;
+        border-style:solid;
+}
+ul.pureCssMenu li{
+    display:block;
+    margin:2px 0px 0px 2px;
+    font-size:12px Tahoma;
+        z-index:5;
+}
+ul.pureCssMenu a:active, ul.pureCssMenu a:focus {
+outline-style:none;
+}
+ul.pureCssMenu a, ul.pureCssMenu li.dis a:hover, ul.pureCssMenu li.sep a:hover {
+    display:block;
+    vertical-align:middle;
+    background-color:transparent;
+    border-width:0px;
+    border-style:none;
+    text-align:center;
+    text-decoration:none;
+    padding:7px 8px 7px 10px;
+    _padding-left:0;
+    font:12px Tahoma;
+    color: #000;
+    text-decoration:none;
+    cursor:default;
+}
+ul.pureCssMenu span{
+    overflow:hidden;
+    font-size:12px Tahoma;
+}
+ul.pureCssMenu li {
+    float:left;
+}
+ul.pureCssMenu ul li {
+    float:none;
+}
+ul.pureCssMenu ul a {
+    text-align:left;
+    white-space:nowrap;
+}
+ul.pureCssMenu li.sep{
+    text-align:left;
+    padding:0px;
+    line-height:0;
+    height:100%;
+}
+ul.pureCssMenu li.sep span{
+    float:none;	padding-right:0;
+    width:3px;
+    height:100%;
+    display:inline-block;
+    background-color:transparent;
+    
+    }
+ul.pureCssMenu ul li.sep span{
+    width:100%;
+    height:3px;
+}
+ul.pureCssMenu li:hover{
+    position:relative;
+    background-color:#ffba00;
+}
+ul.pureCssMenu li:hover>a{
+    border-style:solid;
+    font:12px Tahoma;
+    color:#000;
+    text-decoration:none;
+}
+ul.pureCssMenu li a:hover{
+    position:relative;
+    font:12px Tahoma;
+    color: #000;
+    text-decoration:none;
+    background-color:#ffba00;
+}
+ul.pureCssMenu li.dis a {
+    color: #666 !important;
+}
+ul.pureCssMenu img {border: none;float:left;_float:none;margin-right:2px;width:16px;
+height:16px;
+}
+ul.pureCssMenu ul img {width:16px;
+height:16px;
+}
+
+ul.pureCssMenu img.over{display:none}
+ul.pureCssMenu li.dis a:hover img.over{display:none !important}
+ul.pureCssMenu li.dis a:hover img.def {display:inline !important}
+ul.pureCssMenu li:hover > a img.def  {display:none}
+ul.pureCssMenu li:hover > a img.over {display:inline}
+ul.pureCssMenu a:hover img.over,ul.pureCssMenu a:hover ul img.def,ul.pureCssMenu a:hover a:hover ul img.def,ul.pureCssMenu a:hover a:hover img.over,ul.pureCssMenu a:hover a:hover a:hover img.over{display:inline}
+ul.pureCssMenu a:hover img.def,ul.pureCssMenu a:hover ul img.over,ul.pureCssMenu a:hover a:hover ul img.over,ul.pureCssMenu a:hover a:hover img.def,ul.pureCssMenu a:hover a:hover a:hover img.def{display:none}
+ul.pureCssMenu a:hover ul,ul.pureCssMenu a:hover a:hover ul{display:block}
+ul.pureCssMenu a:hover ul ul{display:none}
+ul.pureCssMenu span{
+    display:block;
+    background-image:none;
+    background-position:right center;
+    background-repeat: no-repeat;
+   padding-right:12px;
+   font-size:12px Tahoma;
+
+   }
+ul.pureCssMenu li:hover>a>span{	background-color:#ffba00;}
+ul.pureCssMenu a:hover span{	}
+ul.pureCssMenu ul span,ul.pureCssMenu a:hover table span{}
+    .style1
+    {
+        height: 19px;
+    }
+</style>
+<!-- End PureCSSMenu.com STYLE -->
+
+
+
+<!-- Start PureCSSMenu.com MENU -->
+<ul class="pureCssMenu pureCssMenum">
+    <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?e=1">New Magic</a></li>
+    <li class="pureCssMenui"><a class="pureCssMenui" href="/AllStars.aspx">All Stars</a></li>
+    <li class="pureCssMenui"><a class="pureCssMenui" href="#">&nbsp;</a></li>
+    <li class="pureCssMenui"><a class="pureCssMenui" href="/Streaming/Search.aspx">Downloads<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+    <ul class="pureCssMenum">
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Streaming/Search.aspx">All</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Streaming/Search.aspx?t=137">L&L</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Streaming/Search.aspx?t=168">At The Table</a></li>
+    </ul>
+    <!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+    <li class="pureCssMenui"><a class="pureCssMenui" href="#"><span class="mms-nav-spacer"></a></li>
+    <li class="pureCssMenui"><a class="pureCssMenui" href="#">Categories<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+    <ul class="pureCssMenum">
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?a=13">All Books</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?a=16">All DVDs</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?a=15">All Tricks</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="#">Allied Arts<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=138">All</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=161">Balooning</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=159">Escapes, Stunts</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=158">Fire, Fire Eating</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=160">Hypnosis</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=157">Juggling</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=162">Other</a></li>
+        </ul>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=135">Bizarre, Haunted</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="#">Card Magic<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=174">All</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=142">Card Flourish</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=141">Card Trick</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=141">Playing Card</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=139">Trick Deck</a></li>
+        </ul>
+                <li class="pureCssMenui"><a class="pureCssMenui" href="#">Close Up<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=128">All</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=167">Cups and Balls</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=169">Gambling</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=168">Sponge</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=164">Standard</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=166">Street</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=163">Walk Around</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=165">Wallet</a></li>
+        </ul>
+                <li class="pureCssMenui"><a class="pureCssMenui" href="#">Collectable, Gifts<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=131">All</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=145">Collectable</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=146">Gifts</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=147">Posters</a></li>
+        </ul>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=136">Comedy</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=177">Custom Designed Decks</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=137">Kids Show</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=132">Magic Kits</a></li>
+        <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=175">Mentalism</a></li>
+
+                        <li class="pureCssMenui"><a class="pureCssMenui" href="#">Money Magic<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=176">All</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=152">Coin</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=153">Paper</a></li>
+        </ul>
+
+                        <li class="pureCssMenui"><a class="pureCssMenui" href="#">Parlor, Stage, Illusion<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=129">All</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=171">Illusion</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=170">Parlor, Stage</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=172">Rope</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=173">Silk</a></li>
+        </ul>
+
+                        <li class="pureCssMenui"><a class="pureCssMenui" href="#">Seasonal<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=133">All</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=154">Christmas</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=155">Halloween</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=156">Religious</a></li>
+        </ul>
+
+                        <li class="pureCssMenui"><a class="pureCssMenui" href="#">Staples, Refills, One Time Use<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=134">All</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=150">One Time Use</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=149">Refills</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=151">Staples</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=148">Table, Cases, Mats</a></li>
+        </ul>
+
+                        <li class="pureCssMenui"><a class="pureCssMenui" href="#">Theory, History<![if gt IE 6]></a><![endif]><!--[if lte IE 6]><table><tr><td><![endif]-->
+        <ul class="pureCssMenum">
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=130">All</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=144">History</a></li>
+            <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=143">Theory, Stage Craft</a></li>
+        </ul>
+
+        <!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+    </ul>
+    <!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
+    <li class="pureCssMenui"><a class="pureCssMenui" href="/BlackLabel/Default.aspx">Black Label</a></li>
+    <li class="pureCssMenui"><a class="pureCssMenui" href="/Search.aspx?c=177">Custom Decks</a></li>
+</ul>
+<a id="pcm" href="http://www.purecssmenu.com/">CSS Drop Down Menu by PureCSSMenu.com</a>
+<!-- End PureCSSMenu.com MENU --> 
+
+            </header>
+                <nav>
+                <div>
+                  <span class="mms-nav-spacer">
+
+                            </span>
+
+                </div>
+            </nav>  
+        </div> 
+      
+
+
+
+
+
+
+      <div id="PageSetup" style="width:980px; text-align:left; margin-left:auto; margin-right:auto; -webkit-margin-start: auto;
+-webkit-margin-end: auto; padding:0;">
+        <!-- Header -->
+        
+
+        <!-- Main Content -->
+            
+    
+    <table align="center" width="980px" cellpadding="0" cellspacing="0" style="text-align:center; position: relative; width: 980px; -webkit-margin-start: auto;
+-webkit-margin-end: auto;">
+        <tr>     
+            <td>   
+                <div>
+                    
+                    
+<style type="text/css">
+    .panel_with_padding
+    {
+        padding-top:20px;
+        padding-left:0px;
+        padding-right:4px;
+        padding-bottom:15px; 
+    }
+</style>
+
+                </div>
+                <div style="display: none;">
+                    
+                </div>
+                
+                <!-- Sales -->
+                
+                
+            </td>
+        </tr>
+    </table>
+
+    <div style="height: 0px; width:100%; right: auto; left: auto; position: relative; text-align:center;"></div>
+
+    <!-- Splash SWF -->
+    <table cellpadding="0" cellspacing="0" width="100%" height="100%>
+        <tr>
+            <td>
+                
+<center>
+    
+    <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="980" height="225" id="Splash" align="middle">
+        <param name="allowScriptAccess" value="sameDomain" />
+        <param name="movie" value="Splash_bandwidth.swf"/>
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#ffffff" />
+        <param name="wmode" value="transparent" />
+        <embed wmode="Transparent" src="../Splash/Splash_bandwidth.swf" quality="high" bgcolor="#ffffff" width="980" height="225" name="Splash" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+    </object>
+</center>
+            </td>
+            <td align="center" style="display: none;">
+                <a href="/Product.aspx?id=50027" target="_top"><img src="clear.png" alt="Electric Touch Plus" style="border-width:0px;" /></a>
+            </td>
+        </tr>
+    </table>
+
+    <div style="height: 10px; width: 100%;"></div>
+
+    <div style="position: relative;width: 980px; height: 252px;">  
+        <div style="position: absolute;z-index: 1;">
+                
+                <a id="ctl00_Content_AdRotator7" href="/attoptions/" target="_top"><img src="/AppImages/live-lecture-options-strip.jpg" alt="At The Table Options" style="border-width:0px;" /></a>
+                <a id="ctl00_Content_AdRotator4" href="/free20/" target="_top"><img src="/AppImages/att20free_countd.png" alt="ATT Experience 20 Min FREE!" style="border-width:0px;" /></a>
+                
+<div id="countbox1"></div>
+<script type='text/javascript'>function GetCount(e,t){dateAtClient=new Date;var n=dateAtClient.getUTCFullYear();var r=dateAtClient.getUTCMonth();var i=dateAtClient.getUTCDate();var s=dateAtClient.getUTCHours();var o=dateAtClient.getUTCMinutes();var u=dateAtClient.getUTCSeconds();dateNow=new Date(n,r,i,s,o,u);amount=e.getTime()-dateNow.getTime();delete dateNow;if(amount<0){document.getElementById(t).innerHTML='Lecture is Now Live.'}else{days=0;hours=0;mins=0;secs=0;out='';amount=Math.floor(amount/1e3);days=Math.floor(amount/86400);amount=amount%86400;hours=Math.floor(amount/3600);amount=amount%3600;mins=Math.floor(amount/60);amount=amount%60;secs=Math.floor(amount);if(days!=0){out+=days+(days==1?"<span style='font-size:26pt;color:white'>Day</span>":"<span style='font-size:26pt;color:white'>Days</span>")+" "}if(hours!=0){out+=hours+(hours==1?"<span style='font-size:26pt;color:white'>Hour</span>":"<span style='font-size:26pt;color:white'>Hours</span>")+" "}out+=mins+(mins==1?"<span style='font-size:26pt;color:white'>Min</span>":"<span style='font-size:26pt;color:white'>Mins</span>")+" ";out+=secs+(secs==1?"<span style='font-size:26pt;color:white'>Sec</span>":"<span style='font-size:26pt;color:white'>Secs</span>")+" ";out=out.substr(0,out.length-2);document.getElementById(t).innerHTML=out;setTimeout(function(){GetCount(e,t)},1000);}}dateFuture1=new Date(2015,03,01,23,00,00);window.onload=function(){GetCount(dateFuture1,"countbox1");$("#countbox1").css({'position':'absolute', 'z-index': '2' ,'top':'120px','left':'225px','font-size':'50pt','color':'#24cddf','font-weight':'bold'});}</script>
+        </div>
+    </div>
+
+    <table width="980px">
+        <tr>
+            <td>
+            
+              <!-- Latest X Magic Items -->
+                
+
+<style type="text/css">
+    .stepcarousel
+    {
+        position: relative; /*leave this value alone*/
+        overflow: scroll; /*leave this value alone*/
+        width: 925px; /*Width of Carousel Viewer itself*/
+        height: 230px; /*Height should enough to fit largest content's height*/
+    }
+
+    .stepcarousel_large
+    {
+        position: relative; /*leave this value alone*/
+        overflow: scroll; /*leave this value alone*/
+        width: 925px; /*Width of Carousel Viewer itself*/
+        height: 460px; /*Height should enough to fit largest content's height*/
+    }
+    
+    .stepcarousel_large .belt, .stepcarousel .belt
+    {
+        position: absolute; /*leave this value alone*/
+        left: 0;
+        top: 0;
+    }
+    
+    .stepcarousel_large .panel, .stepcarousel .panel
+    {
+        float: left; /*leave this value alone*/
+        overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+        margin: 0px; /*margin around each panel*/
+        width: 925px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+    }
+    
+  
+</style>
+
+<script type="text/javascript">
+    stepcarousel.setup(
+    {
+        galleryid: 'NewMagicCarousel', //id of carousel DIV
+        beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+        panelclass: 'panel', //class of panel DIVs each holding content
+        autostep: {enable:false, moveby:1, pause:3000},
+        panelbehavior: {speed:500, wraparound:true, persist:false},
+        defaultbuttons: {enable: false, moveby: 1, leftnav: ['http://i34.tinypic.com/317e0s5.gif', -5, 80], rightnav: ['http://i38.tinypic.com/33o7di8.gif', -20, 80]},
+        statusvars: ['currentPanel', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+        contenttype: ['inline'] //content setting ['inline'] or ['external', 'path_to_external_file']
+    })
+
+    stepcarousel.setup(
+    {
+        galleryid: 'NewMagicCarouse2', //id of carousel DIV
+        beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+        panelclass: 'panel', //class of panel DIVs each holding content
+        autostep: { enable: false, moveby: 1, pause: 3000 },
+        panelbehavior: { speed: 500, wraparound: true, persist: false },
+        defaultbuttons: { enable: false, moveby: 1, leftnav: ['http://i34.tinypic.com/317e0s5.gif', -5, 80], rightnav: ['http://i38.tinypic.com/33o7di8.gif', -20, 80] },
+        statusvars: ['currentPanel', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+        contenttype: ['inline'] //content setting ['inline'] or ['external', 'path_to_external_file']
+    })
+
+
+    function GoToPage(id, page)
+    {
+        javascript:stepcarousel.stepTo(id, page)
+    }
+
+    function SetNewMagicPage(page)
+    {
+        if(page == 1)
+        {
+            document.getElementById('NewMagicPage1').style.backgroundColor = '#a32525';
+            document.getElementById('NewMagicPage2').style.backgroundColor = '#ffffff';
+            document.getElementById('NewMagicPage3').style.backgroundColor = '#ffffff';
+        }
+        if(page == 2)
+        {
+            document.getElementById('NewMagicPage1').style.backgroundColor = '#ffffff';
+            document.getElementById('NewMagicPage2').style.backgroundColor = '#a32525';
+            document.getElementById('NewMagicPage3').style.backgroundColor = '#ffffff';
+        }
+        if(page == 3)
+        {
+            document.getElementById('NewMagicPage1').style.backgroundColor = '#ffffff';
+            document.getElementById('NewMagicPage2').style.backgroundColor = '#ffffff';
+            document.getElementById('NewMagicPage3').style.backgroundColor = '#a32525';
+        }
+    }
+
+    function SetNewMagicPage2(page) {
+        if (page == 1) {
+            document.getElementById('NewMagicPage4').style.backgroundColor = '#a32525';
+            document.getElementById('NewMagicPage5').style.backgroundColor = '#ffffff';
+            document.getElementById('NewMagicPage6').style.backgroundColor = '#ffffff';
+        }
+        if (page == 2) {
+            document.getElementById('NewMagicPage4').style.backgroundColor = '#ffffff';
+            document.getElementById('NewMagicPage5').style.backgroundColor = '#a32525';
+            document.getElementById('NewMagicPage6').style.backgroundColor = '#ffffff';
+        }
+        if (page == 3) {
+            document.getElementById('NewMagicPage4').style.backgroundColor = '#ffffff';
+            document.getElementById('NewMagicPage5').style.backgroundColor = '#ffffff';
+            document.getElementById('NewMagicPage6').style.backgroundColor = '#a32525';
+        }
+    }
+
+</script>
+
+<div class="ModuleTitleMainPage">NEW FEATURED ALL STAR MAGIC</div>
+<!--b><a href="Search.aspx?e=1" style="font-size: 12pt;text-decoration: none;"><span style="color: #920101">NEW</span> <b style="color: #444444">ALL STAR MAGIC</b></a></b-->
+
+
+<!-- All Star Plus New Prudcts -->
+<table width="100%" cellpadding="0" cellspacing="0" style="font-size: 10pt;">
+    <tr>
+        <td 
+            style="background-color: #fafbec; border: solid 1px #aaaaaa;"
+            onmouseover="style.cursor='hand';style.backgroundColor='#dddddd'"
+            onmouseout="style.backgroundColor='#fafbec'"
+            onclick="javascript:stepcarousel.stepBy('NewMagicCarousel', -1);SetNewMagicPage(currentPanel);">
+            <table cellpadding="0" cellspacing="0" height="100%" width="22">
+                <tr>
+                    <td align="center"><img src="/AppImages/Carousel/left-arrow-carousel.gif" border="0" /></td>
+                </tr>
+            </table>
+        </td>
+        <td width="2"></td>
+        <td style="padding: 2px; border: solid 1px #aaaaaa">
+            <div id="NewMagicCarousel" class="stepcarousel">
+                <div class="belt">
+                    <div class="panel">
+                        <table id="ctl00_Content_NewMagicCarousel_Panel1" cellspacing="0" cellpadding="3" border="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55137'><img border="0" src='http://www.murphysmagicsupplies.com/images/55137-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55137'>Last Laugh by Mark Elsdon - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$38.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55391'><img border="0" src='http://www.murphysmagicsupplies.com/images/55391-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55391'>mINt (DVD and Gimmick) by Steve Rowe and Big Blind Media - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$34.95</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=36667'><img border="0" src='http://www.murphysmagicsupplies.com/images/36667-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=36667'>BIP Book 2.0 by Scott Creasey - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$38.50</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55282'><img border="0" src='http://www.murphysmagicsupplies.com/images/55282-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55282'>Against all Odds by Alakzam Magic - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$38.10</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55281'><img border="0" src='http://www.murphysmagicsupplies.com/images/55281-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55281'>Inked (DVD and Gimmicks) by Fred Darevil and Alakazam Magic - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$30.50</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55256'><img border="0" src='http://www.murphysmagicsupplies.com/images/55256-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55256'>50 Fifty (DVD and Gimmick) by Brian Kennedy - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$38.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55079'><img border="0" src='http://www.murphysmagicsupplies.com/images/55079-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55079'>Badge (DVD and Gimmick) by Alexis De La Fuente and Sebastien Calbry - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$45.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55257'><img border="0" src='http://www.murphysmagicsupplies.com/images/55257-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55257'>Hacked (DVD and Gimmick) by Brian Kennedy - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$34.50</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td>
+	</tr>
+</table>
+                    </div>
+
+                    <div class="panel">
+                        <table id="ctl00_Content_NewMagicCarousel_Panel2" cellspacing="0" cellpadding="3" border="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55108'><img border="0" src='http://www.murphysmagicsupplies.com/images/55108-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55108'>The Controls Project by Big Blind Media - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$34.95</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=54788'><img border="0" src='http://www.murphysmagicsupplies.com/images/54788-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=54788'>Paul Harris Presents Wishbone by Paul Harris and Bro Gilbert - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$34.95</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55087'><img border="0" src='http://www.murphysmagicsupplies.com/images/55087-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55087'>Destination (DVD and Gimmick) by Rus Andrews - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$45.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55197'><img border="0" src='http://www.murphysmagicsupplies.com/images/55197-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55197'>Gone (Red) by Daniel Bryan and Alakazam Magic - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$22.75</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55198'><img border="0" src='http://www.murphysmagicsupplies.com/images/55198-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55198'>Gone (Blue) by Daniel Bryan and Alakazam Magic - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$22.75</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=54752'><img border="0" src='http://www.murphysmagicsupplies.com/images/54752-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=54752'>Expanded Shell Poker Chip Green (plus 4 Regular Chips) by Tango magic - Trick (PK001)</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$20.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=54054'><img border="0" src='http://www.murphysmagicsupplies.com/images/54054-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=54054'>Super Expanded Shell Saint Gauden (D0154) by Tango - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$55.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=54908'><img border="0" src='http://www.murphysmagicsupplies.com/images/54908-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=54908'>Refill Elastic Thread for Tango Coins (1 Meter) (A0032) - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$2.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td>
+	</tr>
+</table>
+                    </div>
+
+                    <div class="panel">
+                        <table id="ctl00_Content_NewMagicCarousel_Panel3" cellspacing="0" cellpadding="3" border="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55107'><img border="0" src='http://www.murphysmagicsupplies.com/images/55107-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55107'>Solomon's Secret Subtleties by David Solomon - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$34.95</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=50858'><img border="0" src='http://www.murphysmagicsupplies.com/images/50858-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=50858'>Paul Harris Presents Fair Play Japanese (DVD and Gimmick) by Steve Haynes - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$39.95</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=55080'><img border="0" src='http://www.murphysmagicsupplies.com/images/55080-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=55080'>Tab (DVD and Gimmicks) by Wayne Fox - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$30.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=50652'><img border="0" src='http://www.murphysmagicsupplies.com/images/50652-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=50652'>Unreal by Joshua Jay and Luis De Matos - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$150.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=54714'><img border="0" src='http://www.murphysmagicsupplies.com/images/54714-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=54714'>Paul Harris Presents Fair Play U.K. (DVD and Gimmick) by Steve Haynes - Trick</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$39.95</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=54684'><img border="0" src='http://www.murphysmagicsupplies.com/images/54684-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=54684'>Expansion Pack (7 Of Hearts) for Limitless by Peter Nardi - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$30.75</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=54774'><img border="0" src='http://www.murphysmagicsupplies.com/images/54774-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=54774'>Expansion Pack (3 Of Clubs) for Limitless by Peter Nardi - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$30.75</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td><td style="width:25%;">
+                                <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                    <tr style="padding: 3px;" valign="top">
+                                        <td width="79" height="79">
+                                            <!-- Image -->
+                                            <a href='Product.aspx?id=54782'><img border="0" src='http://www.murphysmagicsupplies.com/images/54782-thumb.png' /></a>
+                                        </td>
+                                        <td width="10"></td>
+                                        <td>
+                                            <!-- Description -->
+                                            <a href='Product.aspx?id=54782'>The Forces Project by Big Blind Media - DVD</a>
+                                            <!-- Price -->
+                                            <div align="right" class="ModulePrice">$35.00</div>
+                                        </td>
+                                    </tr>
+                                </table>                       
+                            </td>
+	</tr>
+</table>
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td width="2"></td>
+        <td 
+            style="background-color: #fafbec; border: solid 1px #aaaaaa;"
+            onmouseover="style.cursor='hand';style.backgroundColor='#dddddd'"
+            onmouseout="style.backgroundColor='#fafbec'"
+            onclick="javascript:stepcarousel.stepBy('NewMagicCarousel', 1);SetNewMagicPage(currentPanel);">
+            <table cellpadding="0" cellspacing="0" height="100%" height="100%" width="22">
+                <tr>
+                    <td align="center"><img src="AppImages/Carousel/right-arrow-carousel.gif" id="ctl00_Content_NewMagicCarousel_Img2" border="0" /></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    </table>
+    <div style="height: 3px"></div>
+    <div align="center">
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="33%"></td>
+            <td width="33%" align="center">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td id="NewMagicPage1"
+                            onmouseover="style.cursor='hand';"
+                            onclick="GoToPage('NewMagicCarousel', 1);SetNewMagicPage(1);"        
+                            style="background-color: #a32525"><img src="AppImages/Carousel/circle-page.gif" id="ctl00_Content_NewMagicCarousel_Img3" /></td>
+                        <td width="10"></td>
+                        <td id="NewMagicPage2"
+                            onmouseover="style.cursor='hand';"
+                            onclick="GoToPage('NewMagicCarousel', 2);SetNewMagicPage(2);"        
+                            style="background-color: #ffffff"><img src="AppImages/Carousel/circle-page.gif" id="ctl00_Content_NewMagicCarousel_Img4" /></td>
+                        <td width="10"></td>
+                        <td id="NewMagicPage3"
+                            onmouseover="style.cursor='hand';"
+                            onclick="GoToPage('NewMagicCarousel', 3);SetNewMagicPage(3);"        
+                            style="background-color: #ffffff"><img src="AppImages/Carousel/circle-page.gif" id="ctl00_Content_NewMagicCarousel_Img5" /></td>
+                    </tr>
+                </table>
+            </td>
+            <td width="33%" align="right"><div align="right"> </div></td>
+        </tr>
+    </table>
+</div>
+   
+
+<br /><br />
+
+<div class="ModuleTitleMainPage">NEW ALL STAR MAGIC</div>
+
+<!-- All Star New Products -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="font-size: 10pt;">
+        <tr>
+            <td 
+                style="background-color: #fafbec; border: solid 1px #aaaaaa;"
+                onmouseover="style.cursor='hand';style.backgroundColor='#dddddd'"
+                onmouseout="style.backgroundColor='#fafbec'"
+                onclick="javascript:stepcarousel.stepBy('NewMagicCarouse2', -1);SetNewMagicPage2(currentPanel);">
+                <table cellpadding="0" cellspacing="0" height="100%" width="22">
+                    <tr>
+                        <td align="center"><img src="AppImages/Carousel/left-arrow-carousel.gif" id="ctl00_Content_NewMagicCarousel_Img6" border="0" /></td>
+                    </tr>
+                </table>
+            </td>
+            <td width="2"></td>
+            <td style="padding: 2px; border: solid 1px #aaaaaa">
+                <div id="NewMagicCarouse2" class="stepcarousel_large">
+                    <div class="belt">
+                        <div class="panel">
+                            <table id="ctl00_Content_NewMagicCarousel_Panel4" cellspacing="0" cellpadding="3" border="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54722'><img border="0" src='http://www.murphysmagicsupplies.com/images/54722-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54722'>Gonzo by Jose Lac'Quest - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$89.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55390'><img border="0" src='http://www.murphysmagicsupplies.com/images/55390-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55390'>Canic (DVD and Gimmick) by Nicholas Lawrence and SansMinds - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$29.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54952'><img border="0" src='http://www.murphysmagicsupplies.com/images/54952-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54952'>At the Table Live Lecture January 2015 (4 DVD set) - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$49.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54951'><img border="0" src='http://www.murphysmagicsupplies.com/images/54951-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54951'>At the Table Live Lecture Dani da Ortiz - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54949'><img border="0" src='http://www.murphysmagicsupplies.com/images/54949-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54949'>At the Table Live Lecture Francis Menotti - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54950'><img border="0" src='http://www.murphysmagicsupplies.com/images/54950-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54950'>At the Table Live Lecture Jay Sankey - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54948'><img border="0" src='http://www.murphysmagicsupplies.com/images/54948-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54948'>At the Table Live Lecture Paul Gertner - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54002'><img border="0" src='http://www.murphysmagicsupplies.com/images/54002-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54002'>Flash Wand by Alan Wong - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$29.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=52815'><img border="0" src='http://www.murphysmagicsupplies.com/images/52815-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=52815'>EVP (DVD and Gimmick) by Alan Rorrison - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$99.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55307'><img border="0" src='http://www.murphysmagicsupplies.com/images/55307-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55307'>Jermay's Mind (DVD Set) by Luke Jermay and Vanishing Inc. - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$75.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55460'><img border="0" src='http://www.murphysmagicsupplies.com/images/55460-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55460'>Reel Magic Episode 41 (Brian Gillis) - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$12.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54875'><img border="0" src='http://www.murphysmagicsupplies.com/images/54875-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54875'>Pasteboard: SansMinds Workers' Series (DVD and Gimmick) - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$34.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=53435'><img border="0" src='http://www.murphysmagicsupplies.com/images/53435-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=53435'>Moments (DVD and Gimmick) by Rory Adams - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$34.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55236'><img border="0" src='http://www.murphysmagicsupplies.com/images/55236-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55236'>Flash Deck Switch 2.0 (Improved / Red) by Shin Lim - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$34.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55304'><img border="0" src='http://www.murphysmagicsupplies.com/images/55304-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55304'>Tremble (DVD & Gimmicks included) by Magician Anonymous - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$29.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=51567'><img border="0" src='http://www.murphysmagicsupplies.com/images/51567-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=51567'>Handomatic (DVD and Gimmick) by Mark Southworth - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$60.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr>
+</table>
+                        </div>
+
+                        <div class="panel">
+                            <table id="ctl00_Content_NewMagicCarousel_Panel5" cellspacing="0" cellpadding="3" border="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54374'><img border="0" src='http://www.murphysmagicsupplies.com/images/54374-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54374'>Something Out of the Ordinary  by Nicholas Lawrence and SansMinds - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$34.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55263'><img border="0" src='http://www.murphysmagicsupplies.com/images/55263-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55263'>Changeling (DVD and Gimmicks) by Marc Lavelle and Titanas Magic - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$29.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55273'><img border="0" src='http://www.murphysmagicsupplies.com/images/55273-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55273'>Multitude (DVD & Gimmicks) Red by Vincent Hedan and System 6 - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$39.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55274'><img border="0" src='http://www.murphysmagicsupplies.com/images/55274-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55274'>Multitude (DVD & Gimmicks)Blue by Vincent Hedan and System 6 - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$39.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55253'><img border="0" src='http://www.murphysmagicsupplies.com/images/55253-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55253'>Too Hot to Handle (DVD and Gimmick) by Keiron Johnson and RSVP Magic - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$48.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=53195'><img border="0" src='http://www.murphysmagicsupplies.com/images/53195-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=53195'>Dissolve (DVD and Gimmick) by Francis Menotti - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$29.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55285'><img border="0" src='http://www.murphysmagicsupplies.com/images/55285-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55285'>Bandwidth by Greg Wilson - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$39.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54006'><img border="0" src='http://www.murphysmagicsupplies.com/images/54006-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54006'>Squeaky Salt Shaker by Alan Wong - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$25.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54182'><img border="0" src='http://www.murphysmagicsupplies.com/images/54182-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54182'>Magnetic Cane holder by Alan Wong - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$29.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54892'><img border="0" src='http://www.murphysmagicsupplies.com/images/54892-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54892'>GAME by Luke Jermay and Vanishing Inc. - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$29.99</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=52817'><img border="0" src='http://www.murphysmagicsupplies.com/images/52817-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=52817'>Vapr Replacement Heater Coil</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$11.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55209'><img border="0" src='http://www.murphysmagicsupplies.com/images/55209-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55209'>Sherlockian (2 DVD Set) by Ben Cardall and Titanas Magic - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$60.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54902'><img border="0" src='http://www.murphysmagicsupplies.com/images/54902-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54902'>Insight (gimmicks & DVD) by Tom Elderfield /Presented by Shin Lim - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$25.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54702'><img border="0" src='http://www.murphysmagicsupplies.com/images/54702-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54702'>Center Stage (2 DVD Set) by John Guastaferro - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$39.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55190'><img border="0" src='http://www.murphysmagicsupplies.com/images/55190-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55190'>Ace Assemblies (World's Greatest Magic) Vol. 2 by L&L Publishing - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55191'><img border="0" src='http://www.murphysmagicsupplies.com/images/55191-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55191'>Ace Assemblies (World's Greatest Magic) Vol. 3 by L&L Publishing - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr>
+</table>
+                        </div>
+
+                        <div class="panel">
+                            <table id="ctl00_Content_NewMagicCarousel_Panel6" cellspacing="0" cellpadding="3" border="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55189'><img border="0" src='http://www.murphysmagicsupplies.com/images/55189-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55189'>Ace Assemblies (World's Greatest Magic) Vol. 1 by L&L Publishing - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55147'><img border="0" src='http://www.murphysmagicsupplies.com/images/55147-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55147'>Doc Eason Card Under Glass (2 DVD set) by Kozmomagic - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$49.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54827'><img border="0" src='http://www.murphysmagicsupplies.com/images/54827-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54827'>Touched by Morgan Strebler and SansMinds - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$49.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54098'><img border="0" src='http://www.murphysmagicsupplies.com/images/54098-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54098'>Sponge Pills by Alan Wong - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$15.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54673'><img border="0" src='http://www.murphysmagicsupplies.com/images/54673-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54673'>At the Table Live Lecture Alan Rorrison - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54674'><img border="0" src='http://www.murphysmagicsupplies.com/images/54674-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54674'>At the Table Live Lecture Rich Ferguson - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54675'><img border="0" src='http://www.murphysmagicsupplies.com/images/54675-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54675'>At the Table Live Lecture Chris Mayhew - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54672'><img border="0" src='http://www.murphysmagicsupplies.com/images/54672-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54672'>At the Table Live Lecture Jack Carpenter - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55143'><img border="0" src='http://www.murphysmagicsupplies.com/images/55143-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55143'>Visualize by Brendan Rodrigues and RSVP Magic - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$29.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54679'><img border="0" src='http://www.murphysmagicsupplies.com/images/54679-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54679'>At the Table Live Lecture December 2014 (4 DVD set) - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$49.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54923'><img border="0" src='http://www.murphysmagicsupplies.com/images/54923-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54923'>Unboxing by Nicholas Lawrence and SansMinds - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=52961'><img border="0" src='http://www.murphysmagicsupplies.com/images/52961-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=52961'>Dean's Coin Wallet by Dean Dill and Alan Wong - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$35.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr><tr>
+		<td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54097'><img border="0" src='http://www.murphysmagicsupplies.com/images/54097-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54097'>Sponge Eggs (4pk.) by Alan Wong - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$19.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54227'><img border="0" src='http://www.murphysmagicsupplies.com/images/54227-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54227'>Sponge Bread (four slices) by Alan Wong - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$25.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=54967'><img border="0" src='http://www.murphysmagicsupplies.com/images/54967-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=54967'>The Gypsy Thread by Quoc-Tien Tran - DVD</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$40.00</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td><td style="width:25%;">
+                                    <table cellpadding="0" cellspacing="0" width="100%" height="110">
+                                        <tr style="padding: 3px;" valign="top">
+                                            <td width="79" height="79">
+                                                <!-- Image -->
+                                                <a href='Product.aspx?id=55144'><img border="0" src='http://www.murphysmagicsupplies.com/images/55144-thumb.png' /></a>
+                                            </td>
+                                            <td width="10"></td>
+                                            <td>
+                                                <!-- Description -->
+                                                <a href='Product.aspx?id=55144'>Benz by Sean Fields - Trick</a>
+                                                <!-- Price -->
+                                                <div align="right" class="ModulePrice">$34.95</div>
+                                            </td>
+                                        </tr>
+                                    </table>                       
+                                </td>
+	</tr>
+</table>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td width="2"></td>
+            <td 
+                style="background-color: #fafbec; border: solid 1px #aaaaaa;"
+                onmouseover="style.cursor='hand';style.backgroundColor='#dddddd'"
+                onmouseout="style.backgroundColor='#fafbec'"
+                onclick="javascript:stepcarousel.stepBy('NewMagicCarouse2', 1);SetNewMagicPage2(currentPanel);">
+                <table cellpadding="0" cellspacing="0" height="100%" width="22">
+                    <tr>
+                        <td align="center"><img src="AppImages/Carousel/right-arrow-carousel.gif" id="ctl00_Content_NewMagicCarousel_Img7" border="0" /></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+      <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="33%"></td>
+            <td width="33%" align="center">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td id="NewMagicPage4"
+                            onmouseover="style.cursor='hand';"
+                            onclick="GoToPage('NewMagicCarouse2', 1);SetNewMagicPage2(1);"        
+                            style="background-color: #a32525"><img src="AppImages/Carousel/circle-page.gif" id="ctl00_Content_NewMagicCarousel_Img8" /></td>
+                        <td width="10"></td>
+                        <td id="NewMagicPage5"
+                            onmouseover="style.cursor='hand';"
+                            onclick="GoToPage('NewMagicCarouse2', 2);SetNewMagicPage2(2);"        
+                            style="background-color: #ffffff"><img src="AppImages/Carousel/circle-page.gif" id="ctl00_Content_NewMagicCarousel_Img9" /></td>
+                        <td width="10"></td>
+                        <td id="NewMagicPage6"
+                            onmouseover="style.cursor='hand';"
+                            onclick="GoToPage('NewMagicCarouse2', 3);SetNewMagicPage2(3);"        
+                            style="background-color: #ffffff"><img src="AppImages/Carousel/circle-page.gif" id="ctl00_Content_NewMagicCarousel_Img10" /></td>
+                    </tr>
+                </table>
+            </td>
+            <td width="33%" align="right"><div align="right"> <a href="Search.aspx?e=1" id="ctl00_Content_NewMagicCarousel_A3">All Star + Exclusive New Magic</a></div></td>
+        </tr>
+    </table>
+
+                <br />
+                <div>
+                    <a href="/submit-video"><img src="AppImages/MMS_submit_banner.png" id="ctl00_Content_Img2" alt="submit video" border="0" /></a>
+                </div>
+
+                <!-- All Star Carousel -->
+                
+                
+                <br /> <br />
+            </td>
+        </tr>
+         <tr valign="top">
+            <td>
+                <table width="980px" cellpadding="0" cellspacing="0">
+                    <tr valign="top">
+                        <td align="left">
+                            <!-- Back In Stock -->
+                            <div class="ModuleTitleMainPage">BACK IN STOCK</div>
+                                <a href="Search.aspx?bis=1"><a id="ctl00_Content_AdRotator1" href="/Product.aspx?id=54604" target="_top"><img src="/AppImages/ComingSoon/backinstock-extortion.png" alt="Back in Stock" style="border-width:0px;" /></a></a>
+                            <div><a href="Search.aspx?bis=1">View All Back in Stock</a></div>
+
+                        </td>
+                        <td width="4%"></td>
+                        <td align="left">
+                            <div class="ModuleTitleMainPage">VENDOR SPOTLIGHT</div>
+                            
+                            <a id="ctl00_Content_AdRotator6" href="/Search.aspx?d=33137" target="_top"><img src="/AppImages/Spotlight/spotlight-undermagic.png" alt="" style="border-width:0px;" /></a>
+                            
+                            <!-- Auction -->
+                            
+                        </td>
+
+                        <td width="4%"></td>
+                        <td>
+                            <!-- Coming Soon/Presale -->
+                            
+                            
+
+                            
+                            <div class="ModuleTitleMainPage">HUGE DISCOUNTS</div>
+                            <a id="ctl00_Content_AdRotator3" href="/Search.aspx?t=166" target="_top"><img src="/AppImages/amazingdeal2.png" alt="Buy these products today for a huge discount!" style="border-width:0px;" /></a>
+                            <div><a href="Search.aspx?t=161">View All Slashed Items</a></div>
+                        </td>
+                        <td width="4%"></td>
+                        <td>
+                            <!-- Developer Center -->
+                            <div class="ModuleTitleMainPage">CHECK IT OUT:</div>
+                                <a id="ctl00_Content_AdRotator2" href="http://www.murphysmagic.com/Search.aspx?t=124" target="_top"><img src="/AppImages/Spotlight/reviews.png" alt="Product Reviews" style="border-width:0px;" /></a>
+                        </td>
+                    </tr>
+                </table>
+             </td>
+       </tr>
+       
+    </table>
+
+    <br />
+                
+    <table cellpadding="0" cellspacing="0" width="980px">
+        <tr valign="top">
+            <td width="48%">
+                <!-- Top Sold Products -->
+                
+
+
+<table width="100%" cellpadding="0" cellspacing="0" style="margin-top: 15px">
+    <tr>
+        <td align="left">
+            <span class="ModuleTitleMainPage">NEW EXCLUSIVE PRODUCTS (<a style="font-size: 10pt;" href="/Search.aspx?e=1">View All</a>)</span>
+            <!--b style="font-size: 12pt;"><span style="color: #920101">WHAT'S</span><b style="color: #444444"> HOT</b></b> <span style="font-size: 10pt;">(Last 14 days)</span-->
+        </td>
+        <td align="right"></td>
+    </tr>
+    <tr>
+        <td colspan="2" valign="top" style="border: solid 1px #bbbbbb; width: 100%;padding: 5px; font-size:10pt;">
+            
+                    
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=54768'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/54768-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=54768'>Ripper (Twisted Edition) DVD & Gimmicks by Matthew Wright - Trick</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$49.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=54767'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/54767-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=54767'>Ripper DVD & Gimmicks by Matthew Wright - Trick</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$35.00</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55461'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55461-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55461'>Houdini Picture Show by The Miracle Factory - DVD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$20.00</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55462'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55462-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55462'>Houdini: Captured on Film by The Miracle Factory - DVD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$20.00</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55463'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55463-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55463'>Houdini: The Master Mystery by The Miracle Factory  - DVD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$20.00</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55407'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55407-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55407'>Lennart Green's Green Lite - DVD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$34.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55404'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55404-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55404'>Cherry Deck by Derek McKee - Trick</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$9.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55326'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55326-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55326'>Bicycle Neverland Deck by Nat Iwata  - Trick</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$10.00</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55447'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55447-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55447'>My Favorite Magician by Richard Ribuffo - Trick</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$14.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55556'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55556-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55556'>Blue Poker by Nathan Kranzo - Trick</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$9.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                
+        </td>
+    </tr>
+</table>
+            
+            </td>
+            <td width="4%"></td>
+            <td width="48%">
+                <!-- Top Sold Products -->
+                
+
+<table width="100%" cellpadding="0" cellspacing="0" style="margin-top: 15px">
+    <tr>
+        <td align="left">
+            <span class="ModuleTitleMainPage">PRESALES (<a style="font-size: 10pt;" href="/Search.aspx?ps=1">View All</a>)</span>
+        </td>
+        <td align="right"></td>
+    </tr>
+    <tr>
+        <td colspan="2" valign="top" style="border: solid 1px #bbbbbb; width: 100%;padding: 5px; font-size:10pt;">
+            
+                    
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55391'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55391-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55391'>mINt (DVD and Gimmick) by Steve Rowe and Big Blind Media - Trick</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$34.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=52815'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/52815-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=52815'>EVP (DVD and Gimmick) by Alan Rorrison - DVD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$99.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55307'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55307-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55307'>Jermay's Mind (DVD Set) by Luke Jermay and Vanishing Inc. - DVD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$75.00</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=51567'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/51567-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=51567'>Handomatic (DVD and Gimmick) by Mark Southworth - DVD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$60.00</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55197'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55197-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55197'>Gone (Red) by Daniel Bryan and Alakazam Magic - Trick</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$22.75</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Product.aspx?id=55198'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55198-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Product.aspx?id=55198'>Gone (Blue) by Daniel Bryan and Alakazam Magic - Trick</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$22.75</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                
+        </td>
+    </tr>
+</table>
+            
+            </td>
+        </tr>
+    </table> 
+
+
+     <br />
+               
+    <!-- New Streaming Products -->
+    
+
+<table width="100%" cellpadding="0" cellspacing="0" style="margin-top: 15px">
+    <tr>
+        <td align="left">
+            <span class="ModuleTitleMainPage">NEW DOWNLOADS (<a style="font-size: 10pt;" href="/Streaming/Search.aspx">View All</a>)</span>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" valign="top" style="border: solid 1px #bbbbbb; width: 100%;padding: 5px; font-size:10pt;">
+            
+                    
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Streaming/Product.aspx?id=55551'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55551-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Streaming/Product.aspx?id=55551'>At the Table Live Lecture - Steven Himmel 4/22/2015 - video DOWNLOAD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$24.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Streaming/Product.aspx?id=55549'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55549-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Streaming/Product.aspx?id=55549'>At the Table Live Lecture - Mike Hankins 4/8/2015 - video DOWNLOAD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$24.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Streaming/Product.aspx?id=55548'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55548-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Streaming/Product.aspx?id=55548'>At the Table Live Lecture - Eric Ross 4/1/2015 - video DOWNLOAD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$24.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Streaming/Product.aspx?id=55301'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55301-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Streaming/Product.aspx?id=55301'>At the Table Live Lecture - Geoff Williams 3/25/2015 - video DOWNLOAD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$24.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                    <table width="100%" cellpadding="0" cellspacing="0">
+                        <tr valign="top">
+                            <td style="width: 31px">
+                                <a target="_self" href='/Streaming/Product.aspx?id=55550'>
+                                <img border="0" width="35" height="35" src='http://www.murphysmagicsupplies.com/images/55550-thumb.png' alt="View this product on the Web" /></a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <a target="_self" href='/Streaming/Product.aspx?id=55550'>At the Table Live Lecture - Will Houstoun 4/15/2015 - video DOWNLOAD</a>
+                            </td>
+                            <td width="10"></td>
+                            <td>
+                                <div align="right" class="ModulePrice">$24.95</div>
+                            </td>
+                        </tr>
+                    </table>
+                
+                
+        </td>
+    </tr>
+</table>
+
+
+
+    <br /><br />
+
+    For access to FTP, Web Services, CSVs and anything related to automation and adding Products to your site visit our <a href="http://developer.murphysmagic.com">Developer Center</a>. 
+
+    <br /><br />
+
+    <!-- Main page Modal Popup -->
+    <div id="mmsModalPopupDiv" style="display:none;width:400px; height:600px;">
+        <a id="ctl00_Content_AdRotator5" href="/Product.aspx?id=55310" target="_top"><img src="http://www.murphysmagicsupplies.com/images_splash/overlay-3ropes.jpg" alt="" style="border-width:0px;" /></a>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+        function getCookie(c_name) {
+            var c_value = document.cookie;
+            var c_start = c_value.indexOf(" " + c_name + "=");
+            if (c_start == -1) {
+                c_start = c_value.indexOf(c_name + "=");
+            }
+            if (c_start == -1) {
+                c_value = null;
+            }
+            else {
+                c_start = c_value.indexOf("=", c_start) + 1;
+                var c_end = c_value.indexOf(";", c_start);
+                if (c_end == -1) {
+                    c_end = c_value.length;
+                }
+                c_value = unescape(c_value.substring(c_start, c_end));
+            }
+            return c_value;
+        }
+        function setCookie(c_name, value, exdays) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + exdays);
+            var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+            document.cookie = c_name + "=" + c_value;
+        }
+
+        $(document).ready(function () {
+            $("a[rel^='prettyPhoto']").prettyPhoto(
+                {
+                    social_tools: false,
+                    deeplinking: false,
+                    default_width: 400,
+                    default_height: 600
+                }
+            );
+
+            var mmsModalPopup = getCookie("mmsPopupOverlayStatus");
+            if (mmsModalPopup == null || mmsModalPopup == "") {
+                $.prettyPhoto.open("#mmsModalPopupDiv");
+                setCookie("mmsPopupOverlayStatus", "Hide");
+            }
+            else if (mmsModalPopup == true) {
+                $.prettyPhoto.open("#mmsModalPopupDiv");
+                setCookie("mmsPopupOverlayStatus", "Hide");
+            }
+            else {
+                if (mmsModalPopup == "Show") {
+                    $.prettyPhoto.open("#mmsModalPopupDiv");
+                    setCookie("mmsPopupOverlayStatus", "Hide");
+                }
+            }
+        }
+    );
+    </script>
+
+
+    </div>
+</div>
+
+        
+    <!-- Footer -->
+    <div style="padding: 10px;background-color:#444444;">
+        <center>
+        <table width="980px" cellpadding="0" cellspacing="0" style="text-align:center; -webkit-margin-start: auto; -webkit-margin-end: auto;">
+            <tr valign="top">
+                <td> 
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="5"></td>
+                            <td><a href="/Information/Contact.aspx" id="ctl00_A5" class="FooterLink">Contacts</a></td>
+                            <td width="10"></td>
+                            <td><a href="/Information/AboutMurphys.aspx" id="ctl00_A1" class="FooterLink">About Murphy's</a></td>
+                            <td width="10"></td>
+                            
+                            <td><a href="/Information/MissionStatement.aspx" id="ctl00_A2" class="FooterLink">Mission Statement</a></td>
+                            <td width="10"></td>
+                            <td><a href="/Information/BecomeADealer.aspx" id="ctl00_A4" class="FooterLink">Become a Dealer</a></td>
+                            <td width="10"></td>
+                            <td><a href="/jobs" id="ctl00_A6" class="FooterLink">Careers</a></td>
+                            
+                            
+                            
+                        </tr>  
+                         
+                    </table>
+                </td>
+                <td align="right" style="color: White"><span style='font-size: 9pt;color: White'>&copy; 2015</span> Murphy's Magic Supplies, Inc.</td>
+            </tr>
+        </table>
+        </center>
+    </div>
+    
+    <div style="background-color:#1c2426;">
+    <br />
+    
+        <center>
+    <table width="980px" cellpadding="0" cellspacing="0" style="text-align:center; -webkit-margin-start: auto; -webkit-margin-end: auto;">
+        <tr>
+                <td align="left" class="style1">
+                <map id="map1" name="map1">
+                    <area shape="rect" coords="0,0,131,35" href="/information/Contact.aspx#japanese" alt="" title=""    />
+                        
+                        <area shape="rect" coords="134,0,265,35" href="/information/Contact.aspx#spanish" alt="" title=""    />
+                        <area shape="rect" coords="268,0,399,35" href="/information/Contact.aspx#french" alt="" title=""    />
+                    
+                </map>
+
+               
+
+
+                    <img src="AppImages/language3.gif" id="ctl00_Img1" border="0" usemap="#map1" />
+                            
+            </td>
+            <td align="right" style="color: #888888; font-size: small;" width="290">
+                    11500 Gold Dredge Way<br />
+                    Rancho Cordova, CA 95742<br />
+                    Phone 1.800.853.7403
+            </td>
+            </tr>
+            <tr>
+                <td align="left" class="style1">
+                        <a href="https://www.facebook.com/MurphysMagicSupplies" target="_blank"><img border="0" src="/AppImages/Follow/icon-facebook.png" /></a>
+                        <a href="http://www.youtube.com/user/murphysmagic" target="_blank"><img border="0" src="/AppImages/Follow/icon-youtube.png" /></a>
+                        <a href="http://twitter.com/murphysmagic" target="_blank"><img border="0" src="/AppImages/Follow/icon-twitter.png" /></a>
+                        <a href="http://instagram.com/MurphysMagic" target="_blank"><img border="0" src="/AppImages/Follow/icon-instagram.png" /></a>
+                </td>
+            <td align="right" style="color: #888888;">
+                
+                        
+                </td>
+        </tr>
+        <tr>
+            
+                <td colspan="2">
+                    Version: 03.31.2015.1302
+                </td>
+        </tr>
+        </table>
+    
+        </center>
+</div>
+
+        <div id="mmsContainer">
+            <div id="mmsContent">
+                <div id="mmsNavBar">
+                    <div id="mmsTab1" class="mmsTabs"></div>
+                    <div id="mmsTab2" class="mmsTabs"></div>
+                    <div id="mmsTab3" class="mmsTabs"></div>
+                </div>
+                <div id="mmsMainProd">
+                    <img id="mmsMPBottom" class="bottom" src="" />
+                    <img id="mmsMPTop" class="top" src="" />
+                </div>
+                <div id="mmsClose">X</div>
+            </div>
+            <div id="mmsButton"></div>
+            <div id="mmsLogo">
+                <img id="mmsLogoBottom" class="bottom" src="" />
+                <img id="mmsLogoTop" class="top" src="" />
+            </div>
+            <div id="mmsPopToggle"></div>
+        </div>
+
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-6822776-1");
+            pageTracker._trackPageview();
+        } catch (err) { }</script>
+    </form>
+</body>
+</html>
