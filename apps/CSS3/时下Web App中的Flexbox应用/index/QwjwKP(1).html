@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://s.codepen.io/imohkay/fullembedgrid/QwjwKP?type=embed&animations=run -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <!--
+Copyright (c) 2015 by Karen Menezes (http://codepen.io/imohkay/pen/QwjwKP)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+  <title>CodePen - Flexbox: Toggling a list's order</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="css" rel="stylesheet" type="text/css">
+
+  <style>body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.list-ordered {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.list-ordered li {
+  background: seagreen;
+  border-bottom: 1px solid;
+  padding: 5px;
+}
+
+.list-ordered li, .list-ordered li a {
+  color: white;
+}
+
+.list-ordered li a {
+  text-decoration: none;
+}
+
+.list-ordered li a:hover {
+  opacity: 0.8;
+}
+
+input:checked + ol {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}</style>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <h1></h1>
+
+<h2>Highest Paid Actors: 2013</h2>
+<p>Uses flexbox to toggle a list's ascending and descending order. Pure CSS.</p>
+
+<label for="lowest-paid-toggle">See Lowest to Highest</label>
+<input type="checkbox" id="lowest-paid-toggle" class="lowest-paid-toggle">
+
+<ol class="list-ordered">
+  <li><a href="http://s.codepen.io/imohkay/fullembedgrid/QwjwKP?type=embed&animations=run#">Robert Downey Jr.</a></li>
+  <li><a href="http://s.codepen.io/imohkay/fullembedgrid/QwjwKP?type=embed&animations=run#">Channing Tatum</a></li>
+  <li><a href="http://s.codepen.io/imohkay/fullembedgrid/QwjwKP?type=embed&animations=run#">Hugh Jackman</a></li>
+  <li><a href="http://s.codepen.io/imohkay/fullembedgrid/QwjwKP?type=embed&animations=run#">Mark Wahlberg</a></li>
+  <li><a href="http://s.codepen.io/imohkay/fullembedgrid/QwjwKP?type=embed&animations=run#">Dwayne Johnson</a></li>
+</ol>
+
+
+
+</body></html>

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://www..com/css3/harnessing-flexbox-for-todays-web-apps.html -->
+<html lang="zh-hans" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="js">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script charset="utf-8" src="./index/t.js"></script>
+
+  <link rel="shortcut icon" href="http://www..com/sites/all/themes/V2/favicon.ico" type="image/vnd.microsoft.icon">
+  <meta content="时下Web App中的Flexbox应用" about="/css3/harnessing-flexbox-for-todays-web-apps.html" property="dc:title">
+  <link rel="canonical" href="./index/时下Web App中的Flexbox应用   css3教程-css3实例-css3动画   .html">
+  <meta name="Generator" content="Drupal 7 (http://drupal.org)">
+  <link rel="shortlink" href="http://www..com/node/1528">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="css3教程,css3实例,css3属性详解,w3c,transition">
+  <meta name="description" content="是一个前端爱好者的家园，努力打造最优秀的web 前端学习的站点。力求原创，以一起学习，一起进步，共同分享为原则。站提供了有关于css,css3,html,html5,jQuery,手机移动端的技术文档、DEMO、资源，与前端爱好者一起共勉。">
+  <meta name="chinaz-site-verification" content="e05734b7-b750-4282-b98f-1dfe97a349bc">
+  <meta name="ujianVerification" content="4f5e0543e4b020324dcf03e2">
+  <meta name="baidu-site-verification" content="ftyq813qEZgpw9nb">
+  <meta name="google-site-verification" content="uVNoZLN3dibr1wA6EQAxou562q9YhGKXPYG5_ZzhW6Y">
+  <title>时下Web App中的Flexbox应用 | css3教程-css3实例-css3动画 | </title>
+  <link type="text/css" rel="stylesheet" href="./index/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all">
+  <link type="text/css" rel="stylesheet" href="./index/css_gVGFplumcGoJ2okZlVPI3HbaT-4z725h0TUUahmzdhk.css" media="all">
+  <link type="text/css" rel="stylesheet" href="./index/css_AFNnEjvDR5CvJkNKTljzBrlXpHTR2BYWPNnWbH1OEx4.css" media="all">
+  <link type="text/css" rel="stylesheet" href="./index/css_NVvgl9rrb9JrSCvvCeBtJ7URAk1lZAe9UENPovz9Jxc.css" media="all">
+  
+  <link href="http://api.lagou.com/css/animate.css" rel="stylesheet" class="lazyload" charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="./index/embed.default.css">
+
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-1528 node-type-blog featured">
+
+  <div id="page" role="page">
+    <div class="container">
+
+      <div class="col-main">
+        <div class="main-wrap">
+
+          <div class="page-inner">
+
+            <a id="main-content"></a>
+            <h1 class="title" id="page-title">时下Web App中的Flexbox应用</h1>
+
+            <div class="region region-content">
+              <div id="block-system-main" class="block block-system">
+
+                <div class="content">
+                  <div id="node-1528" class="node node-blog node-promoted node-full clearfix" about="/css3/harnessing-flexbox-for-todays-web-apps.html" typeof="sioc:Post sioct:BlogPost">
+
+                    <div class="node-header">
+                      <div class="submitted">
+                        原文地址：
+                        <a href="http://www..com/css3/harnessing-flexbox-for-todays-web-apps.html">
+                          http://www..com/css3/harnessing-flexbox-for-todays-web-apps.html
+                        </a>
+                      </div>
+                      <div class="tags">
+                        <div class="field field-name-field-blog-tag field-type-taxonomy-term-reference field-label-hidden">
+                          <div class="field-items">
+                            <div class="field-item even">
+                              <a href="http://www..com/blog/tags/69.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">CSS3</a>
+                            </div>
+                            <div class="field-item odd">
+                              <a href="http://www..com/blog/tags/157.html" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">flexbox</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="body-content clearfix">
+                      <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+                        <div class="field-items">
+                          <div class="field-item even" property="content:encoded">
+                            <p>
+                              虽然语法可能比较混杂，但
+                              <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes">Flexbox</a>
+                              还是名不虚传的。它创造的是可伸缩的、有弹性的、可改变视觉顺序的智能盒子。它提供了简单的CSS布局方案范例让容器总是处于垂直水平居中的位置。使用盒模型来工作是非常通用的。
+                            </p>
+
+                            <p>
+                              <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Chris Coyier 对Flexbox的总结</a>
+                              很好：
+                            </p>
+
+                            <blockquote>
+                              <p>
+                                Flexbox Layout（弹性盒模型）模块（目前W3C工作草案正在最后通过）的目的是为了提供一种更有效的方式来布局，使各模块即使大小是未知或者动态的也可以在项目空间中合理分配位置（就像“弹性”这个词一样）。
+  弹性布局的主要思想是：让这个容器有能力自动改变宽高（和顺序）来尽可能地填充可用空间（大多用来适应所有类型的显示器的屏幕尺寸）。Flex容器可以扩展它的模块来填充可用空间或缩小来防止溢出。
+                              </p>
+                            </blockquote>
+
+                            <p>
+                              Flexbox真正的发光是在HTML5 Web应用上。大多数Web Apps 由一系列模块化、可重用的组件组成。你可以使用Flexbox来为那些令你头痛的和依赖于脆弱的CSS hack 的地方布局。好的方法是使用Flexbox对小模块的地方进行布局，然后用
+                              <code>float</code>
+                              和其它工具来布局更广泛的地方。
+                            </p>
+
+                            <p>
+                              我正在做的Web应用程序上使用了很多的Flexbox，我非常喜欢它处理布局和盒子的智能计算。我想要分享一些关于盒模型的例子，如果有什么反馈我将感激不尽。
+                            </p>
+
+                            <p>本文假定你已经有一定相关的Flexbox工作经验。网上也有大量关于这方面的信息。请记住，它的规范已经经历了很多年的变化。</p>
+
+                            <blockquote>
+                              <p>
+                                如果你对Flexbox一无所知，或者从未了解，译者建议您先点击
+                                <a href="http://www..com/blog/tags/157.html">这里</a>
+                                了解有关于Flexbox的相关知识。
+                              </p>
+                            </blockquote>
+
+                            <p>Flexfox经历过三个版本，主要区别是2009年到2012年之间的语法变化。</p>
+
+                            <ol>
+                              <li>
+                                最新的语法和现在规范是同步的（例
+                                <code>display:flex</code>
+                                ）。
+                              </li>
+                              <li>
+                                在这之间的语法是2012年出现的非官方语法，只能被IE识别（例
+                                <code>display: -ms-flexbox</code>
+                                ）。
+                              </li>
+                              <li>
+                                最老的语法产生于2009年（例
+                                <code>display: box</code>
+                                ）
+                              </li>
+                            </ol>
+
+                            <h2>浏览器支持情况</h2>
+
+                            <p>
+                              让我们来具体看看那些浏览器支持那些语法以及
+                              <a href="http://caniuse.com/#search=flexbox">支持情况</a>
+                            </p>
+
+                            <h3>支持新语法的浏览器</h3>
+
+                            <p> <strong>PC端：</strong>
+                            </p>
+
+                            <ul>
+                              <li>无前缀：Chrome 29+, Firefox 28+, IE 11+, Opera 17+</li>
+                              <li>
+                                需要前缀：Chrome 21+, Safari 6.1+, Opera 15+需要前缀
+                                <code>-webkit-</code>
+                              </li>
+                            </ul>
+
+                            <p> <strong>提示：</strong>
+                              旧版本的Firefox（22-27）支持除了
+                              <code>flex-wrap</code>
+                              和
+                              <code>flex-flow</code>
+                              之外的新语法。Opera (12.1+ - 17+)使用
+                              <code>flex</code>
+                              可以没有私有前缀，但是中间的15和16版本需要私有前缀。
+                            </p>
+
+                            <p>
+                              <strong>移动端：</strong>
+                            </p>
+
+                            <ul>
+                              <li>
+                                无前缀：Android 4.4+, Opera mobile 12.1+, BlackBerry 10+, Chrome for Android 39+, Firefox for Android 33+, IE 11+ mobile
+                              </li>
+                              <li>
+                                需要前缀：iOS 7.1+需要前缀
+                                <code>-webkit-</code>
+                              </li>
+                            </ul>
+
+                            <p>
+                              几乎上述所有浏览器的旧版本都支持Flexbox的版本退化，除了一些像
+                              <code>flex-wrap</code>
+                              和
+                              <code>flex-wrap</code>
+                              的属性（后者是
+                              <code>flex-direction</code>
+                              和
+                              <code>flex-wrap</code>
+                              属性的简写）。通过避免
+                              <code>flex-wrap</code>
+                              我们得到了浏览器对于合并新旧语法惊人的支持。
+                            </p>
+
+                            <h3>支持中间语法的浏览器</h3>
+
+                            <p>
+                              <strong>PC端和移动端：</strong>
+                              IE10（使用
+                              <code>-ms-</code>
+                              私有前缀）。
+                            </p>
+
+                            <h3>支持旧语法的浏览器</h3>
+
+                            <p>
+                              所有PC端和移动端的浏览器都需要加
+                              <code>-webkit-</code>
+                              的私有前缀（除了firefox需要使用
+                              <code>-moz-</code>
+                              前缀）。
+                            </p>
+
+                            <ul>
+                              <li>
+                                <strong>PC端：</strong>
+                                Firefox 2 – 21, Chrome 4 – 20, Safari 3.1 – 6
+                              </li>
+                              <li>
+                                <strong>移动端</strong>
+                                Android 2.1 – 4.3, iOS 3.2 – 6.1, UC browser 9.9 on Android, BlackBerry 7
+                              </li>
+                            </ul>
+
+                            <p>
+                              对于具有自动更新功能的现代浏览器（比如Chrome, Firefox, IE and Opera的桌面浏览器），可以直接使用新的语法形式。
+                            </p>
+
+                            <h3>不支持flexbox语法的浏览器</h3>
+
+                            <ul>
+                              <li>
+                                <strong>PC端：</strong>
+                                IE9和Opera12以下
+                              </li>
+                              <li>
+                                <strong>移动端</strong>
+                                Opera Mini
+                              </li>
+                            </ul>
+
+                            <p>
+                              如果你被私有前缀的数量和语法的改变所吓到，你需要看一下
+                              <a href="https://css-tricks.com/using-flexbox/">Chris Coyier的建议</a>
+                            </p>
+
+                            <p>你开可以通过以下工具去获得浏览器私有前缀最好的支持</p>
+
+                            <ul>
+                              <li>
+                                <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>
+                                有了这个通用的私有前缀编写工具，就可以为你写的css或预处理文件添加相应的前缀
+                              </li>
+                              <li>
+                                <a href="https://github.com/mastastealth/sass-flex-mixin">Sass flexbox mixins</a>
+                              </li>
+                              <li>
+                                <strong>Less</strong>
+                                :LESS mixin 有两种形式：对于IE10 而言
+                                <a href="https://gist.github.com/kenstone/5460000">有</a>
+                                或者
+                                <a href="https://gist.github.com/jayj/4012969">没有</a>
+                                中间语法。
+                              </li>
+                            </ul>
+
+                            <p>
+                              根据以下这些原因我会建议使用Autoprefixer。我还没有尝试过其它预处理器的解决方案，如果你有欢迎提出任何意见。需要注意的是，如果你使用一个mixin的辅助库（例如Bourbon或Sass的Compass，Stylus的Nib和LESS的LESS Hat），它需要建立在对flexbox私有前缀支持的基础上。
+                            </p>
+
+                            <p>
+                              有了这样一个Autoprefixer工具，实际上你得到了除了IE9和Opera Mini之外的，对flexbox很大程度上的支持。当然，你依旧需要在所有浏览器上彻底测试你的应用程序，以确保对不同语法的支持。
+                            </p>
+
+                            <p>
+                              让我们来看看几个不错的
+                              <strong>关于使用flexbox的web app的例子</strong>
+                              。
+                            </p>
+
+                            <h2>一个父元素包含不定数量的子元素</h2>
+
+                            <p>
+                              <strong>用例：</strong>
+                              我的App具有搜索过滤功能。搜索过滤器的数量取决于用户是否登陆。匿名用户可以看到两个过滤器（“公众”和“最新”），登陆用户可同时看到四个（还有“主要”和“收藏”）。
+                            </p>
+
+                            <p>
+                              <strong>问题：</strong>
+                              我想要在不对CSS样式做任何改变的情况下适应这两种选项。
+                            </p>
+
+                            <p>
+                              <strong>讨论：</strong>
+                              大家通常在你的模板里使用
+                              <code>if</code>
+                              声明来处理登陆用户的状态。如果你使用
+                              <code>float</code>
+                              来布局，你还需要为匿名用户的过滤器设置
+                              <code>50%</code>
+                              的宽度，为登陆用户的过滤器设置
+                              <code>25%</code>
+                              的宽度。
+                            </p>
+
+                            <p>
+                              <strong>解决方法：</strong>
+                              使用Flexbox，你只需要通过为父容器设置
+                              <code>display：flex</code>
+                              然后给子元素的
+                              <code>flex</code>
+                              属性设为
+                              <code>1</code>
+                              ，这将让每个子元素在父容器内占据相等的宽度。所以，无论视图怎么改变css样式都不需要改变。请记住
+                              <code>flex</code>
+                              属性是
+                              <code>flex-grow``flex-shrink</code>
+                              和
+                              <code>flex-basis</code>
+                              的简写。
+                            </p>
+
+                            <p>
+                              <strong>示例：</strong>
+                            </p>
+
+                            <div style="margin-bottom: 25px;">
+                              <iframe id="cp_embed_vENEEe" src="./index/vENEEe.html" scrolling="no" frameborder="0" height="347" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe undefined" style="width: 100%; overflow: hidden;"></iframe>
+                            </div>
+
+                            <p>
+                              可以在
+                              <a href="http://codepen.io/">CodePen</a>
+                              上看到Karen Menezes(
+                              <a href="http://codepen.io/imohkay">@imohkay</a>
+                              )做的示例
+                              <a href="http://codepen.io/imohkay/pen/vENEEe/">Felxbox：一个父元素包含不定数量的子元素</a>
+                            </p>
+
+                            <h2>带图标的输入框</h2>
+
+                            <p>
+                              <strong>用例：</strong>
+                              我想要在我的表单输入框上加一个有意义的图标。
+                            </p>
+
+                            <p>
+                              <strong>问题：</strong>
+                              我想要一个不必规定宽高的灵活的优雅的解决方案。
+                            </p>
+
+                            <p>
+                              <strong>讨论：</strong>
+                              这是一个经典问题。不同的前端框架有不同的处理方法，大多数是用
+                              <code>display:table-cell</code>
+                              或者使用绝对定位。
+                            </p>
+
+                            <p>
+                              <strong>解决方法</strong>
+                              这里有一个Flexbox的方法。所有我们需要做的就只是把
+                              <code>input</code>
+                              框和图标包在一个父元素内部，并为这个父元素设置
+                              <code>display:flex</code>
+                              ，然后，为
+                              <code>input</code>
+                              框添加
+                              <code>flex:1</code>
+                              ，让它占用父元素减去图标宽度的剩余空间。
+                            </p>
+
+                            <p>
+                              <strong>示例：</strong>
+                              （通过CDN使用Font Awesome 字符图标很方便）
+                            </p>
+
+                            <div style="margin-bottom: 25px;">
+                              <iframe id="cp_embed_QwjwwY" src="./index/QwjwwY.html" scrolling="no" frameborder="0" height="245" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe undefined" style="width: 100%; overflow: hidden;"></iframe>
+                            </div>
+
+                            <p>
+                              可以在
+                              <a href="http://codepen.io/">CodePen</a>
+                              上看到Karen Menezes(
+                              <a href="http://codepen.io/imohkay">@imohkay</a>
+                              )做的示例
+                              <a href="http://codepen.io/imohkay/pen/QwjwwY/">Felxbox：带有图标的输入框</a>
+                            </p>
+
+                            <h2>视觉顺序</h2>
+
+                            <p>
+                              Flexbox可以用来改变文档的视觉顺序但依旧会根据文档的原顺序来保留
+                              <a href="http://www.w3.org/TR/css3-flexbox/#flow-order">导航</a>
+                              的完整性。我们作为开发人员的主要工作是负责使用Flexbox排序机制所产生的巨大能量。
+                            </p>
+
+                            <p>
+                              事实上，我们可以通过对源文件使用适当的辅助技术来构建我们的文件像屏幕阅读器那样（比如：在源顺序里把侧边栏放在主内容之前），并且使用flexbox简单的改变可视顺序来使用户图形界面更加友好化(通过
+                              <code>order</code>
+                              和
+                              <code>flex-direction</code>
+                              属性来把侧边栏竖立在主内容的右侧)。让我们俩看看这些细节。
+                            </p>
+
+                            <h3>flex-direction 产生的视觉独立</h3>
+
+                            <p>
+                              <strong>用例：</strong>
+                              我有一个侧边栏定位在主内容的右侧。在小屏幕上，我想改变顺序把侧边栏放在主内容的顶部。
+                            </p>
+
+                            <p>
+                              <strong>问题：</strong>
+                              我不想使用JavaScript或者CSS hack的方式来改变视觉顺序。
+                            </p>
+
+                            <p>
+                              <strong>讨论：</strong>
+                              Flexbox在布局方面是不可知论的。这是它成为一个响应式布局的神奇工具。我们可以通过两种方式来做到这一点：使用
+                              <code>flex-direction</code>
+                              属性或
+                              <code>order</code>
+                              属性。让我们来看看这里的第一个方法。
+                            </p>
+
+                            <p>
+                              <strong>解决方法：</strong>
+                              让我们把侧边栏放在我们代码布局中的第一部分。这符合逻辑的原因有两个：它坚持移动优先的布局原则，吧侧边栏链接放在元顺序的优先位置是对屏幕阅读器有益的。然后我们在父元素中声明
+                              <code>flex-direction</code>
+                              （因为
+                              <code>row</code>
+                              是默认值）。在我们的大屏幕上，我们将把
+                              <code>flex-direction</code>
+                              替换成
+                              <code>row-reverse</code>
+                              ，这样就解决了我们的问题。
+                            </p>
+
+                            <p>作为奖励，我们将放一个fixed-width 的侧边栏（它在大屏幕和移动屏幕上始终是180px）。</p>
+
+                            <p>
+                              <strong>示例：</strong>
+                            </p>
+
+                            <div style="margin-bottom: 25px;">
+                              <iframe id="cp_embed_JoYoRE" src="./index/JoYoRE.html" scrolling="no" frameborder="0" height="452" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe undefined" style="width: 100%; overflow: hidden;"></iframe>
+                            </div>
+
+                            <p>
+                              可以在
+                              <a href="http://codepen.io/">CodePen</a>
+                              上看到Karen Menezes(
+                              <a href="http://codepen.io/imohkay">@imohkay</a>
+                              )做的示例
+                              <a href="http://codepen.io/imohkay/pen/JoYoRE/">Felxbox：使用flex-direction让侧边栏与源顺序无关</a>
+                            </p>
+
+                            <h3>order 产生的视觉独立</h3>
+
+                            <p>我们的用例与问题和上面的例子相同。</p>
+
+                            <p>
+                              <strong>讨论：</strong>
+                              <code>order</code>
+                              属性可以比
+                              <code>flex-direction</code>
+                              更精确的控制视觉顺序。
+                            </p>
+
+                            <p>
+                              <strong>解决方法：</strong>
+                              我们在父元素上声明
+                              <code>flex-direction:column</code>
+                              让它在手机上两列叠加。然后，设置一个媒体查询的
+                              <code>min-width</code>
+                              ，我们将把
+                              <code>flex-direction</code>
+                              变成
+                              <code>row</code>
+                              ,这样将把侧边栏放在左侧，把主内容放在右侧。为了改变顺序，我们为主内容设置
+                              <code>order:1</code>
+                              为侧边栏设置
+                              <code>order:2</code>
+                              ！
+                            </p>
+
+                            <p>
+                              <strong>示例：</strong>
+                            </p>
+
+                            <div style="margin-bottom: 25px;">
+                              <iframe id="cp_embed_VYvYKM" src="./index/VYvYKM.html" scrolling="no" frameborder="0" height="444" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe undefined" style="width: 100%; overflow: hidden;"></iframe>
+                            </div>
+
+                            <p>
+                              可以在
+                              <a href="http://codepen.io/">CodePen</a>
+                              上看到Karen Menezes(
+                              <a href="http://codepen.io/imohkay">@imohkay</a>
+                              )做的示例
+                              <a href="http://codepen.io/imohkay/pen/VYvYKM/">Felxbox：使用order让侧边栏与源顺序无关</a>
+                            </p>
+
+                            <h3>切换升序和降序</h3>
+
+                            <p>
+                              <strong>用例：</strong>
+                              我想要显示2013年好莱坞收入最高的五个演员名单，允许切换顺序。
+                            </p>
+
+                            <p>
+                              <strong>问题：</strong>
+                              我无来由的想使用纯CSS来实现这个效果，但我并不确定它是否可行。
+                            </p>
+
+                            <p>
+                              <strong>讨论：</strong>
+                              这是一个简单的没有JavaScript演示，来展示Flexbox的强大。也许有一点疯狂、不切实际，但让我们来看看是否有这样一种方式。
+                            </p>
+
+                            <p>
+                              <strong>解决方法：</strong>
+                              我们将添加一个有
+                              <code>label</code>
+                              的复选框，通过复选框的选中来切换成由低到高的顺序。下面，我们将添加演员的名单。使用CSS的
+                              <code>:checked</code>
+                              伪类来检查是否被选中。我们选择复选框后立即反转无序列表的顺序（通过使用
+                              <code>flex-direction</code>
+                              ）。虽然这很奇怪，但它是完美的作品，除非你使用屏幕阅读器或键盘导航。在下面的演示中，选择复选框使用键盘导航可以看到这种影响。规范中提到
+                              <code>order</code>
+                              <a href="http://www.w3.org/TR/css3-flexbox/#order-accessibility">
+                                既不影响
+                                <code>tabindex</code>
+                                也不影响
+                              </a>
+                              视觉媒体。因此，我不推荐把这种解决方案放在你的项目中。或许它可以在一个快速原型中派上用场。
+                            </p>
+
+                            <p>
+                              提示：
+                              <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=812687">在Firefox现在的版本中有一个bug</a>
+                              （Ubuntu的34版本，Mac OS X 和Windows的33版本）会导致
+                              <code>tableindex</code>
+                              准守改变后的顺序而不是源顺序。你可以看一下CSS社区的
+                              <a href="http://sprungmarker.de/wp-content/uploads/css-a11y-group/css-a11y-flexbox.html#newspec">测试用例</a>
+                              。
+                            </p>
+
+                            <p>
+                              <strong>示例：</strong>
+                            </p>
+
+                            <div style="margin-bottom: 25px;">
+                              <iframe id="cp_embed_QwjwKP" src="./index/QwjwKP.html" scrolling="no" frameborder="0" height="390" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe undefined" style="width: 100%; overflow: hidden;"></iframe>
+                            </div>
+
+                            <p>
+                              可以在
+                              <a href="http://codepen.io/">CodePen</a>
+                              上看到Karen Menezes(
+                              <a href="http://codepen.io/imohkay">@imohkay</a>
+                              )做的示例
+                              <a href="http://codepen.io/imohkay/pen/QwjwKP/">Felxbox：切换列表顺序</a>
+                            </p>
+
+                            <h3>注释模块</h3>
+
+                            <p>
+                              <strong>用例：</strong>
+                              我有一个典型的注释模块，图片在左面，内容在右面。图片头像始终是同样的宽高（注：这不是响应式的）。
+                            </p>
+
+                            <p>
+                              <strong>问题：</strong>
+                              我使用Flexbox，但这样内容和图片会重叠：
+                            </p>
+
+                            <p>
+                              <img src="./index/1-flexbox-comments-overlap-opt.jpg" alt="注释模块" title="注释模块"></p>
+
+                            <p>
+                              如果你在图片上设置
+                              <code>max-width:100%;height:auto</code>
+                              ，就会变成下面这样：
+                            </p>
+
+                            <p>
+                              <img src="./index/2-flexbox-comments-max-width-opt.jpg" alt="注释模块" title="注释模块"></p>
+
+                            <p>
+                              <strong>讨论：</strong>
+                              这个例子类似于上面带图标的输入框的例子。但是我们可以用它来讨论
+                              <code>flex-shrink</code>
+                              属性，这在你某些情况下是非常方便的。
+                            </p>
+
+                            <p>
+                              <strong>解决方法：</strong>
+                              在包裹图片和文字的父元素上添加
+                              <code>display:flex</code>
+                              。你会发现文本覆盖在头像图片上（或者该头像图片非常的小，就像上面那张图片那样）。为了克服这个情况，你可以在图片上声明
+                              <code>flex-shrink:0</code>
+                              ，这确保了它不会收缩来适应其它flex项目的宽度。另一种方法是为注释的文本添加
+                              <code>flex:1</code>
+                              。这种情况下，你不需要在头像上设置
+                              <code>flex-shrink:0</code>
+                              。总的来说，规范推荐使用flex速记的方法，但它可以让你很好的理解
+                              <code>flex-shrink</code>
+                              属性。
+                            </p>
+
+                            <p>
+                              <strong>示例：</strong>
+                            </p>
+
+                            <div style="margin-bottom: 25px;">
+                              <iframe id="cp_embed_OPyPbo" src="./index/OPyPbo.html" scrolling="no" frameborder="0" height="220" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe undefined" style="width: 100%; overflow: hidden;"></iframe>
+                            </div>
+
+                            <p>
+                              可以在
+                              <a href="http://codepen.io/">CodePen</a>
+                              上看到Karen Menezes(
+                              <a href="http://codepen.io/imohkay">@imohkay</a>
+                              )做的示例
+                              <a href="http://codepen.io/imohkay/pen/OPyPbo/">Felxbox的注释模块</a>
+                            </p>
+
+                            <h3>复杂的菜单</h3>
+
+                            <p>
+                              <strong>用例：</strong>
+                              我的app上有一个菜单，其中包括搜索和排序部件。它融合了按钮，输入框，图标和文本。
+                            </p>
+
+                            <p>
+                              <strong>问题：</strong>
+                              我担心在不同尺寸的屏幕上布局会被打乱。
+                            </p>
+
+                            <p>
+                              <strong>讨论：</strong>
+                              这是一个完美的flexbox用例。有些地方需要固定宽度，而有些地方则需根据屏幕的宽度进行填充。
+                            </p>
+
+                            <p>
+                              <strong>解决方法：</strong>
+                              我们可以通过Flexbox进行垂直居中并用相对较少的代码灵活书写查找排序模块。
+                            </p>
+
+                            <p>
+                              <strong>示例：</strong>
+                              （通过CDN使用Font Awesome 字符图标很方便）
+                            </p>
+
+                            <div style="margin-bottom: 25px;">
+                              <iframe id="cp_embed_QwjwGP" src="./index/QwjwGP.html" scrolling="no" frameborder="0" height="185" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe undefined" style="width: 100%; overflow: hidden;"></iframe>
+                            </div>
+
+                            <p>
+                              可以在
+                              <a href="http://codepen.io/">CodePen</a>
+                              上看到Karen Menezes(
+                              <a href="http://codepen.io/imohkay">@imohkay</a>
+                              )做的示例
+                              <a href="http://codepen.io/imohkay/pen/QwjwGP/">Felxbox示例：搜索和过滤</a>
+                            </p>
+
+                            <h3>卡片</h3>
+
+                            <p>
+                              <strong>用例：</strong>
+                              我想基于Google
+                              <a href="http://www.google.com/design/spec/components/cards.html">Material Design文档</a>
+                              的卡片组件为我的app创建一个卡片模块。这个卡片要支持移动端。
+                            </p>
+
+                            <p>
+                              <strong>问题：</strong>
+                              在大屏幕上，我希望卡片是内联的。卡片在同一水平线上的高度应该是相同的，尽管没有在行上为它们设置标记。“查看更多”按钮应该始终位于卡片底部。
+                            </p>
+
+                            <p>
+                              <strong>讨论：</strong>
+                              我们可以看一下Flexbox模块中的附加属性。比如说用
+                              <code>margin:auto</code>
+                              智能的处理间距。
+                            </p>
+
+                            <p>
+                              <strong>解决方法：</strong>
+                              Flexbox提供了一个令人难以置信的解决方案来解决一个庞大的CSS问题：高度相同。事实上，Flexbox非常灵活，它允许一行里的卡片等高，尽管这组卡片没有被包裹在一个div里。它也允许“查看更多”出现在底部就像使用绝对定位放在了卡片的底部一样。使用一个
+                              <code>margin:auto</code>
+                              就可以了。
+                            </p>
+
+                            <p>
+                              <strong>示例：</strong>
+                              （如果某些旧的浏览器不兼容就使用
+                              <code>flex-wrap</code>
+                              属性。）
+                            </p>
+
+                            <div style="margin-bottom: 25px;">
+                              <iframe id="cp_embed_PwPwWd" src="./index/PwPwWd.html" scrolling="no" frameborder="0" height="531" allowtransparency="true" allowfullscreen="true" class="cp_embed_iframe undefined" style="width: 100%; overflow: hidden;"></iframe>
+                            </div>
+
+                            <p>
+                              可以在
+                              <a href="http://codepen.io/">CodePen</a>
+                              上看到Karen Menezes(
+                              <a href="http://codepen.io/imohkay">@imohkay</a>
+                              )做的示例
+                              <a href="http://codepen.io/imohkay/pen/PwPwWd/">Felxbox：卡片模型</a>
+                            </p>
+
+                            <h2>结论</h2>
+
+                            <p>
+                              如果受众是那些在智能手机上使用新版本浏览器的人，Flexbox可能是最合适的混合web app。事实上，一些流行的前端框架也有使用Flexbox，包括ZURB的
+                              <a href="http://foundation.zurb.com/apps/">Foundation for Apps</a>
+                              (也可以在
+                              <a href="https://github.com/zurb/foundation-apps">GitHub</a>
+                              上看到)和
+                              <a href="http://ionicframework.com/">Ionic</a>
+                              。
+                            </p>
+
+                            <p>
+                              如果你的应用程序只需要现代浏览器的支持，欢迎加入！使用像Autoprefixer这样的工具，很容易过渡到flexbox多个版本和语法汤羹的世界里。虽然Flexbox和
+                              <code>float</code>
+                              很搭配，它也可以代替它做一些目前没有其他布局模式可以做到的布局，包括内联块、表格显示、绝对定位。“CSS网格布局模块”的目的是取代像类似
+                              <code>float</code>
+                              的解决方法和hack。但它现在正处于起步阶段，只有很少的浏览器支持。在未来的某一天，我很愿意想象我们将全部使用CSS网格和Flexbox来构建更直观的用户界面，因为他们的发挥更好。
+                            </p>
+
+                            <p>
+                              Flexbox需要一段时间才能让你“啊哈！”，因为他涉及到要你忘记那些你已经知道的CSS布局方式。一旦你讲了一口流利的Flexbox语言，你设计响应式应用程序的过程将变得轻松，你的样式表也将更加的简洁。
+                            </p>
+
+                            <h2>扩展阅读</h2>
+
+                            <ul>
+                              <li>
+                                <a href="http://www..com/blog/tags/157.html">Flexbox中文教程</a>
+                              </li>
+                              <li>
+                                <a href="http://tympanus.net/codrops/css_reference/flexbox/">Flexbox</a>
+                              </li>
+                              <li>
+                                <a href="http://www.smashingmagazine.com/2013/05/22/centering-elements-with-flexbox">Designing CSS Layouts With Flexbox Is as Easy as Pie</a>
+                              </li>
+                              <li>
+                                <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox">A Complete Guide to Flexbox</a>
+                              </li>
+                              <li>
+                                <a href="http://chriswrightdesign.com/experiments/flexbox-adventures">Flexbox Adventures</a>
+                              </li>
+                              <li>
+                                <a href="http://www.sitepoint.com/are-we-ready-to-use-flexbox">Are We Ready to Use Flexbox?</a>
+                              </li>
+                              <li>
+                                <a href="http://the-echoplex.net/flexyboxes">Flexy Boxes</a>
+                              </li>
+                              <li>
+                                <a href="http://css-tricks.com/flexbox-nav-bar-fixed-variable-take-rest-elements">
+                                  Flexbox Nav Bar With Fixed, Variable, and Take-Up-The-Rest Elements
+                                </a>
+                              </li>
+                              <li>
+                                <a href="http://philipwalton.github.io/solved-by-flexbox">Solved by flexbox</a>
+                              </li>
+                              <li>
+                                <a href="https://github.com/philipwalton/flexbugs">Flexbugs</a>
+                              </li>
+                              <li>
+                                <a href="http://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes">Using CSS Flexible Boxes</a>
+                              </li>
+                              <li>
+                                <a href="http://www.sketchingwithcss.com/samplechapter/cheatsheet.html">The Ultimate Flexbox Cheat Sheet</a>
+                              </li>
+                            </ul>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="region region-sidebar-second"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>

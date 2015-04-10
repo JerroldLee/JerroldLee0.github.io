@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://s.codepen.io/imohkay/fullembedgrid/vENEEe?type=embed&animations=run -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <!--
+Copyright (c) 2015 by Karen Menezes (http://codepen.io/imohkay/pen/vENEEe)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+  <title>CodePen - Flexbox: Parents with an unknown number of children</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css" rel="stylesheet" type="text/css">
+
+  <style>/* tiny reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+  padding: 0;
+}
+/* end tiny reset */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrap {
+  padding: 20px;
+}
+
+/* styling for filters */
+.filter-block {
+  font-size: 14px;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.filter {
+  background: seagreen;
+  color: white;
+  border-right: 1px solid white;
+  padding: 5px;
+  font-size: 14px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}    
+
+.filter:last-of-type {
+  border-right: none;
+}    
+/* end styling for filters */
+</style>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <div class="wrap">
+  <div>Flexbox can handle widths intelligently; no widths are specified for any elements in this demo.</div>
+
+  <h3><strong>Anonymous user</strong></h3>
+  <p>An anonymous user will see only two filters</p>
+  <div class="filter-block">
+    <div class="filter">Popular</div>
+    <div class="filter">Latest</div>
+  </div>      
+
+  <h3><strong>Signed in user</strong></h3>
+  <p>A signed-in user will see four filters</p>
+  <div class="filter-block">
+    <div class="filter">Popular</div>
+    <div class="filter">Latest</div>
+    <div class="filter">Starred</div>
+    <div class="filter">Favorites</div>
+  </div>  
+</div> <!-- /wrap -->
+
+
+
+</body></html>

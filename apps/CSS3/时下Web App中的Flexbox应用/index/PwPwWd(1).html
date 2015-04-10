@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://s.codepen.io/imohkay/fullembedgrid/PwPwWd?type=embed&animations=run -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <!--
+Copyright (c) 2015 by Karen Menezes (http://codepen.io/imohkay/pen/PwPwWd)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+  <title>CodePen - Flexbox: Card module</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css" rel="stylesheet" type="text/css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>* {
+  box-sizing: border-box;
+}
+
+.module-card-wrap {
+  max-width: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.module-card {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  min-width: 100%;
+  padding: 10px;
+  margin-bottom: 5%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.module-card-title {
+  font-size: 120%; 
+  font-weight: 700;
+}
+
+.module-card-meta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.module-card-category, .module-card-author {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.module-card-author {
+  text-align: right;
+}
+
+.module-card-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; /* a flex: 1 also works here, but is buggy on IE11 */
+}
+
+.module-card-img {
+  margin: 20px 0;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  width: 100%;
+  height: auto;
+}
+
+.module-card-button {
+  background: seagreen;
+  color: white;
+  border: none;
+  margin-top: auto;
+  padding: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .module-card {
+    width: 48%;
+    margin: 0 auto 2%;
+    min-width: 0;
+  }
+}
+</style>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <div class="module-card-wrap">
+  <div class="module-card">
+    <div class="module-card-title">Cheesecake</div>
+    <div class="module-card-meta">
+      <div class="module-card-category">
+        <span class="fa fa-tag"></span>
+        <span>Desserts</span>
+      </div>
+      <div class="module-card-author">
+        <span class="fa fa-user"></span>
+        <span>Jenn Davis</span>
+      </div>      
+    </div> <!-- /module-card-meta -->
+
+    <div class="module-card-bottom">
+      <img src="400x150" alt="cheesecake" class="module-card-img">
+
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt fugiat.</p>
+      </div>
+
+      <button class="module-card-button">See More</button>
+    </div>
+  </div>
+
+  <div class="module-card">
+    <div class="module-card-title">Cheesecake</div>
+    <div class="module-card-meta">
+      <div class="module-card-category">
+        <span class="fa fa-tag"></span>
+        <span>Desserts</span>
+      </div>
+      <div class="module-card-author">
+        <span class="fa fa-user"></span>
+        <span>Jenn Davis</span>
+      </div>      
+    </div> <!-- /module-card-meta -->
+
+    <div class="module-card-bottom">
+      <img src="400x100" alt="cheesecake" class="module-card-img">
+      <button class="module-card-button">See More</button>
+    </div>
+  </div>
+
+  <div class="module-card">
+    <div class="module-card-title">Cheesecake</div>
+    <div class="module-card-meta">
+      <div class="module-card-category">
+        <span class="fa fa-tag"></span>
+        <span>Desserts</span>
+      </div>
+      <div class="module-card-author">
+        <span class="fa fa-user"></span>
+        <span>Jenn Davis</span>
+      </div>      
+    </div> <!-- /module-card-meta -->
+
+    <div class="module-card-bottom">
+      <img src="400x300" alt="cheesecake" class="module-card-img">
+
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <button class="module-card-button">See More</button>
+    </div>
+  </div>
+
+  <div class="module-card">
+    <div class="module-card-title">Cheesecake</div>
+    <div class="module-card-meta">
+      <div class="module-card-category">
+        <span class="fa fa-tag"></span>
+        <span>Desserts</span>
+      </div>
+      <div class="module-card-author">
+        <span class="fa fa-user"></span>
+        <span>Jenn Davis</span>
+      </div>      
+    </div> <!-- /module-card-meta -->
+
+    <div class="module-card-bottom">
+      <img src="400x120" alt="cheesecake" class="module-card-img">
+
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt fugiat.</p>
+      </div>
+      <button class="module-card-button">See More</button>
+    </div>
+  </div>
+
+  <div class="module-card">
+    <div class="module-card-title">Cheesecake</div>
+    <div class="module-card-meta">
+      <div class="module-card-category">
+        <span class="fa fa-tag"></span>
+        <span>Desserts</span>
+      </div>
+      <div class="module-card-author">
+        <span class="fa fa-user"></span>
+        <span>Jenn Davis</span>
+      </div>      
+    </div> <!-- /module-card-meta -->
+
+    <div class="module-card-bottom">
+      <img src="400x200" alt="cheesecake" class="module-card-img">
+
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ipsum sit perspiciatis iusto commodi nihil tenetur veritatis adipisci sed? Illo nobis similique in facilis libero ab officia ratione nesciunt fugiat.</p>
+      </div>
+
+      <button class="module-card-button">See More</button>
+    </div>
+  </div>
+</div> <!-- /module-card-wrap -->
+
+
+
+</body></html>

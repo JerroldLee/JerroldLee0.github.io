@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://s.codepen.io/imohkay/fullembedgrid/JoYoRE?type=embed&animations=run -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+  <meta name="google" value="notranslate">
+
+  <!--
+Copyright (c) 2015 by Karen Menezes (http://codepen.io/imohkay/pen/JoYoRE)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+  <title>CodePen - Flexbox: Sidebar with source order independence using flex-direction</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css" rel="stylesheet" type="text/css">
+
+  <style>/* tiny reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0 0 10px 0;
+}
+/* end tiny reset */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.header, .footer {
+  background: #eee;
+  padding: 10px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content, .sidebar {
+  padding: 10px;
+}
+
+.sidebar {
+  background: seagreen;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .main-content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+
+  .sidebar {
+    width: 180px;
+  }
+}</style>
+
+</head>
+
+<body onload="_l=&#39;t&#39;;">
+
+  <header class="header">
+  <div>A header</div>
+</header>
+
+<main class="main">
+  <div class="sidebar">
+    <a href="http://s.codepen.io/imohkay/fullembedgrid/JoYoRE?type=embed&animations=run#">Some links</a>
+    <a href="http://s.codepen.io/imohkay/fullembedgrid/JoYoRE?type=embed&animations=run#">Some links</a>
+    <a href="http://s.codepen.io/imohkay/fullembedgrid/JoYoRE?type=embed&animations=run#">Some links</a>
+  </div>    
+
+  <div class="main-content">
+    <p>A simple flexbox demo showcasing the flex-direction property to achieve source order independence for the classic <em>main content with sidebar</em> layout.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi officiis dignissimos fugiat incidunt ullam optio tempora voluptatibus repudiandae harum repellendus a totam necessitatibus tenetur vero facere in suscipit ipsam provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis asperiores molestias consequatur culpa aliquid quam aspernatur aut vero accusantium amet. Quo repudiandae voluptas harum fuga dolor facilis similique expedita nemo.</p>
+  </div>
+</main>
+
+<footer class="footer">A footer</footer>
+
+
+
+</body></html>
