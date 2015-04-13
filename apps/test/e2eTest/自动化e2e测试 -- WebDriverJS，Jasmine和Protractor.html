@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://sentsin.com/web/658.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK"><link href="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/laycode.css" type="text/css" rel="stylesheet">
+<meta charset="gbk">
+<title>自动化e2e测试 -- WebDriverJS，Jasmine和Protractor</title>
+<meta name="description" content="自动化e2e测试 – WebDriverJS，Jasmine和Protractor
+
+e2e或者端到端（end-to-end）或者UI测试是一种测试方法，它用来测试一个应用从头到尾的流程是否和设计时候所想的一样。简而言之，它从一个用户的角度出发，认为整个系统都是一个黑箱，只有UI会暴露给用户。   
+
+想象一下，如果把这些自动化的测试工作换成人工来做，那会多么的令人头疼，尤其是对于那些具有大量交互的应用，手工测试将会以编程不可能的任务。  
+
+在本文中，我们将会介绍如何使用webdrive">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="http://res.sentsin.com/css/xu.css" media="all">
+<script type="text/javascript" async="" charset="utf-8" src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/core.php"></script><script async="" type="text/javascript" src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/ca-pub-6111334333458862.js"></script><script type="text/javascript" async="" src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/embed.js" charset="UTF-8"></script><link type="text/css" rel="stylesheet" href="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/embed.default.css"><link type="text/css" rel="stylesheet" href="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/layer.css" id="skinlayercss"><script src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/logger.js"></script><link href="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/bdsstyle.css" rel="stylesheet" type="text/css"></head>
+<body class="blogweb laycode body_ok"><iframe frameborder="0" style="display: none;"></iframe><div id="bdshare_s" style="display: block;"><iframe id="bdsIfr" style="position:absolute;display:none;z-index:9999;" frameborder="0"></iframe><div id="bdshare_l" style="display: none;"><div id="bdshare_l_c"><h6>分享到</h6><ul><li><a href="http://sentsin.com/web/658.html#" class="bds_mshare mshare">一键分享</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_qzone qqkj">QQ空间</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_tsina xlwb">新浪微博</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_bdysc bdysc">百度云收藏</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_renren rrw">人人网</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_tqq txwb">腾讯微博</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_bdxc bdxc">百度相册</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_kaixin001 kxw">开心网</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_tqf txpy">腾讯朋友</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_tieba bdtb">百度贴吧</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_douban db">豆瓣网</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_tsohu shwb">搜狐微博</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_bdhome bdhome">百度新首页</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_sqq sqq">QQ好友</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_thx thx">和讯微博</a></li><li><a href="http://sentsin.com/web/658.html#" class="bds_more">更多...</a></li></ul><p><a href="http://sentsin.com/web/658.html#" class="goWebsite">百度分享</a></p></div></div></div>
+<div class="xutop"><i class="iconfont iconf_caidan"></i></div>
+<div class="box_index xunav">
+    <a href="http://sentsin.com/">首页</a><a href="http://sentsin.com/mood/">轻微博</a><a href="http://sentsin.com/web/">前端开发</a><a href="http://sentsin.com/literary/">闲心集</a><a href="http://sentsin.com/message/" title="留言">致时光</a><a href="http://sentsin.com/daohang/">前端江湖录</a><a href="javascript:;" style="color:#FFFF73">+投稿</a>
+<i class="navpos" style="display: inline; width: 48px; left: 835.796875px; overflow: hidden;"></i></div>
+<div class="box_index xuheader">
+    <div class="shadow xuheader_Bg"></div>
+    <a href="http://sentsin.com/" title="贤心博客" class="xulogo" target="_self"><img src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/logo.png" alt="贤心博客"></a>
+    <div class="xucard">
+        <p>你瞧那远古的光 裸露空荡</p>
+        <p>无穷无尽是你深邃的眼 传递遐想 </p>
+        <p style="margin-top: 8px;">——《远与暗》 写于2012·春·杭州</p>
+    </div>
+    <div class="icon_layer xuheader_yuan"></div>
+<form action="http://www.baidu.com/s"><input class="icon_old" autocomplete="off" placeholder="搜索内容" type="text" name="wd"></form></div>
+<div class="box_index timeline clearfix timeline_ok">
+    <ul class="timeline_left timeline_leftweb">
+		<li class="shadow timeline_content">
+            <div class="timeline_text">
+            	<div class="timeline_textH2">
+                    <h1><i class="icon_timeline"></i><a href="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/自动化e2e测试 -- WebDriverJS，Jasmine和Protractor.html">自动化e2e测试 -- WebDriverJS，Jasmine和Protractor</a></h1>
+                    <div class="timeline_webtips"><span>作者：<em class="ws_auther">张小俊128</em></span><span class="timeline_time"><i class="icon_timeline" title="发布日期"></i>最后编辑：2014年11月08日</span><span class="timeline_ready"><em><script language="Javascript" src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/GetHits.asp"></script>308</em>人已阅读</span></div>
+                </div>
+                <div class="timeline_desc">
+                    <div style="overflow: hidden;text-align:center">
+                        <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px;" data-ad-client="ca-pub-6111334333458862" data-ad-slot="9841027833" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
+                    </div>
+
+                    <div id="MyContent"><p><a href="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/1398150413630-NfiCs6a.png" target="_blank"><img src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/1398150413630-NfiCs6a.png" alt="自动化e2e测试 -- WebDriverJS，Jasmine和Protractor" onmousewheel="return bbimg(this)" onload="javascript:resizepic(this)" border="0"></a></p>
+
+<h1>自动化e2e测试 – WebDriverJS，Jasmine和Protractor</h1>
+
+<p>e2e或者端到端（end-to-end）或者UI测试是一种测试方法，它用来测试一个应用从头到尾的流程是否和设计时候所想的一样。简而言之，它从一个用户的角度出发，认为整个系统都是一个黑箱，只有UI会暴露给用户。   </p>
+
+<p>想象一下，如果把这些自动化的测试工作换成人工来做，那会多么的令人头疼，尤其是对于那些具有大量交互的应用，手工测试将会以编程不可能的任务。  </p>
+
+<p>在本文中，我们将会介绍如何使用webdriverJS和Jasmine来进行自动e2e测试。 </p>
+
+<h1>什么是WebDriverJS？</h1>
+
+<p>和WebDriver相关联的东西很多，以至于很多初学者会感到比较困惑。  </p>
+
+<p>因此，在本文中我们从头讲起。  </p>
+
+<h2>Selenium</h2>
+
+<p>正如Selenium网站中提到的：  </p>
+
+<blockquote>
+  <p>Selenium将会自动操作你的浏览器。  </p>
+</blockquote>
+
+<p>仅此而已。  </p>
+
+<p>Selenium已经支持了大部分主流的浏览器，它是一个用于自动化测试的绝佳工具。因此无论你在测试你的应用时做了些什么，比如导航到一个页面，点击了一个按钮，在一个输入框中写了一些文字，提交了一个表单等等，Selenium都可以替你自动完成这些事。  </p>
+
+<h2>WebDriver</h2>
+
+<p>WebDriver（或者Selenium 2）基本上指的都是特定浏览器控制代码的语言绑定和实现。  </p>
+
+<p>WebDriver引入了一个JSON wire protocol用于将不同的语言和浏览器控制器进行交流。  </p>
+
+<p>例如，在浏览器中点击了一个元素，绑定将会发送一个POST请求到<code class="language-javascript">session/:sessionId/element/:id/click</code>。  </p>
+
+<p>因此，WebDriver的一端是一个语言绑定，而另一端，是叫做Selenium server的服务器。二者之间的交流使用的就是JSON wire protocol。  </p>
+
+<h2>WebDriverJS</h2>
+
+<p>正如前面所提到的，WebDriver拥有很多不同的语言绑定，像是Ruby，Python等等。javascript是web世界的主要语言，也载入了WebDriver的列表中。于是我们迎来了WebDriverJS！   </p>
+
+<p>你可能已经猜到了，WebDriverJS就是一个简单的对于JSON wire protocol的包装，它同时暴露除了高等级的函数接口来使我们的生活更加轻松。  </p>
+
+<p>现在如果你搜搜webdriverJS，你可能会看到两个不同的绑定，它们的名字分别是Selenium-webdriver和webdriverjs（确实有很多driver），两个绑定都是node模块。你可以使用任何一个你喜欢的，但是我们依然会坚持使用官方的版本 – selenium-webdriver。  </p>
+
+<p>假设你现在有一个javascript项目需要进行自动化的e2e测试。首先你需要安装这个模块：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">npm install selenium-webdriver  
+</code><ol class="code_nums" style="height:13px;"><li>1</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<p>好了！你现在可以require这个包，然后进行一些小小的配置以便你能够在浏览器中打开任何网页：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">var webdriver = require('selenuim-webdriver');
+
+var driver = new webdriver.Builder().
+    withCapabilities(webdriver.Capabilities.chrome()).
+    build();
+
+driver.get('http://www.baidu.com');
+</code><ol class="code_nums" style="height:151px;"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<p>为了运行你的测试代码，你可以这样做：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">node testfile.js  
+</code><ol class="code_nums" style="height:13px;"><li>1</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<blockquote>
+  <p>注意：除了npm包之外，你还需要下载你想要使用的WebDriver实现。对于2.34.0版本，Selenium-WebDriver原生的支持ChromeDriver。你可以简单的下载ChromeDriver的副本并确保它能够在你的PATH中找到。其他的driver（比如. Firefox,Internet Explorer，以及Safari），仍然需要标准的Selenium server。  </p>
+</blockquote>
+
+<h2>和其他语言绑定的不容之处</h2>
+
+<p>WebDriverJS和其他的语言绑定之间有一个重要的区别 – 它是异步的。  </p>
+
+<p>因此如果你在python下写下面的代码：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">//伪代码  
+driver.get(page1);
+driver.click(E1);
+</code><ol class="code_nums" style="height:59px;"><li>1</li><li>2</li><li>3</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<p>由于Python（以及其他语言）的API都是同步的，因此所有的带啊吗语句都是同步执行的。但是在javascript中却不是这样的情形。为了确保一些行为的前后顺序，WebDriverJS使用了Promise。简单来说，一个promise就是一个能够在它完成之后执行一些代码的对象。  </p>
+
+<p>但是到这里还没有结束。即使是有了Promise，上面的代码也会变成下面的样子：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">//伪代码  
+
+driver.get(page1).then(function(){
+  driver.click(E1); 
+});
+</code><ol class="code_nums" style="height:105px;"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<p>你在这里有没有闻到一丝丝回调地狱的味道？为了让代码更加整洁，WebDriverJS对Promise进行了一些包装，于是便有了ControlFlow。  </p>
+
+<p>简单来说，ControlFlow从下面几个方面阻止了回调地狱：  </p>
+
+<ul>
+<li>它保留了一个行动的列表  </li>
+<li>WebDriverJS暴露的函数并没有做实际的事情，它们只是把需求的任务push到上面的列表中  </li>
+<li>ControlFlow将每一个then的新入口放到了列表的最后，因此确保了它们之间的顺序  </li>
+</ul>
+
+<p>总而言之，它允许我们编写下面的代码：  </p>
+
+<p>//伪代码
+driver.get(page1);
+//隐式的添加到上面行为的then()中 <br>
+driver.click(E1);  </p>
+
+<p>是不是碉堡了！  </p>
+
+<p>ControlFlow也提供了一个excute函数来将你的自定义函数push到执行列表中人后返回这个函数在特定执行环境下解析/拒绝之后的返回值。因此你可以使用promise并且在你的自定义代码中做任何异步的事情：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">var flow = webdriver.promise.controlFlow();
+
+flow.execute(function () {
+    var d = webdriver.promise.defer();
+    do_anything_async().then(function (val) {
+        d.fulfill(val);
+    })
+    return d.promise;
+});
+</code><ol class="code_nums" style="height:197px;"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<h2>将WebDriverJS和Jasmine结合起来</h2>
+
+<p>我们可以使用Selenium进行浏览器自动化测试。现在我们需要一个测试框架来处理我们的测试。这时我们需要Jasmine。  </p>
+
+<p>你可以通过npm来安装Jasmine：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">npm install jasmine-node  
+</code><ol class="code_nums" style="height:13px;"><li>1</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<p>如果我们要让前面的testfile.js代码来检查页面的标题是否正确，代码将会如下所示：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">var webdriver = require('selenium-webdriver');
+
+var driver = new webdriver.Builder().
+    withCapabilities(webdriver.Capabilities.chrome()).
+    build();
+
+describe('basic test',function(){
+    it('should be on correct page',function(){
+        driver.get('http://www.baidu.com');
+        driver.getTitle().then(function(title){
+            expect(title).toBe('Baidu');
+        });
+    });
+});
+</code><ol class="code_nums" style="height:312px;"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<p>现在上面的文件需要使用Jasmine-node命令来运行，如下所示：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">jasmine-node testfile.js  
+</code><ol class="code_nums" style="height:13px;"><li>1</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<p>上面的操作会让浏览器做上面所提到的事情，但是你会注意到Jasmine什么结果都没给出。为什么？  </p>
+
+<p>这是因为Jasmine完成了执行步骤同时没有任何的expect语句被执行，因为期望被放在了getTitle函数的异步毁掉中。  </p>
+
+<p>为了解决异步的问题，Jasmine-node提供了一种方法来告诉特定的it块：它是异步的。只需要在it的回调中添加一个done，并在最后执行即可。于是我们可以把上面的嗲吗改成下面的形式：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">var webdriver = require('selenium-webdriver');
+
+var driver = new webdriver.Builder().
+    withCapabilities(webdriver.Capabilities.chrome()).
+    build();
+
+describe('basic test',function(done){
+    it('should be on correct page',function(){
+        driver.get('http://www.baidu.com');
+        driver.getTitle().then(function(title){
+            expect(title).toBe('Baidu');
+            //Jasmine-node会一直等到这个异步函数执行完毕再调用done()函数来进入下一个测试单元
+            done();
+        });
+    });
+});
+</code><ol class="code_nums" style="height:358px;"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<blockquote>
+  <p>小提示：你可能需要改变Jasmine用于测试的时间：  </p>
+</blockquote>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">jasmine.getEnv().defaultTimeoutInterval = 10000; //以微秒为单位
+</code><ol class="code_nums" style="height:13px;"><li>1</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<h2>Angular应用的额外福利</h2>
+
+<p>AngularJS框架从一开始就是非常倾向于测试的。不用说，这些应用汇应该花费很多时间在e2e之上。  </p>
+
+<p>Protractor是一个又AngularJS团队编写的库，它是一个队WebDriverJS的包装，同时Jasmine在这里被指定用来测试，真是太爽了。  </p>
+
+<p>我们来看看Protractor都有什么额外的福利：  </p>
+
+<ol>
+<li>不需要基于id，css选择器，xpath等查询元素，你可以基于绑定，模型，迭代器等等进行测试。太贴心了！  </li>
+<li><p>其中的Jasmine可以接受promises。因此，我们可以用下面的代码进行上面的测试来检查标题：  </p>
+
+<p>driver.getTitle().then(function(title){
+        expect(title).toBe('Baidu');
+    });</p></li>
+</ol>
+
+<p>可以重构为：  </p>
+
+<div class="code_box code_skin0"><pre><code class="language-javascript">expect(driver.getTitle()).then('Baidu');
+</code><ol class="code_nums" style="height:13px;"><li>1</li></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div>
+
+<p>除此之外，AngularJS中海油很多非常酷的特性来进行end-to-end测试。  </p>
+
+<h1>总结</h1>
+
+<p>e2e对于现在的应用来说非常重要，因此它对于自动化测试来说也变得很重要。你可以选择很多工具来帮助你进行自动化测试。  </p>
+
+<p>希望本文能够帮助你开启你的e2e之路。还在等什么呢？赶快做一些end-to-end测试吧！  </p>
+
+<hr>
+
+<p>本文译自e2e-testing-with-webdriverjs-jasmine/，原文地址http://engineering.wingify.com/posts/e2e-testing-with-webdriverjs-jasmine/  </p>
+
+<p>如果你觉得本文对你有帮助，请为我提供赞助 https://me.alipay.co,/jabez128</p></div>
+
+                    
+                    <div style="padding:20px 0;text-align:center;">
+                        <!-- 336*280 -->
+                        <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="8847462638" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
+                    </div>
+                    
+                    <div class="timeshow_share">
+                        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                            <a class="bds_tsina" title="分享到新浪微博" href="http://sentsin.com/web/658.html#;"></a>
+                            <a class="bds_qzone" title="分享到QQ空间" href="http://sentsin.com/web/658.html#;"></a>
+                            <a class="bds_tqq" title="分享到腾讯微博" href="http://sentsin.com/web/658.html#"></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="line"></div>
+                    <ul class="web_shownext">
+                        <li>上一篇：<a href="http://sentsin.com/web/657.html" title="科普向javascript的四则符和比较符">科普向javascript的四则符和比较符</a></li>
+                        <li>下一篇：<a href="http://sentsin.com/web/659.html" title="AngularJS指令进阶 -- ngModelController详解">AngularJS指令进阶 -- ngModelController详解</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="arrow_bg"></span>
+            <span class="icon_timeline arrow_dot"></span>
+        </li>
+    </ul>
+    <ul class="timeline_right timeline_weiboright">
+		<!--<li class="shadow timeline_content xu">
+            <h3 class="main_title"><i class="i"></i>赞助商<i class="switch" title="收缩"></i></h3>
+            <div class="timeline_text xu" style="padding:15px;">
+                <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px" data-ad-client="ca-pub-6111334333458862" data-ad-slot="4596903032"></ins>
+            </div>
+            <span class="arrow_bg"></span>
+            <span class="icon_timeline arrow_dot"></span>
+        </li>-->
+        <li style="margin-top:15px;"><div class="forum-20150331162335"><script charset="utf-8" language="JavaScript" type="text/javascript" src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/forum-20150331162335.js"></script><script charset="utf-8" language="JavaScript" type="text/javascript" src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/thread-20150331162305.js"></script><a href="http://www.henghost.com/ul-xinyunhost.php" target="_blank" title="恒创"><img src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/20150331162159.jpg" border="0" width="350" height="350"></a><script charset="utf-8" language="JavaScript" type="text/javascript" src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/counter.js"></script></div>
+</li>
+        
+        <li class="shadow timeline_content xu">
+             <h3 class="main_title"><i class="i"></i>博文评论<i class="switch" title="收缩"></i></h3>
+            <div class="timeline_text xu">
+                <div class="timeline_desc" id="thirdComment">
+                    <!-- 多说评论框 start -->
+                    <div class="ds-thread ds-narrow" data-thread-key="113-658" data-title="自动化e2e测试 -- WebDriverJS，Jasmine和Protractor" data-url="http://sentsin.com/web/658.html" id="ds-thread"><div id="ds-reset"><div class="ds-comments-info"><div class="ds-sort"><a class="ds-order-desc ds-current">最新</a><a class="ds-order-asc">最早</a><a class="ds-order-hot">最热</a></div><ul class="ds-comments-tabs"><li class="ds-tab"><a class="ds-comments-tab-duoshuo ds-current" href="javascript:void(0);"><span class="ds-service-icon ds-duoshuo"></span>0</a></li>  </ul></div><ul class="ds-comments"><li class="ds-post ds-post-placeholder">一个评论都不给的？</li></ul><div class="ds-paginator" style="display: none;"><div class="ds-border"></div><a data-page="1" href="javascript:void(0);" class="ds-current">1</a></div><a name="respond"></a><div class="ds-login-buttons"><p>社交帐号登录:</p><div class="ds-social-links"><ul class="ds-service-list"><li><a href="http://sentsin.duoshuo.com/login/weibo/" rel="nofollow" class="ds-service-link ds-weibo">微博</a></li><li><a href="http://sentsin.duoshuo.com/login/qq/" rel="nofollow" class="ds-service-link ds-qq">QQ</a></li><li><a href="http://sentsin.duoshuo.com/login/renren/" rel="nofollow" class="ds-service-link ds-renren">人人</a></li><li><a href="http://sentsin.duoshuo.com/login/douban/" rel="nofollow" class="ds-service-link ds-douban">豆瓣</a></li><li><a class="ds-more-services" href="javascript:void(0)">更多&#187;</a></li></ul><ul class="ds-service-list ds-additional-services"><li><a href="http://sentsin.duoshuo.com/login/kaixin/" rel="nofollow" class="ds-service-link ds-kaixin">开心</a></li><li><a href="http://sentsin.duoshuo.com/login/netease/" rel="nofollow" class="ds-service-link ds-netease">网易</a></li><li><a href="http://sentsin.duoshuo.com/login/sohu/" rel="nofollow" class="ds-service-link ds-sohu">搜狐</a></li><li><a href="http://sentsin.duoshuo.com/login/baidu/" rel="nofollow" class="ds-service-link ds-baidu">百度</a></li><li><a href="http://sentsin.duoshuo.com/login/google/" rel="nofollow" class="ds-service-link ds-google">谷歌</a></li></ul></div></div><div class="ds-replybox"><a class="ds-avatar" href="javascript:void(0);" onclick="return false"><img src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/121820.jpg" alt=""></a><form method="post"><input type="hidden" name="thread_id" value="1415877406970872132">
+<input type="hidden" name="parent_id" value="">
+<input type="hidden" name="nonce" value="54ef00039efca"><div class="ds-textarea-wrapper ds-rounded-top"><textarea name="message" title="Ctrl+Enter快捷提交" placeholder=" "></textarea><div class="code_box code_skin0"><pre class="ds-hidden-text"><ol class="code_nums" style="height:-10px;"></ol></pre><span class="code_title">代码<a href="http://sentsin.com/layui/laycode/" target="_blank">laycode - v1.1</a></span></div></div><div class="ds-post-toolbar"><div class="ds-post-options ds-gradient-bg"><span class="ds-sync"></span></div><button class="ds-post-button" type="submit">发布</button><div class="ds-toolbar-buttons"><a class="ds-toolbar-button ds-add-emote" title="插入表情"></a></div></div></form></div><p class="ds-powered-by"><a href="http://duoshuo.com/" target="_blank" rel="nofollow">多说</a></p></div></div>
+                    <!-- 多说评论框 end -->
+                    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                    <script type="text/javascript">
+                    var duoshuoQuery = {short_name:"sentsin"};
+                    (function() {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';ds.async = true;
+                    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0] 
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                    </script>
+                </div>
+            </div>
+            <span class="arrow_bg"></span>
+            <span class="icon_timeline arrow_dot"></span>
+        </li>
+    </ul>
+    <div class="c"></div>
+    <span class="arrow_line"><i id="add_event_plus" class="icon_timeline spine_plus" style="top: 5px; display: none;"></i></span>
+</div>
+<div class="box_index shadow xufooter">
+    <div class="bottomMsg">
+        <a href="http://sentsin.com/" class="footer_logo" title="贤心博客"><img src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/xin.gif" alt="贤心"></a>
+        <ul class="footer_me">
+            <li>贤心，自由职业者。这不是一个人的博客。</li>
+            <li><a href="http://sentsin.com/web/197.html">广告合作</a> - 站长邮箱：xu@sentsin.com</li>
+            <li><a href="http://weibo.com/SentsinXu" target="_blank">新浪微博</a>：<a href="http://weibo.com/SentsinXu" target="_blank">http://weibo.com/SentsinXu</a>
+</li>
+            <li><a href="http://sentsin.com/sitemap.xml">Sitemap</a> | 小众前端一枚，小众前端一枚</li>
+            <li>
+                <a href="http://say.sentsin.com/">Say前端技术论坛</a> 
+                <a href="http://sentsin.com/web/">前端开发</a> 
+                <a href="http://sentsin.com/mood/">轻微博</a>
+            </li>
+            <li>2011-3011  &#169; sentsin.com <a href="javascript:;" onclick="paysentsin()">友情赞助</a></li>
+        </ul>
+        <ul class="ul footerLiuyan" id="liuyan">
+<li><a href="http://sentsin.com/message#book2173" target="_blank">
+it游客：很niux! 学习了</a></li>
+
+<li><a href="http://sentsin.com/message#book2171" target="_blank">
+你好啊：时光任时光匆匆离去，我只在乎你</a></li>
+
+<li><a href="http://sentsin.com/message#book2169" target="_blank">
+Bill：任时光匆匆离去，我只在乎你</a></li>
+
+<li><a href="http://sentsin.com/message#book2168" target="_blank">
+22：顶一个</a></li>
+
+<li><a href="http://sentsin.com/message#book2164" target="_blank">
+ykjver：看到这验证码，第一反应居然是写个灌水机器人。。。</a></li>
+
+<li><a href="http://sentsin.com/message#book2163" target="_blank">
+糖炒栗子：要是有移动版就好咯，搭公交可以看！;)</a></li>
+</ul>
+        <em id="eig_top"><i class="icon_old"></i>TOP</em>
+    </div>
+</div>
+<script async="" src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/adsbygoogle.js"></script>
+<script src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/sea.js"></script>
+<script>seajs.use('public');</script>
+
+<script src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/ajax.js"></script>
+
+<script id="bdshare_js" data="type=tools&amp;uid=139216" src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/bds_s_v2.js"></script>
+
+<script>
+var bds_config = {'snsKey': {'tsina': '1090010962'}, 'bdText':'自动化e2e测试 -- WebDriverJS，Jasmine和Protractor'};
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<script src="./自动化e2e测试 -- WebDriverJS，Jasmine和Protractor_files/c.php"></script>
+
+
+
+</body></html>
