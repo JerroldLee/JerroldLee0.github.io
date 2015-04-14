@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://blog.fens.me/nodejs-karma-jasmine/ -->
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Karma和Jasmine自动化单元测试 | 粉丝日志</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://blog.fens.me/xmlrpc.php">
+	<link rel="alternate" type="application/rss+xml" title="粉丝日志 » Feed" href="http://blog.fens.me/feed/">
+	<link rel="alternate" type="application/rss+xml" title="粉丝日志 » Comments Feed" href="http://blog.fens.me/comments/feed/">
+	<link rel="alternate" type="application/rss+xml" title="粉丝日志 » Karma和Jasmine自动化单元测试 Comments Feed" href="http://blog.fens.me/nodejs-karma-jasmine/feed/">
+	<link rel="stylesheet" id="default-css" href="./index/style.css" type="text/css" media="all">
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.fens.me/xmlrpc.php?rsd">
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.fens.me/wp-includes/wlwmanifest.xml">
+	<link rel="prev" title="jasmine行为驱动,测试先行" href="http://blog.fens.me/nodejs-jasmine-bdd/">
+	<link rel="next" title="UnderscoreJS精巧而强大工具包" href="http://blog.fens.me/nodejs-underscore/">
+	<meta name="generator" content="WordPress 4.1.1">
+	<link rel="canonical" href="./index/Karma和Jasmine自动化单元测试   粉丝日志.html">
+	<link rel="shortlink" href="http://blog.fens.me/?p=2018">
+	<meta name="template" content="silesia 1.0.6">
+	<meta name="generator" content="NattyWP Framework Version 2.1.5">
+	<meta name="keywords" content="karma,jasmine,istanbul,nodejs,javascript,自动化测试">
+	<meta name="description" content="跨界的IT博客，核心IT技术包括：Hadoop, R, RHadoop, Nodejs, AngularJS, KVM, NoSQL, IT金融">
+	<link href="http://blog.fens.me/wp-content/uploads/2013/05/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./index/shortcodes.css" media="screen">
+
+	<style type="text/css">
+	#header {
+		background-color: #F7F7F7;
+	}
+
+	#link-sidebar ul li.widget a:hover {
+		color: #ffffff;
+	}
+	.hentry h2, .hentry h2 a, .singlepage .post h2, .singlepage .page.comments h2 {
+		color: #434343;
+	}
+	.p-cont .entry, .singlepage .entry {
+		color: #4D4D4F;
+	}
+	.post a, .page.comments a {
+		color: #0E73B8;
+	}
+	.post a:hover, .page.comments a:hover, .hentry h2 a:hover {
+		color: #ff0505;
+	}
+	#sidebar h2 {
+		color: #4D4D4F;
+	}
+	#sidebar {
+		color: #555555;
+	}
+	#sidebar a {
+		color: #0E73B8;
+	}
+	#sidebar a:hover {
+		color: #ff0505;
+	}
+</style>
+	<style type="text/css">#header .triangle {border-left: 7px solid #527F8D;}</style>
+	<!--[if IE 6]>
+	<script type="text/javascript" src="http://blog.fens.me/wp-content/themes/silesia/js/ie6/warning.js"></script>
+	<script type="text/javascript" charset="utf-8">/*<![CDATA[*/window.onload=function(){e("http://blog.fens.me/wp-content/themes/silesia/js/ie6/")}/*]]>*/</script>
+	<![endif]-->
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	<style type="text/css" id="custom-background-css">body.custom-background { background-color: #ffffff; }</style>
+</head>
+
+<body class="single single-post postid-2018 single-format-standard custom-background">
+	<link href="./index/jiathis_counter.css" rel="stylesheet" type="text/css">
+	<script src="./index/jiathis.php" charset="utf-8"></script>
+	<link href="./index/jiathis_share.css" rel="stylesheet" type="text/css">
+	<div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; top: 50%; left: 50%; overflow: auto;"></div>
+	<div class="jiathis_style" style="position: absolute; z-index: 1000000000; display: none; overflow: auto;"></div>
+
+<div id="main-wrapper">
+
+<div id="cnt" class="wrapper" style="width:85%">
+	<!-- END Header -->
+	<div class="narrowcolumn singlepage" style="width:100%">
+		<div class="post-2018 post type-post status-publish format-standard hentry category-javascript tag-istanbul tag-jasmine tag-javascript tag-karma tag-nodejs tag-259">
+
+			<div class="p-cont">
+				<h2>Karma和Jasmine自动化单元测试</h2>
+				<div class="entry">
+					<p> 
+						原文地址：<a class="logo-title shadowed" href="http://blog.fens.me/nodejs-karma-jasmine/" rel="home" title="">http://blog.fens.me/nodejs-karma-jasmine/</a>
+					</p>
+					<p>
+						<a href="./index/karma.png">
+							<img class="alignnone size-full wp-image-2033" alt="karma" src="./index/karma.png" width="600" height="400"></a>
+					</p>
+					<p>
+						<strong>前言</strong>
+					</p>
+					<p>
+						在Java领域，Apache, Spring, JBoss 三大社区的开源库，包罗万象，但每个库都在其领域中都鹤立鸡群。而Nodejs中各种各样的开源库，却让人眼花缭乱，不知从何下手。
+					</p>
+					<p>
+						Nodejs领域:
+						<a title="jasmine行为驱动,测试先行" href="http://blog.fens.me/nodejs-jasmine-bdd/" target="_blank">Jasmine做单元测试</a>
+						，
+						<a title="Karma和Jasmine自动化单元测试" href="./index/Karma和Jasmine自动化单元测试   粉丝日志.html" target="_blank">Karma自动化完成单元测试</a>
+						，
+						<a title="grunt让Nodejs规范起来" href="http://blog.fens.me/nodejs-grunt-intro/" target="_blank">Grunt启动Karma统一项目管理</a>
+						，
+						<a title="Yeoman自动构建js项目" href="http://blog.fens.me/nodejs-yeoman-intro/" target="_blank">Yeoman最后封装成一个项目原型模板</a>
+						，npm做nodejs的包依赖管理，
+						<a title="bower解决js的依赖管理" href="http://blog.fens.me/nodejs-bower-intro/" target="_blank">bower做javascript的包依赖管理</a>
+						。Java领域：JUnit做单元测试, Maven自动化单元测试，统一项目管理，构建项目原型模板，包依赖管理。
+					</p>
+					<p>Nodejs让组合变得更丰富，却又在加重我们的学习门槛。我还说不清楚，也看不透！</p>
+					<p>上面写的有点远了，回到文章的主题，Jasmine+Karma自动化单元测试。</p>
+					<p>
+						<strong>目录</strong>
+					</p>
+					<ol>
+						<li>Karma的介绍</li>
+						<li>Karma的安装</li>
+						<li>Karma +&nbsp;Jasmine配置</li>
+						<li>自动化单元测试</li>
+						<li>Karma和istanbul代码覆盖率</li>
+						<li>Karma第一次启动时出现的问题</li>
+					</ol>
+					<h2>1. Karma的介绍</h2>
+					<p>
+						Karma是Testacular的新名字，在2012年google开源了Testacular，2013年Testacular改名为Karma。Karma是一个让人感到非常神秘的名字，表示佛教中的缘分，因果报应，比Cassandra这种名字更让人猜不透！
+					</p>
+					<p>
+						Karma是一个基于Node.js的JavaScript测试执行过程管理工具（Test Runner）。该工具可用于测试所有主流Web浏览器，也可集成到CI（Continuous integration）工具，也可和其他代码编辑器一起使用。这个测试工具的一个强大特性就是，它可以监控(Watch)文件的变化，然后自行执行，通过console.log显示测试结果。
+					</p>
+					<p>
+						Jasmine是单元测试框架，本单将介绍用Karma让Jasmine测试自动化完成。Jasmine的介绍，请参考文章：
+						<a title="jasmine行为驱动,测试先行" href="http://blog.fens.me/nodejs-jasmine-bdd" target="_blank">jasmine行为驱动,测试先行</a>
+					</p>
+					<p>istanbul是一个单元测试代码覆盖率检查工具，可以很直观地告诉我们，单元测试对代码的控制程度。</p>
+					<h2>2. Karma的安装</h2>
+					<p>系统环境:</p>
+					<pre><code>win7 64bit, node v0.10.5, npm 1.2.19</code></pre>
+					<p>
+						<strong>安装Karma</strong>
+					</p>
+					<pre><code>
+~ D:\workspace\javascript&gt;mkdir karma
+~ D:\workspace\javascript&gt;cd karma
+~ D:\workspace\javascript\karma&gt;npm install -g karma
+
+# 测试是否安装成功
+~ D:\workspace\javascript\karma&gt;karma start
+INFO [karma]: Karma v0.10.2 server started at http://localhost:9876/
+INFO [Chrome 28.0.1500 (Windows 7)]: Connected on socket nIlM1yUy6ELMp5ZTN9Ek
+</code></pre>
+					<p>从浏览器看到karam界面。</p>
+					<p>
+						<a href="./index/karma1.png">
+							<img class="alignnone size-full wp-image-2021" alt="karma1" src="./index/karma1.png" width="596" height="146"></a>
+					</p>
+					<p>下面我们要开始配置karam。</p>
+					<h2>3. Karma +&nbsp;Jasmine配置</h2>
+					<p>初始化karma配置文件karma.conf.js</p>
+					<pre><code>
+~ D:\workspace\javascript\karma&gt;karma init
+
+Which testing framework do you want to use ?
+Press tab to list possible options. Enter to move to the next question.
+&gt; jasmine
+
+Do you want to use Require.js ?
+This will add Require.js plugin.
+Press tab to list possible options. Enter to move to the next question.
+&gt; no
+
+Do you want to capture a browser automatically ?
+Press tab to list possible options. Enter empty string to move to the next question.
+&gt; Chrome
+&gt;
+
+What is the location of your source and test files ?
+You can use glob patterns, eg. "js/*.js" or "test/**/*Spec.js".
+Enter empty string to move to the next question.
+&gt;
+
+Should any of the files included by the previous patterns be excluded ?
+You can use glob patterns, eg. "**/*.swp".
+Enter empty string to move to the next question.
+&gt;
+
+Do you want Karma to watch all the files and run the tests on change ?
+Press tab to list possible options.
+&gt; yes
+
+Config file generated at "D:\workspace\javascript\karma\karma.conf.js".
+</code></pre>
+					<p>安装集成包karma-jasmine</p>
+					<pre><code>~ D:\workspace\javascript\karma&gt;npm install karma-jasmine</code></pre>
+					<h2>4. 自动化单元测试</h2>
+					<p>
+						<strong>3步准备工作：</strong>
+					</p>
+					<ul>
+						<li>1. 创建源文件：用于实现某种业务逻辑的文件，就是我们平时写的js脚本</li>
+						<li>2. 创建测试文件：符合jasmineAPI的测试js脚本</li>
+						<li>3. 修改karma.conf.js配置文件</li>
+					</ul>
+					<p>
+						<strong>1). 创建源文件：用于实现某种业务逻辑的文件，就是我们平时写的js脚本</strong>
+						<br>有一个需求，要实现单词倒写的功能。如：”ABCD” ==&gt; “DCBA”</p>
+					<pre><code>
+~ vi src.js
+
+function reverse(name){
+    return name.split("").reverse().join("");
+}
+</code></pre>
+					<p>
+						<strong>2). 创建测试文件：符合jasmineAPI的测试js脚本</strong>
+					</p>
+					<pre><code>
+describe("A suite of basic functions", function() {
+    it("reverse word",function(){
+        expect("DCBA").toEqual(reverse("ABCD"));
+    });
+});
+</code></pre>
+					<p>
+						<strong>3). 修改karma.conf.js配置文件</strong>
+						<br>我们这里需要修改：files和exclude变量</p>
+					<pre><code>
+module.exports = function (config) {
+    config.set({
+        basePath: '',
+        frameworks: ['jasmine'],
+        files: ['*.js'],
+        exclude: ['karma.conf.js'],
+        reporters: ['progress'],
+        port: 9876,
+        colors: true,
+        logLevel: config.LOG_INFO,
+        autoWatch: true,
+        browsers: ['Chrome'],
+        captureTimeout: 60000,
+        singleRun: false
+    });
+};
+</code></pre>
+					<p>
+						<strong>启动karma</strong>
+						<br>单元测试全自动执行</p>
+					<pre><code>
+~ D:\workspace\javascript\karma&gt;karma start karma.conf.js
+INFO [karma]: Karma v0.10.2 server started at http://localhost:9876/
+INFO [launcher]: Starting browser Chrome
+WARN [launcher]: The path should not be quoted.
+  Normalized the path to C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+INFO [Chrome 28.0.1500 (Windows 7)]: Connected on socket bVGffDWpc1c7QNdYye_6
+INFO [Chrome 28.0.1500 (Windows 7)]: Connected on socket DtTdVbd4ZsgnMQrgye_7
+Chrome 28.0.1500 (Windows 7): Executed 1 of 1 SUCCESS (3.473 secs / 0.431 secs)
+Chrome 28.0.1500 (Windows 7): Executed 1 of 1 SUCCESS (0.068 secs / 0.021 secs)
+TOTAL: 2 SUCCESS
+</code></pre>
+					<p>
+						浏览器会自动打开
+						<br>
+						<a href="./index/karma2.png">
+							<img class="alignnone size-full wp-image-2026" alt="karma2" src="./index/karma2.png" width="527" height="195"></a>
+					</p>
+					<p>我们修改test.js</p>
+					<pre><code>
+~ vi test.js
+
+describe("A suite of basic functions", function() {
+    it("reverse word",function(){
+        expect("DCBA").toEqual(reverse("ABCD"));
+        expect("Conan").toEqual(reverse("nano"));
+    });
+});
+</code></pre>
+					<p>
+						由于karma.conf.js配置文件中autoWatch: true, 所以test.js文件保存后，会自动执行单元测试。
+					</p>
+					<p>执行日志如下：提示我们单元测试出错了。</p>
+					<pre><code>
+INFO [watcher]: Changed file "D:/workspace/javascript/karma/test.js".
+Chrome 28.0.1500 (Windows 7) A suite of basic functions reverse word FAILED
+        Expected 'Conan' to equal 'onan'.
+        Error: Expected 'Conan' to equal 'onan'.
+            at null. (D:/workspace/javascript/karma/test.js:4:25)
+Chrome 28.0.1500 (Windows 7): Executed 1 of 1 (1 FAILED) ERROR (0.3 secs / 0.006 secs)
+</code></pre>
+					<h2>5. Karma和istanbul代码覆盖率</h2>
+					<p>增加代码覆盖率检查和报告，增加istanbul依赖</p>
+					<pre><code>
+~ D:\workspace\javascript\karma&gt;npm install karma-coverage
+</code></pre>
+					<p>修改karma.conf.js配置文件</p>
+					<pre><code>
+~ vi karma.conf.js
+
+reporters: ['progress','coverage'],
+preprocessors : {'src.js': 'coverage'},
+coverageReporter: {
+    type : 'html',
+    dir : 'coverage/'
+}
+</code></pre>
+					<p>
+						启动karma start，在工程目录下面找到index.html文件，coverage/chrome/index.html
+					</p>
+					<p>
+						打开后，我们看到代码测试覆盖绿报告
+						<br>
+						<a href="./index/karma3.png">
+							<img class="alignnone size-full wp-image-2029" alt="karma3" src="./index/karma3.png" width="938" height="330"></a>
+					</p>
+					<p>覆盖率是100%，说明我们完整了测试了src.js的功能。</p>
+					<p>接下来，我们修改src.js，增加一个if分支</p>
+					<pre><code>
+function reverse(name){
+    if(name=='AAA') return "BBB";
+    return name.split("").reverse().join("");
+}
+</code></pre>
+					<p>
+						再看覆盖率报告，
+						<br>
+						<a href="./index/karma4.png">
+							<img class="alignnone size-full wp-image-2030" alt="karma4" src="./index/karma4.png" width="935" height="329"></a>
+					</p>
+					<p>Statements：75%覆盖，Branches：50%覆盖。</p>
+					<p>
+						为了产品的质量我们要尽量达到更多的覆盖率，一般对于JAVA项目来说，能达到80%就是相当高的标准了。对于Javascript的代码测试及覆盖率研究，我还要做更多的验证。
+					</p>
+					<h2>6. Karma第一次启动时出现的问题</h2>
+					<p>CHROME_BIN的环境变量问题</p>
+					<pre><code>
+~ D:\workspace\javascript\karma&gt;karma start karma.conf.js
+INFO [karma]: Karma v0.10.2 server started at http://localhost:9876/
+INFO [launcher]: Starting browser Chrome
+ERROR [launcher]: Cannot start Chrome
+        Can not find the binary C:\Users\Administrator\AppData\Local\Google\Chrome\Application\chrome.exe
+        Please set env variable CHROME_BIN
+</code></pre>
+					<p>设置方法：找到系统中chrome的安装位置，找到chrome.exe文件</p>
+					<pre><code>
+~ D:\workspace\javascript\karma&gt;set CHROME_BIN="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+</code></pre>
+
+
+			</div>
+		</div>
+
+	</div>
+	<!-- END Narrowcolumn -->
+
+</div>
+<div class="clear"></div>
+</div>
+<!-- END main wrapper -->
+
+
+</body>
+</html>
