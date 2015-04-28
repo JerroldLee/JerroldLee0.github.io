@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0063)http://www.oschina.net/news/61214/11-react-native-ui-components -->
+<html lang="zh-CN" xml:lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" type="text/javascript" src="./index/ca-pub-7090564139599510.js"></script>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.oschina.net/img/favicon.ico?t=1423294220000">
+  <title>推荐 11 款 React Native 开源移动 UI 组件 - 开源中国社区</title>
+  <meta name="Keywords" content="React Native,推荐 11 款 React Native 开源移动 UI 组件">  <meta name="Description" content="本文推荐 11 个非常棒的 React Native 开源组件，希望能给移动应用开发者提供帮助。 React Native 是近期 Facebook 基于 MIT 协议开源的原生移动应用开发框架，已经用于 Facebook 的生产环境。React Native 可以使...">    <link rel="stylesheet" href="./index/channel.css" type="text/css" media="screen">
+  <link rel="stylesheet" type="text/css" href="./index/jquery.fancybox-1.3.4.css" media="screen">
+  <link rel="alternate" type="application/rss+xml" title="最新开源项目" href="http://www.oschina.net/project/rss">
+  <link rel="alternate" type="application/rss+xml" title="最新开源资讯" href="http://www.oschina.net/news/rss">
+  <link rel="alternate" type="application/rss+xml" title="最新问题列表" href="http://www.oschina.net/question/rss">
+  <link rel="alternate" type="application/rss+xml" title="最新翻译列表" href="http://www.oschina.net/translate/rss">
+  <link rel="alternate" type="application/rss+xml" title="最新博客列表" href="http://www.oschina.net/blog/rss">
+  <link rel="alternate" type="application/rss+xml" title="最新代码分享列表" href="http://www.oschina.net/code/rss">
+  <link rel="alternate" type="application/rss+xml" title="开源中国 - 源码列表" href="http://www.oschina.net/code/source_rss">
+    <!--添加emoji支持-->
+    <link rel="stylesheet" type="text/css" href="./index/nature.css">
+    <link rel="stylesheet" type="text/css" href="./index/object.css">
+    <link rel="stylesheet" type="text/css" href="./index/people.css">
+    <link rel="stylesheet" type="text/css" href="./index/place.css">
+    <link rel="stylesheet" type="text/css" href="./index/Sysmbols.css">
+    <link rel="stylesheet" type="text/css" href="./index/twemoji.css">
+
+  <script type="text/javascript" src="./index/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="./index/jquery.form.js"></script>
+  <script type="text/javascript" src="./index/jquery.fancybox-fixed.js"></script>
+    <link rel="stylesheet" href="./index/tip-yellowsimple.css" type="text/css">
+  <script type="text/javascript" src="./index/jquery.poshytip.min.js"></script>
+  <script type="text/javascript">
+  	g_user = {
+	id:0,
+	name:'',
+	login:false};  </script>
+    <script type="text/javascript" src="./index/oschina.js"></script>
+  <script type="text/javascript" src="./index/utils.js"></script>
+  <script type="text/javascript" src="./index/channel.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="开源中国 - 最新新闻" href="http://www.oschina.net/news/rss">
+  <script src="./index/share.js"></script>
+  </head>
+<body>
+
+
+<div id="OSC_Screen">
+	<div id="OSC_Content" class="CenterDiv">
+
+
+
+<style>
+#NewsChannel {overflow:hidden;}
+
+.ListPanel {float:left;width:730px;}
+.ListRight {float:right; width:250px;}
+	
+.ListPanel .List {margin:10px 5px;}
+.ListPanel .List a {text-decoration:none;}
+
+.NewsBody {float:left; width:680px;}
+.NewsRight {float:right; width:300px;}
+
+.News .NewsEntity {background:#fff;border:1px solid #ccc;padding:15px 10px 10px 10px;-moz-box-shadow: 0 1px 3px rgba(198,198,198,0.5);-webkit-box-shadow: 0 1px 3px rgba(198,198,198,0.5);box-shadow: 0 1px 3px rgba(198,198,198,0.5);}
+.News h1.OSCTitle {font-size:18pt;}
+.News .PubDate {margin:15px 0 0px 0;color:#666;}
+.News .NewsContent {margin:10px 0;font-size:10.5pt;overflow: hidden;}
+.News .NewsContent #NewsPic {float:right;margin:0 0 10px 10px;border:1px solid #ccc;background:#f6f6f6;padding:2px;}
+.News .NewsLinks {font-size:10.5pt;}
+.News .NewsLinks ul {list-style-type: disc; margin: 1em 0 1em 2.5em;line-height:22px;}
+.News .NewsLinks ul li span.pn {color:#a00;}
+.News .copyright {
+	background:#efe;
+	text-align:left;
+	margin:20px 0;
+	padding:3px 0 3px 10px;
+	color:#333;
+	font-size:9pt;
+	line-height:22px;
+	border-left:5px solid #40AA53;
+}
+.News .NewsPrevAndNext {line-height:30px;}
+.News .NewsPrevAndNext span {font-weight:normal;font-size:8pt;color:#666;margin-left:10px;}
+
+.News .RelatedThreads {padding:10px 0 0 10px;}
+.News .RelatedThreads ul {margin:10px 0 20px 3px;line-height:22px;}
+.News .RelatedThreads ul li {background:url('/img/a2.gif') no-repeat left center;padding-left:12px;}
+.News .RelatedThreads ul li .date {font-size:8pt;margin-left:10px;color:#666;-webkit-text-size-adjust:none;}
+
+.News .RelatedNews {padding:10px 0 0 0;}
+.News .RelatedNews ul {margin:10px 0 20px 3px;line-height:22px;}
+.News .RelatedNews ul li {background:url('/img/a3.gif') no-repeat left center;padding-left:12px;}
+.News .RelatedNews ul li .date {font-size:8pt;margin-left:10px;color:#666;-webkit-text-size-adjust:none;}
+
+#HotNewsList {background:#fafcff;}
+#HotNewsList .List li {background:url('/img/a2.gif') no-repeat left center;padding-left:16px;overflow:hidden;height: 24px;line-height:24px;}
+#HotNewsList .List h3 {
+    font-size: 10.5pt;
+    float: left;
+    font-weight: normal;
+    width: 420px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#HotNewsList .List .date {float:right;margin-left:20px;color:#666;}
+#HotNewsList .List .stat {float:right;margin-left:10px;color:#666;}
+#HotNewsList .List li em {font-style:normal;color:#A00;margin:0 2px;} 
+
+.RightNewsList .List li {overflow:hidden;background:url('/img/a2.gif') no-repeat left center;padding-left:16px;overflow:hidden;line-height:24px;}
+.RightNewsList .List h3 {font-size:10.5pt; float:left; font-weight:normal;}
+.RightNewsList .List .date {float:right;color:#666;font-size:12px;}
+.RightNewsList .List li em {font-style:normal;color:#A00;margin:0 2px;} 
+
+#RecentNewsList {margin-top:20px;background:#fff;}
+#RecentNewsList .List {margin:20px 10px;}
+#RecentNewsList .List li {overflow:hidden;border-bottom:1px solid #eee; margin-bottom:10px; padding-bottom:10px;}
+#RecentNewsList .List li h2 {margin:0 0 5px 0;}
+#RecentNewsList .List li .date {color:#666;}
+#RecentNewsList .List li .detail {color:#666;margin:10px 0;line-height:20px;}
+#RecentNewsList .List li .newsImg {margin:0 0 10px 0; }
+#RecentNewsList .List li .newsImg img {border:1px solid #fff;max-width:600px;}
+#RecentNewsList .List li .newsImg a:hover img {border:1px solid #40AA53;}
+#RecentNewsList .List li .img {float:right;}
+
+#NewsReplies ul {margin:10px 0 0 5px;}
+#NewsReplies ul li {margin-bottom: 10px;border-bottom:1px dashed #ccc; padding-bottom:10px;overflow:hidden;}
+#NewsReplies ul li .content {display:block; margin-bottom:8px;}
+#NewsReplies ul li .outline {color:#888;}
+
+.TOP_OSCER{margin:0 10px 10px 10px;display: inline-block;}
+.TOP_OSCER li{float:left;margin:10px 10px 10px 13px;text-align:center;}
+.TOP_OSCER li a {display: inline-block;width:90px;}
+.TOP_OSCER li img{padding-bottom:5px;width:60px;height:60px;}
+.TOP_OSCER span.name{font-size:12px;display:block;}
+
+#WeeklyProject {}
+#WeeklyProject #ProjectText {font-size:9pt;padding:5px;color:#666;}
+#WeeklyProject #ProjectText img {max-width:265px;margin-left:3px;}
+#WeeklyProject #ProjectLink {text-align:right;}
+#WeeklyProject #ProjectLink a {display:block;font-size:9pt;margin:0 10px 5px 5px;}
+
+.lbox {border:1px solid #ccc;margin-bottom:10px;}
+.lbox strong {display:block;background:#cfc;height:24px;line-height:24px;padding:0 5px;overflow:hidden;}
+.lbox strong a {float:right;margin-right:5px;font-weight:normal;}
+.lbox ul {line-height:20px;margin:5px;}
+.lbox ul li {height:24px;overflow:hidden;}
+.lbox ul li span.date {color:#999;font-size:8pt;float:right;-webkit-text-size-adjust:none;}
+
+.HomeHotNews ul li {height:18px;line-height:18px;overflow:hidden;margin-bottom:5px;}
+.HomeHotNews ul li a {
+	background:url('/img/a2.gif') no-repeat 0 7px;
+	padding-left:13px;	
+}
+
+
+/* 评论相关 */
+.Comments {margin: 20px 0 0 0;}
+.Comments h2 {font-size:11pt;background:#40AA53;color:#fff;line-height:24px;padding:0 5px;}
+.Comments h2 .more {float:right;font-weight:normal;font-size:9pt;color:#fff;}
+.Comments ul {list-style-type:none;padding:0 10px 0 0;}
+.Comments ul li {margin:10px 0;}
+.Comments ul li span.user {background:url('../img/u.gif') no-repeat center left;padding-left:18px;}
+.Comments ul li span.time {font-style:italic;margin-left:10px;}
+.Comments ul li a.delete {font-style:italic;margin-left:10px;}
+.Comments ul li span.content {display:block;margin:10px 0 5px 10px;}
+
+.Comments ul li.row_0 {background:#f6f6f6;}
+.Comments ul li .portrait {width:45px;vertical-align:top;}
+.Comments ul li .portrait img {width:32px;height:32px;border:1px solid #eee;padding:2px;background:#fff;}
+.Comments ul li .portrait a:hover img {border:1px solid #40AA53;}
+.Comments ul li .body {vertical-align:top;font-size:9pt;word-break: break-all;}
+.Comments ul li .body .r_title {font-size:9pt;color:#888;}
+.Comments ul li .body .r_content {margin:5px 0 0 0;color:#00A;overflow: hidden;}
+.Comments .pager {margin:20px 0 10px 5px;}
+.Comments .pager li {margin-right:2px;}
+
+.CommentForm {margin:0 5px;padding-left:45px;}
+.CommentForm form {margin: 20px 0 20px 0; padding:0;}
+.CommentForm form textarea {padding:5px;border:1px solid #999;margin:5px 0}
+.CommentForm form input.SUBMIT {font-size:14px;height:28px;line-height:26px;padding:0 5px;}
+.CommentForm form input.TEXT {padding:2px;border:1px solid #999;}
+</style>
+
+<div id="NewsChannel" class="Channel">
+<div class="NewsBody">
+	<div class="News">
+		<div class="NewsEntity">
+		<!-- google_ad_section_start -->
+		<h1 class="OSCTitle">推荐 11 款 React Native 开源移动 UI 组件</h1>
+		<div class="PubDate">
+        	原文地址 (<a href="http://www.oschina.net/news/61214/11-react-native-ui-components" target="_blank">http://www.oschina.net/news/61214/11-react-native-ui-components</a>)				
+        </div>
+		<div class="NewsToolbar">
+						<style type="text/css">
+#TagsSwitcher{color:#A00;}
+#RecTags,#MyTags{margin:5px 0;}
+#RecTags a.tag{line-height:24px;}
+#favor_form{width:200px;}
+#favor_form p:first-child{margin:5px 0;}
+#favor_form p {color:#666;}
+#favor_form form{min-height:85px;width:200px;}
+#favor_form form ._favor_input{display:block;margin:2px 0;width:199px;}
+#favor_form form ._favor_button{float:left;padding:2px 5px;}
+.favor_ok {text-align:center;font-size:10.5pt;width:199px;height:60px;margin-top:10px;}
+#TagsSwitcher{cursor:pointer;float:right;margin-top:10px;}
+#MyTags{display:none;width:199px;}
+#MyTags a.tag {float:left; background-color: #E0EAF1;border-bottom: 1px solid #3E6D8E;border-right: 1px solid #7F9FB6;color: #3E6D8E;font-size: 8pt;line-height: 16px;margin: 2px 2px 2px 0;padding: 2px 4px;text-decoration: none;white-space: nowrap;}
+#MyTags a.tag:hover{background-color: #3E6D8E;color: #FFF;}
+#toolbar_wrapper{padding:10px 0 5px 0;}
+.toolbar{height:33px;margin:0;padding:0;vertical-align: middle;border:1px solid #CCC;-moz-box-shadow: 0 1px 3px rgba(198,198,198,0.5);-webkit-box-shadow: 0 1px 3px rgba(198,198,198,0.5);box-shadow: 0 1px 3px rgba(198,198,198,0.5);}
+.toolbar a{text-decoration:none;color:black;}
+.share{float:left;margin:0;padding:3px 0 0 0;line-height:25px;width:280px;}
+.share_sina{float:left;background:url(/img/toolbar.gif) -1px -278px no-repeat;padding-left:25px;padding-right:5px;margin-left:3px;}
+.share_qq{float:left;background:url(/img/toolbar.gif) -1px -316px no-repeat;padding-left:25px;padding-right:5px;}
+#share_weixin {float:left;background:url('/img/weixin.gif') 5px 4px no-repeat;padding-left:25px; cursor:pointer;}
+.options{float:right;margin:3px 5px 0 5px;padding:0;height:30px;line-height:25px;}
+.tool_title {float:left;text-align:center;vertical-align:middle;margin:0 0 0 5px;line-height:33px;}
+.options .tool_title{line-height:30px;}
+.favorite{float:left;}
+.soft_collect{background: url(/img/toolbar.gif) 0 -1px no-repeat; cursor: pointer;padding-left:20px;}
+.soft_collected{background: url(/img/toolbar.gif) 1px -28px no-repeat;}
+.soft_collect_count{font-size:12pt;font-family: Arial;color:#8B0000;margin:0 10px 0 10px;}
+.soft_collect_count:hover {color:red;}
+.soft_used{float:right;margin:0 0 0 20px;padding:0;position: relative;}
+.soft_used_button{z-index: 1; position: relative; cursor: pointer;margin-left:10px;}
+.arrow_holder{background: url(/img/toolbar.gif) -1px -350px no-repeat;}
+a.soft_used_button_n{}
+a.soft_used_button_y{color:#40AA53;font-weight:bold;}
+.soft_used_level{ z-index: 99; position: absolute; top: 28px;left: 0; width: 80px; background-color: #f9f9f9; border: 1px solid #ccc;}
+.soft_used_level li{ line-height: 34px; padding-left: 30px;background: url(/img/toolbar.gif) 3px -390px no-repeat; cursor: pointer;}
+.soft_used_level li.choice{ background-color: #e9e9e9; background-position: 3px -418px}
+.soft_used_level li.level{ background-position: 3px -418px}
+.options .report{float:left;background: url(/img/toolbar.gif) 0 -113px no-repeat;padding:0 10px 0 15px;border-top:1px solid #CCC;border-bottom:1px solid #CCC;border-right:1px solid #CCC;}
+.options .vote{float:right;width:120px;margin:0 0 0 20px;padding:0 5px;border:1px solid #CCC;text-align:center;vertical-align:middle;}
+.options .vote-up-on{float:left;background: url(/img/toolbar.gif) 0 -160px no-repeat;padding-left:15px;}
+.options .vote-up-off{float:left;background: url(/img/toolbar.gif) 0 -137px no-repeat;padding-left:15px;}
+.options .vote-down-on{float:right;background: url(/img/toolbar.gif) 0 -209px no-repeat;padding-left:15px;}
+.options .vote-down-off{float:right;background: url(/img/toolbar.gif) 0 -184px no-repeat;padding-left:15px;}
+.options .vote-count-post{font-size:12pt;font-family: Arial;color: #8B0000;text-align: center;vertical-align:middle;margin:0 5px;}
+.options .news_deliver{float:left;background: url(/img/toolbar.gif) 3px -243px no-repeat;padding:0 10px 0 24px;border-top:1px solid #CCC;border-bottom:1px solid #CCC;border-right:1px solid #CCC;}
+#p_used_count{cursor:pointer;}
+</style>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$.ajax({
+		url:"/action/favorite/attentionUsersCount",
+		type:"get",
+		data:"id="+61214+"&type="+4,
+		success:function(msg){
+			$("#p_favor_count").html("+"+msg);
+		}
+	});
+	
+	$('#favor_trigger').click(function(){
+			add_to_favor(61214,4);
+		});
+});
+
+var favor_ok = "<p class='favor_ok'>已成功添加到收藏夹<br/><br/> <a href='null/favorites?type=4'>我的收藏夹</a> | <a href='javascript:close_favor()'>关闭</a></p>";
+function delete_favor(obi_id, obj_type){
+	if(!confirm('确定取消收藏？')) return;
+	$.post("/action/favorite/cancel?type="+obj_type+"&id="+obi_id+"&user=${g_user.id}",function(html){
+    	$('#favor_trigger').removeClass('soft_collected');
+		$('#favor_trigger').attr('title','添加到收藏');
+    	$('#p_favor_count').html('+'+html);
+		$('#favor_trigger').unbind('click');
+		$('#favor_trigger').click(function(){add_to_favor(61214,4);});
+	});
+}
+function add_to_favor(obj_id, obj_type){
+	if(confirm('必须登录后才能收藏，是否现在登录？')){
+		location.href="http://www.oschina.net/home/login?goto_page="+encodeURIComponent(location.href);
+	}
+}
+function close_favor(elem_id){
+    $('#favor_trigger').poshytip('destroy');
+}
+function setTag(tv){
+	var t = $("._favor_input");
+	var value = t.val();
+	var tags = value.replace(/，/ig,',').split(',');
+	var exist = false;
+	value = $.map(tags,function(v,i){
+		if($.trim(tv) == $.trim(v)){
+			exist = true;
+			return undefined;
+		}
+		return v;
+	}).join(',');
+	if(exist){
+		t.val(value);
+		return;
+	}
+	if(value!="")
+		t.val(value+","+tv);
+	else
+		t.val(tv)
+}
+</script>
+</div>
+		<div id="OSChina_News_61214" class="Body NewsContent TextContent">
+
+			                <img id="NewsPic" src="./index/reactnative_GOL2Q.png" data-bd-imgshare-binded="1">
+						<p>本文推荐 11 个非常棒的 <a target="_blank" href="http://www.oschina.net/p/reactnative" rel="nofollow">React Native</a> 开源组件，希望能给移动应用开发者提供帮助。</p><p>React Native 是近期 Facebook 基于 MIT 协议开源的原生移动应用开发框架，已经用于 Facebook 的生产环境。React Native 可以使用最近非常流行的 <a target="_blank" href="http://www.oschina.net/p/facebook-react" rel="nofollow">React.js</a> 库来开发 iOS 和 Android 原生 APP。</p><h3>1. iOS 表单处理控件 tcomb-form-native</h3><p><a target="_blank" href="http://www.oschina.net/p/tcomb-form-native" rel="nofollow">tcomb-form-native</a> 是 React Native 强大的表单处理控件，支持 JSON 模式，可插拔的外观和感觉。在线演示：<a target="_blank" href="http://react.rocks/example/tcomb-form-native" rel="nofollow">http://react.rocks/example/tcomb-form-native</a>。</p><p><img src="./index/174117_lkMl_865233.jpg" data-bd-imgshare-binded="1"></p><h3>2. 摄像机视图 react-native-camera</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-camera" rel="nofollow">react-native-camera</a> 是 React Native 的摄像头 viewport。这个模块应用于开发的早期阶段，它支持摄像头的转换和基本图片捕捉。</p><p>使用示例：</p><div><div id="highlighter_661018" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code>&nbsp;<code class="js plain">React&nbsp;=&nbsp;require(</code><code class="js string">'react-native'</code><code class="js plain">);</code></div><div class="line number2 index1 alt1"><code class="js keyword">var</code>&nbsp;<code class="js plain">{</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">AppRegistry,</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">StyleSheet,</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">Text,</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">View,</code></div><div class="line number7 index6 alt2"><code class="js plain">}&nbsp;=&nbsp;React;</code></div><div class="line number8 index7 alt1"><code class="js keyword">var</code>&nbsp;<code class="js plain">Camera&nbsp;=&nbsp;require(</code><code class="js string">'react-native-camera'</code><code class="js plain">);</code></div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="js keyword">var</code>&nbsp;<code class="js plain">cameraApp&nbsp;=&nbsp;React.createClass({</code></div><div class="line number11 index10 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">render:&nbsp;</code><code class="js keyword">function</code><code class="js plain">()&nbsp;{</code></div><div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code>&nbsp;<code class="js plain">(</code></div><div class="line number13 index12 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;View&gt;</code></div><div class="line number14 index13 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;TouchableHighlight&nbsp;onPress={</code><code class="js keyword">this</code><code class="js plain">._switchCamera}&gt;</code></div><div class="line number15 index14 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;View&gt;</code></div><div class="line number16 index15 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;Camera</code></div><div class="line number17 index16 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ref=</code><code class="js string">"cam"</code></div><div class="line number18 index17 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">aspect=</code><code class="js string">"Stretch"</code></div><div class="line number19 index18 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">orientation=</code><code class="js string">"PortraitUpsideDown"</code></div><div class="line number20 index19 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">style={{height:&nbsp;200,&nbsp;width:&nbsp;200}}</code></div><div class="line number21 index20 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">/&gt;</code></div><div class="line number22 index21 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;/View&gt;</code></div><div class="line number23 index22 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;/TouchableHighlight&gt;</code></div><div class="line number24 index23 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;/View&gt;</code></div><div class="line number25 index24 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">);</code></div><div class="line number26 index25 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">},</code></div><div class="line number27 index26 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">_switchCamera:&nbsp;</code><code class="js keyword">function</code><code class="js plain">()&nbsp;{</code></div><div class="line number28 index27 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">this</code><code class="js plain">.refs.cam.</code><code class="js keyword">switch</code><code class="js plain">();</code></div><div class="line number29 index28 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">}</code></div><div class="line number30 index29 alt1"><code class="js plain">});</code></div><div class="line number31 index30 alt2">&nbsp;</div><div class="line number32 index31 alt1"><code class="js plain">AppRegistry.registerComponent(</code><code class="js string">'cameraApp'</code><code class="js plain">,&nbsp;()&nbsp;=&gt;&nbsp;cameraApp);</code></div></div></td></tr></tbody></table></div></div><h3></h3><h3>3. react-native-video</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-video" rel="nofollow">react-native-video</a> 是 &lt;Video&gt; 标签控件。</p><p>示例：</p><div><div id="highlighter_729653" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js comments">//&nbsp;Within&nbsp;your&nbsp;render&nbsp;function,&nbsp;assuming&nbsp;you&nbsp;have&nbsp;a&nbsp;file&nbsp;called</code></div><div class="line number2 index1 alt1"><code class="js comments">//&nbsp;"background.mp4"&nbsp;in&nbsp;your&nbsp;project</code></div><div class="line number3 index2 alt2"><code class="js plain">&lt;Video&nbsp;source={</code><code class="js string">"background"</code><code class="js plain">}&nbsp;style={styles.backgroundVideo}&nbsp;repeat={</code><code class="js keyword">true</code><code class="js plain">}&nbsp;/&gt;</code></div><div class="line number4 index3 alt1"><code class="js comments">//&nbsp;Later&nbsp;on&nbsp;in&nbsp;your&nbsp;styles..</code></div><div class="line number5 index4 alt2"><code class="js keyword">var</code>&nbsp;<code class="js plain">styles&nbsp;=&nbsp;Stylesheet.create({</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">backgroundVideo:&nbsp;{</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">resizeMode:&nbsp;</code><code class="js string">'cover'</code><code class="js plain">,&nbsp;</code><code class="js comments">//&nbsp;stretch&nbsp;and&nbsp;contain&nbsp;also&nbsp;supported</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">position:&nbsp;</code><code class="js string">'absolute'</code><code class="js plain">,</code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">top:&nbsp;0,</code></div><div class="line number10 index9 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">left:&nbsp;0,</code></div><div class="line number11 index10 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">bottom:&nbsp;0,</code></div><div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">right:&nbsp;0,</code></div><div class="line number13 index12 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">},</code></div><div class="line number14 index13 alt1"><code class="js plain">});</code></div></div></td></tr></tbody></table></div></div><h3>4. 导航控件 react-native-navbar</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-navbar" rel="nofollow">react-native-navbar</a> 是用于 React Native 上简单的定制化导航栏。</p><p>示例代码：</p><div><div id="highlighter_983289" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code>&nbsp;<code class="js plain">NavigationBar&nbsp;=&nbsp;require(</code><code class="js string">'react-native-navbar'</code><code class="js plain">);</code></div><div class="line number2 index1 alt1"><code class="js keyword">var</code>&nbsp;<code class="js plain">ExampleProject&nbsp;=&nbsp;React.createClass({&nbsp;&nbsp;</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">renderScene:&nbsp;</code><code class="js keyword">function</code><code class="js plain">(route,&nbsp;navigator)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code>&nbsp;<code class="js plain">Component&nbsp;=&nbsp;route.component;&nbsp;&nbsp;&nbsp;&nbsp;</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code>&nbsp;<code class="js plain">navBar&nbsp;=&nbsp;route.navigationBar;&nbsp;&nbsp;&nbsp;&nbsp;</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">if</code>&nbsp;<code class="js plain">(navBar)&nbsp;{</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">navBar&nbsp;=&nbsp;React.addons.cloneWithProps(navBar,&nbsp;{navigator:&nbsp;navigator,</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">route:&nbsp;route</code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">});</code></div><div class="line number10 index9 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code>&nbsp;<code class="js plain">(&lt;View&nbsp;style={styles.navigator}&gt;</code></div><div class="line number11 index10 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">{navBar}&lt;Component&nbsp;navigator={navigator}&nbsp;route={route}&nbsp;/&gt;</code></div><div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;/View&gt;</code></div><div class="line number13 index12 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">);</code></div><div class="line number14 index13 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">},&nbsp;&nbsp;render:&nbsp;</code><code class="js keyword">function</code><code class="js plain">()&nbsp;{</code><code class="js keyword">return</code>&nbsp;<code class="js plain">(&lt;Navigator</code></div><div class="line number15 index14 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">style={styles.navigator}</code></div><div class="line number16 index15 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">renderScene={</code><code class="js keyword">this</code><code class="js plain">.renderScene}</code></div><div class="line number17 index16 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">initialRoute={{</code></div><div class="line number18 index17 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">component:&nbsp;InitialView,</code></div><div class="line number19 index18 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">navigationBar:&nbsp;&lt;NavigationBar&nbsp;title=</code><code class="js string">"Initial&nbsp;View"</code><code class="js plain">/&gt;</code></div><div class="line number20 index19 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}}</code></div><div class="line number21 index20 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">/&gt;</code></div><div class="line number22 index21 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">);</code></div><div class="line number23 index22 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">}</code></div><div class="line number24 index23 alt1"><code class="js plain">});</code></div></div></td></tr></tbody></table></div></div><h3></h3><h3>5. React Native 轮播控件 react-native-carousel</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-carousel" rel="nofollow">react-native-carousel</a> 是一个简单的 React Native 轮播控件。</p><p>示例代码：</p><div><div id="highlighter_612495" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js keyword">var</code>&nbsp;<code class="js plain">Carousel&nbsp;=&nbsp;require(</code><code class="js string">'react-native-carousel'</code><code class="js plain">);</code><code class="js keyword">var</code>&nbsp;<code class="js plain">ExampleProject&nbsp;=&nbsp;React.createClass({</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">render()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code>&nbsp;<code class="js plain">(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;Carousel&nbsp;width={375}&nbsp;indicatorColor=</code><code class="js string">"#ffffff"</code>&nbsp;<code class="js plain">inactiveIndicatorColor=</code><code class="js string">"#999999"</code><code class="js plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;MyFirstPage&nbsp;/&gt;</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;MySecondPage&nbsp;/&gt;</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;MyThirdPage&nbsp;/&gt;</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;/Carousel&gt;</code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">);</code></div><div class="line number10 index9 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">}</code></div><div class="line number11 index10 alt2"><code class="js plain">});</code></div></div></td></tr></tbody></table></div></div><h3></h3><h3>6. 下拉刷新组件 react-native-refreshable-listview</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-refreshable-listview" rel="nofollow">react-native-refreshable-listview</a> 是下拉刷新 ListView，当数据重载的时候显示加载提示。</p><p><img src="./index/03171923_Q645.jpg" alt="React Native Hacker News" data-bd-imgshare-binded="1"></p><h3></h3><h3>7. Modal 组件 react-native-modal</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-modal" rel="nofollow">react-native-modal</a> 是 React Native 的 &lt;Modal&gt; 组件。</p><p><img title="" src="./index/172211_K5MI_865233.jpg" height="694" width="375" data-bd-imgshare-binded="1"></p><h3></h3><h3>8. 文本解析控件 react-native-htmltext</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-htmltext" rel="nofollow">react-native-htmltext</a> 可以用 HTML 像 markup 一样在 ReactNative 里创建出相应效果的样式文本。ReactNative 为那些样式文本提供一个文本元素，用于取代 NSAttributedString，你可以创建嵌套的文本：</p><div><div id="highlighter_263596" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js plain">&lt;Text&nbsp;style={{fontWeight:&nbsp;</code><code class="js string">'bold'</code><code class="js plain">}}&gt;</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">I&nbsp;am&nbsp;bold&nbsp;</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">&lt;Text&nbsp;style={{color:&nbsp;</code><code class="js string">'red'</code><code class="js plain">}}&gt;&nbsp;and&nbsp;red&nbsp;&lt;/Text&gt;</code></div><div class="line number4 index3 alt1"><code class="js plain">&lt;/Text</code></div></div></td></tr></tbody></table></div></div><h3></h3><h3>9. react-native-htmlview</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-htmlview" rel="nofollow">react-native-htmlview</a> 是一个将 HTML 目录作为本地视图的控件，其风格可以定制。</p><p><img src="./index/164911_vudp_2306979.jpg" data-bd-imgshare-binded="1"></p><h3>10. LinearGradient 组件 react-native-linear-gradient</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-linear-gradient" rel="nofollow">react-native-linear-gradient</a> 是一个 React Native 的 LinearGradient 组件。</p><p><img src="./index/115737_FSUg_2306979.jpg" data-bd-imgshare-binded="1"></p><h3></h3><h3>11. 双向循环播放 react-native-looped-carousel</h3><p><a target="_blank" href="http://www.oschina.net/p/react-native-looped-carousel" rel="nofollow">react-native-looped-carousel</a> 是基于 React Native 的双向循环播放控件。</p><p>&nbsp;示例代码：</p><div><div id="highlighter_852834" class="syntaxhighlighter  js"><div class="toolbar"><span><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js string">'use&nbsp;strict'</code><code class="js plain">;</code><code class="js keyword">var</code>&nbsp;<code class="js plain">React&nbsp;=&nbsp;require(</code><code class="js string">'react-native'</code><code class="js plain">);</code><code class="js keyword">var</code>&nbsp;<code class="js plain">Carousel&nbsp;=&nbsp;require(</code><code class="js string">'react-native-looped-carousel'</code><code class="js plain">);</code><code class="js keyword">var</code>&nbsp;<code class="js plain">Dimensions&nbsp;=&nbsp;require(</code><code class="js string">'Dimensions'</code><code class="js plain">);</code><code class="js keyword">var</code>&nbsp;<code class="js plain">{width,&nbsp;height}&nbsp;=&nbsp;Dimensions.get(</code><code class="js string">'window'</code><code class="js plain">);</code><code class="js keyword">var</code>&nbsp;<code class="js plain">{</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">AppRegistry,</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">StyleSheet,&nbsp;&nbsp;Text,</code></div><div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">View</code></div><div class="line number5 index4 alt2"><code class="js plain">}&nbsp;=&nbsp;React;</code><code class="js keyword">var</code>&nbsp;<code class="js plain">carouselTest&nbsp;=&nbsp;React.createClass({&nbsp;&nbsp;render:&nbsp;</code><code class="js keyword">function</code><code class="js plain">()&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code>&nbsp;<code class="js plain">(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Carousel&nbsp;delay={500}&gt;</code></div><div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;View&nbsp;style={{backgroundColor:</code><code class="js string">'#BADA55'</code><code class="js plain">,width:width,height:height}}/&gt;</code></div><div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;View&nbsp;style={{backgroundColor:</code><code class="js string">'red'</code><code class="js plain">,width:width,height:height}}/&gt;</code></div><div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;View&nbsp;style={{backgroundColor:</code><code class="js string">'blue'</code><code class="js plain">,width:width,height:height}}/&gt;</code></div><div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">&lt;/Carousel&gt;</code></div><div class="line number10 index9 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">);</code></div><div class="line number11 index10 alt2"><code class="js spaces">&nbsp;&nbsp;</code><code class="js plain">}</code></div><div class="line number12 index11 alt1"><code class="js plain">});</code></div><div class="line number13 index12 alt2">&nbsp;</div><div class="line number14 index13 alt1"><code class="js plain">AppRegistry.registerComponent(</code><code class="js string">'carouselTest'</code><code class="js plain">,&nbsp;()&nbsp;=&gt;&nbsp;carouselTest);</code></div></div></td></tr></tbody></table></div></div><p>如果你知道其他 React Native 插件，在评论与大家分享一下吧～<br></p>
+		</div>
+
+		
+
+
+        				</div>
+
+			              </form>
+			
+			
+        </div>
+			</div>
+</div>
+
+
+<!--[if lt IE 7]>
+<script type="text/javascript" src="/js/minmax.js?t=1399607773000"></script>
+<![endif]-->
+<script type="text/javascript" src="./index/news"></script>
+<link rel="stylesheet" href="./index/tip-yellowsimple.css" type="text/css">
+<script type="text/javascript" src="./index/jquery.poshytip.min.js"></script>
+
+<script type="text/javascript" src="./index/xregexp-min.js"></script>
+<script type="text/javascript" src="./index/shCore.min.js"></script>
+<script type="text/javascript" src="./index/shAutoloader.js"></script>
+<link type="text/css" rel="stylesheet" href="./index/shCore.css">
+<link type="text/css" rel="Stylesheet" href="./index/shThemeDefault.css">
+
+<script type="text/javascript">
+    SyntaxHighlighter.autoloader(
+            'applescript			/js/sh309/scripts/shBrushAppleScript.js?t=1423294217000',
+            'actionscript3 as3		/js/sh309/scripts/shBrushAS3.js?t=1423294217000',
+            'bash shell				/js/sh309/scripts/shBrushBash.js?t=1423294217000',
+            'coldfusion cf			/js/sh309/scripts/shBrushColdFusion.js?t=1423294217000',
+            'cpp c					/js/sh309/scripts/shBrushCpp.js?t=1423294217000',
+            'obj-c objc				/js/sh309/scripts/shBrushObjC.js?t=1423294217000',
+            'c# c-sharp csharp		/js/sh309/scripts/shBrushCSharp.js?t=1423294217000',
+            'css					/js/sh309/scripts/shBrushCss.js?t=1423294217000',
+            'delphi pascal			/js/sh309/scripts/shBrushDelphi.js?t=1423294217000',
+            'diff patch pas			/js/sh309/scripts/shBrushDiff.js?t=1423294217000',
+            'erl erlang				/js/sh309/scripts/shBrushErlang.js?t=1423294217000',
+            'groovy					/js/sh309/scripts/shBrushGroovy.js?t=1423294217000',
+            'haxe hx				/js/sh309/scripts/shBrushHaxe.js?t=1423294217000',
+            'java					/js/sh309/scripts/shBrushJava.js?t=1423294217000',
+            'jfx javafx				/js/sh309/scripts/shBrushJavaFX.js?t=1423294217000',
+            'js jscript javascript	/js/sh309/scripts/shBrushJScript.js?t=1423294217000',
+            'perl pl				/js/sh309/scripts/shBrushPerl.js?t=1423294217000',
+            'php					/js/sh309/scripts/shBrushPhp.js?t=1423294217000',
+            'text plain				/js/sh309/scripts/shBrushPlain.js?t=1423294217000',
+            'py python				/js/sh309/scripts/shBrushPython.js?t=1423294217000',
+            'ruby rails ror rb		/js/sh309/scripts/shBrushRuby.js?t=1423294217000',
+            'scala					/js/sh309/scripts/shBrushScala.js?t=1423294217000',
+            'sql					/js/sh309/scripts/shBrushSql.js?t=1423294217000',
+            'vb vbnet				/js/sh309/scripts/shBrushVb.js?t=1423294217000',
+            'xml xhtml xslt html	/js/sh309/scripts/shBrushXml.js?t=1423294217000'
+    );
+    SyntaxHighlighter.all();
+</script>
+<script language="javascript">
+<!--
+function getScrollY() {
+    scrOfY = 0;
+    if( typeof( window.pageYOffset ) == "number" ) {
+        scrOfY = window.pageYOffset;
+    } else if( document.body && ( document.body.scrollLeft || document.body.scrollTop ) ) {
+        scrOfY = document.body.scrollTop;
+    } else if( document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
+        scrOfY = document.documentElement.scrollTop;
+    }
+    return scrOfY;
+}
+
+jQuery(function(){
+	//启用回到顶部
+	if(scrolltotop)
+		scrolltotop.init();
+    var upprev_closed = false;
+    var upprev_hidden = true;
+    $(window).scroll(function() {
+        var lastScreen;
+        if ($("#userComments").length > 0)
+            lastScreen = getScrollY() + $(window).height() < $("#userComments").offset().top * 1 ? false : true;
+        else
+            lastScreen = getScrollY() + $(window).height() < $(document).height() * 1 ? false : true;
+        if (lastScreen && !upprev_closed) {
+			//Firefox下，“你也许会喜欢”推荐会被滚动条遮盖部分
+            $("#upprev_box").stop().animate({right:$.browser.mozilla?"15px":"0px"});
+            upprev_hidden = false;
+        }
+        else if (upprev_closed && getScrollY() == 0) {
+            upprev_closed = false;
+        }
+        else if (!upprev_hidden) {
+            upprev_hidden = true;
+            $("#upprev_box").stop().animate({right:"-400px"});
+        }
+		/*
+		var $offset = $('.google_ads').last().offset();
+		if($(window).scrollTop()>($offset.top)) {
+			$('.google_ads iframe').first().css({'position':'fixed','top':'0px','left':$offset.left+'px','margin-top':'10px','z-index':'999'});
+		}
+		else {
+			$('.google_ads iframe').first().css({'position':'relative','top':'','left':'','margin-top':'0','z-index':'0'});
+		}*/
+    });
+    $("#upprev_close").click(function() {
+        $("#upprev_box").stop().animate({right:"-400px"});
+        upprev_closed = true;
+        upprev_hidden = true;
+		return false;
+    });
+}); 
+$(function(){
+    $('#form_comment').ajaxForm({
+    	dataType: 'json',
+    	success: function(json) {
+        	if(json.msg){
+        		alert(json.msg);
+        	}
+        	else if(json.id){
+        		jQuery.get("/news/show_reply?_cmt_news="+json.news+"&_cmt_user="+json.user+"&_cmt_id="+json.id, function(data){
+    				$('.Comments .NoData').hide();
+        			$('.Comments ul:eq(0)').append(data);
+        			$('#form_comment').resetForm();
+        		}); 
+        	}
+    	}
+    });
+    
+    $("#form_comment").ajaxStart(function(){
+      	$('#btn_comment').val('正在发表，请稍候...');
+      	$('#btn_comment').attr('disabled',true);
+    });
+    $("#form_comment").ajaxComplete(function(event,request, settings){
+      	$('#btn_comment').val('发表评论');
+      	$('#btn_comment').attr('disabled',false);
+    });
+});
+
+function _rvi(){document.getElementById('img_vcode').src = '/action/user/captcha?t='+Math.random(1000);}
+function delete_c(nid,uid,cid){
+  if(confirm("您确认要删除此篇评论？")){
+    var args = "cmt="+cid+"#"+uid+"#"+nid;
+    ajax_post("/action/news/delete_comments",args,function(){$("#cmt_"+nid+"_"+uid+"_"+cid).fadeOut();});
+  }
+}
+function ReplyInline(news,user,reply){
+	$('.inline_reply').empty();
+	var div_id = '#inline_reply_of_'+news+'_'+user+'_'+reply;
+	$('#inline_reply_id').val(user+'_'+reply);
+	$(div_id).html($('#inline_reply_editor').html());
+	$('#txt_focus').focus();
+	$('#btn_close_inline_reply').click(function(){
+		$(div_id).empty();
+	});
+	$('#form_inline_comment').ajaxForm({
+	dataType: 'json',
+	success: function(json) {
+    	if(json.msg){
+    		alert(json.msg);
+    	}
+    	else if(json.id){
+			location.reload();
+    	}
+	}
+});
+}
+function pay_attention(pid,concern_it){
+	login_and_do(function(msg){
+		if(concern_it){
+			$("#p_attention_count").load("/action/favorite/add?mailnotify=true&type=4&id="+pid, {user: ''});
+			$('#attention_it').html("<a href='javascript:pay_attention('+pid+',false)' style='color:#A00;'>取消收藏</a>");	
+		}
+		else{
+			$("#p_attention_count").load("/action/favorite/cancel?type=4&id="+pid, {user: ''});
+			$('#attention_it').html("<a href='javascript:pay_attention('+pid+',true)' style='color:#3E62A6;'>收藏此新闻</a>");
+		}
+		tb_remove();
+	});
+}
+function pay_attention2(pid,concern_it){
+	login_and_do(function(msg){
+		if(concern_it){
+			$("#p_attention_count").load("/action/favorite/add?mailnotify=true&type=4&id="+pid, {user: ''});
+			$('#attention_it2').html('<a href="javascript:pay_attention2('+pid+',false)" style="color:#A00;">取消收藏</a>');	
+		}
+		else{
+			$("#p_attention_count").load("/action/favorite/cancel?type=4&id="+pid, {user: ''});
+			$('#attention_it2').html('<a href="javascript:pay_attention2('+pid+',true)" style="color:#3E62A6;">收藏此新闻</a>');
+		}
+		tb_remove();
+	});
+}
+//-->
+</script><div class="clear"></div></div>
+	<div id="OSC_Footer" class="CenterDiv"><style>
+.oscapp {text-align:left; width:220px;}
+.oscapp span {float:left;width:140px;}
+.oscapp a {float:left;text-indent:-9999em;width:16px;margin-left:8px;}
+.oscapp a.android {background:url('/img/android.gif') no-repeat left center;}
+.oscapp a.iphone {background:url('/img/iphone.gif') no-repeat left center;}
+.oscapp a.wp7 {background:url('/img/wp7.gif') no-repeat left center;}
+</style>
+
+<script type="text/javascript">
+<!--
+if (top.location != self.location)top.location=self.location;
+//-->
+</script></div>
+</div>
+
+
+<!-- Generated by OsChina.NET (init:1[ms],page:48[ms],ip:121.32.130.122) --><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><div id="bdimgshare_1430204511580" class="sr-bdimgshare sr-bdimgshare-list sr-bdimgshare-16 sr-bdimgshare-black" style="height: 36px; line-height: 26px; font-size: 12px; position: absolute; top: 530.328125px; left: 186.5px; width: 500px; display: none;" data-bd-bind="1430204511579"><div class="bdimgshare-bg"></div><div class="bdimgshare-content bdsharebuttonbox bdshare-button-style0-16"><label class="bdimgshare-lbl">分享到：</label><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" onclick="return false;" class="bds_tsina" data-cmd="tsina" hidefocus=""></a><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" onclick="return false;" class="bds_tqq" data-cmd="tqq" hidefocus=""></a><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" onclick="return false;" class="bds_qzone" data-cmd="qzone" hidefocus=""></a><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" onclick="return false;" class="bds_weixin" data-cmd="weixin" hidefocus=""></a><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" onclick="return false;" class="bds_sqq" data-cmd="sqq" hidefocus=""></a><a href="http://www.oschina.net/news/61214/11-react-native-ui-components#" onclick="return false;" class="bds_more" data-cmd="more" hidefocus=""></a></div></div></body></html>
