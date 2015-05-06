@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://cnodejs.org/topic/53fd30647c1e22847833d7f5 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta name="description" content="CNode：Node.js专业中文社区">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="nodejs, node, express, connect, socket.io">
+  <meta name="apple-itunes-app" content="app-id=954734793">
+  <!-- see http://smerity.com/articles/2013/where_did_all_the_http_referrers_go.html -->
+  <meta name="referrer" content="always">
+
+  
+  <meta name="author" content="EDP@TaoBao">
+  
+  <meta property="wb:webmaster" content="617be6bd946c6b96">
+  
+
+  <link title="RSS" type="application/rss+xml" rel="alternate" href="https://cnodejs.org/rss">
+
+  
+  <link rel="icon" href="https://dn-cnodestatic.qbox.me/public/images/cnode_icon_32.png" type="image/x-icon">
+  
+
+  <!-- style -->
+  <link rel="stylesheet" href="https://dn-cnodestatic.qbox.me/public/stylesheets/index.min.36689462.min.css" media="all">
+
+
+  <!-- scripts -->
+  <script async="" src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent"></script><script src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/index.min.4dde195f.min.js"></script>
+
+
+  
+  <title>【北京招人~】NodeJS攻城狮来战智能硬件~ - CNode</title>
+  
+  <meta content="_csrf" name="csrf-param">
+  <meta content="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs" name="csrf-token">
+</head>
+<body>
+<!-- navbar -->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="https://cnodejs.org/">
+        
+          <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/cnodejs_light.svg">
+        
+      </a>
+
+      <form id="search_form" class="navbar-search" action="https://cnodejs.org/search">
+        <input type="text" id="q" name="q" class="search-query span3" value="">
+      </form>
+      <ul class="nav pull-right">
+        <li><a href="https://cnodejs.org/">首页</a></li>
+        
+        <li>
+            <a href="https://cnodejs.org/my/messages">
+              
+                <span class="big messages_count">6</span>
+              
+              未读消息
+            </a>
+        </li>
+        
+        <li><a href="https://cnodejs.org/getstart">新手入门</a></li>
+        <li><a href="https://cnodejs.org/api">API</a></li>
+        
+        <li><a href="https://cnodejs.org/about" target="">关于</a></li>
+        
+        
+        <li><a href="https://cnodejs.org/setting">设置</a></li>
+        <li>
+          <a href="https://cnodejs.org/signout" data-method="post" rel="nofollow">退出</a>
+        </li>
+        
+      </ul>
+      <a class="btn btn-navbar" id="responsive-sidebar-trigger">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div id="sidebar">
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">作者</span>
+    </div>
+    <div class="inner">
+      <div class="user_card">
+  <div>
+    <a class="user_avatar" href="https://cnodejs.org/user/luan007">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(1)" title="luan007">
+    </a>
+    <span class="user_name"><a class="dark" href="https://cnodejs.org/user/luan007">luan007</a></span>
+
+    <div class="board clearfix">
+      <div class="floor">
+        <span class="big">积分: 10 </span>
+      </div>
+    </div>
+    <div class="space clearfix"></div>
+    <span class="signature">
+        “
+        
+            这家伙很懒，什么个性签名都没有留下。
+        
+        ”
+    </span>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function () {
+    $('.follow_btn').click(function () {
+      var $me = $(this);
+      var action = $me.attr('action');
+      var params = {
+        follow_id: '53fd302c2243147e78329b22',
+        _csrf: 'a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs'
+      };
+      $.post('/user/' + action, params, function (data) {
+        if (data.status === 'success') {
+          var $btns = $('.follow_btn');
+          if (action === 'follow') {
+            $btns.html('取消关注');
+            $btns.attr('action', 'un_follow');
+          } else {
+            $btns.html('加入关注');
+            $btns.attr('action', 'follow');
+          }
+          $btns.toggleClass('btn-success');
+        }
+      }, 'json');
+    });
+  });
+</script>
+
+
+    </div>
+  </div>
+
+  
+    
+<div class="panel">
+  <div class="inner ads">
+
+    
+      
+      <a href="https://coding.net/u/coding/p/marketing/topic/31352" target="_blank" class="banner sponsor_outlink" data-label="coding-net">
+        <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/FlN4stX4SKGFBf8rSU0EgDxAtWsQ">
+      </a>
+    
+      
+        <div class="sep10"></div>
+      
+      <a href="https://campaign.gitcafe.com/leapmotion2015" target="_blank" class="banner sponsor_outlink" data-label="gitcafe">
+        <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/FvU2wKg1Hk4mGMjAxmxu9woYnpdz">
+      </a>
+    
+      
+        <div class="sep10"></div>
+      
+      <a href="https://portal.qiniu.com/hb/?utm_campaign=hb&utm_source=cnode&utm_medium=advposition&utm_content=png" target="_blank" class="banner sponsor_outlink" data-label="qiniu-event">
+        <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/FqFdDaC0q3T2EckLEgU9PANuwj9J">
+      </a>
+    
+      
+        <div class="sep10"></div>
+      
+      <a href="http://www.xiaoyun.com/" target="_blank" class="banner sponsor_outlink" data-label="xiaoyun">
+        <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/FkH26N-_pH6PDL8AoKWSlv5EBI74">
+      </a>
+    
+      
+        <div class="sep10"></div>
+      
+      <a href="https://talk.ai/?s=cnodejs" target="_blank" class="banner sponsor_outlink" data-label="teambition">
+        <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/FsJ2QW9zAHLvrPgC767PvuMWBkRQ">
+      </a>
+    
+      
+        <div class="sep10"></div>
+      
+      <a href="https://www.jpush.cn/common/im" target="_blank" class="banner sponsor_outlink" data-label="jpush">
+        <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/FqnXC_xQeWA8S5jzlKdIXG6CIDer">
+      </a>
+    
+      
+        <div class="sep10"></div>
+      
+      <a href="http://www.jiankongbao.com/" target="_blank" class="banner sponsor_outlink" data-label="jiankongbao">
+        <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/Foj5yawxK4wZXxTLF7DJYJxYIQS7">
+      </a>
+    
+  </div>
+</div>
+
+  
+
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">作者其它话题</span>
+    </div>
+    <div class="inner">
+      
+      <p>无</p>
+      
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">无人回复的话题</span>
+    </div>
+    <div class="inner">
+      
+      <ul class="unstyled">
+        <li>
+  <div><a class="dark topic_title" href="https://cnodejs.org/topic/5549b6a591d252e4400c9a30" title="求bower转spm的回答">求bower转spm的回答</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="https://cnodejs.org/topic/554973e572eab93b431d0dcf" title="nodejs对http协议的支持">nodejs对http协议的支持</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="https://cnodejs.org/topic/5549497f72eab93b431d0d7d" title="关于Express中使用req.pipe(busboy)的用途是什么？是多文件上传吗？">关于Express中使用req.pipe(busboy)的用途是什么？是多文件上传吗？</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="https://cnodejs.org/topic/5548f03372eab93b431d0d6b" title="关于express中app.post的一个问题">关于express中app.post的一个问题</a>
+  </div>
+</li>
+<li>
+  <div><a class="dark topic_title" href="https://cnodejs.org/topic/5548b5f072eab93b431d0d0f" title="How to structure models in NodeJS">How to structure models in NodeJS</a>
+  </div>
+</li>
+
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+<div id="content">
+  <div class="panel">
+    <div class="header topic_header">
+      <span class="topic_full_title">
+
+        
+
+
+        【北京招人~】NodeJS攻城狮来战智能硬件~
+      </span>
+      <div class="action">
+      
+        
+        <span class="span-common span-success" id="collect_btn" action="collect">加入收藏</span>
+        
+        
+      </div>
+      <div class="changes">
+        <span>
+          发布于 8个月前
+        </span>
+        <span>
+          作者 <a href="https://cnodejs.org/user/luan007">luan007</a>
+        </span>
+        <span>
+          1075 次浏览
+        </span>
+        
+        
+          <span> 来自 招聘</span>
+        
+      </div>
+      
+      <div id="manage_topic">
+        
+        
+        
+      </div>
+      
+    </div>
+    <div class="inner topic">
+
+      <div class="topic_content">
+        <div class="markdown-text"><p>我们是一家在软硬件领域做结合创新的公司~ 当下在发展期，已基本完成融资，来招人啦~</p>
+<p>希望你的node代码跑在ARM/MIPS上咩？希望你的代码操控到用户的手机、打印机、空调么？我们敢尝试，就看你敢不敢来玩~ 我们需要你来把产品做的更牛更酷炫~</p>
+<p>在这里你会有机会接触尝试没做过的事情，如果你想玩Arduino，我们这里有大把；树莓PI、pcDuino随地可见，写东西没思路了就来找个烙铁焊接吧，或者玩玩激光切割~ 还有设计妹子陪你共事哟</p>
+<p>简历可直接投1<a href="https://cnodejs.org/user/emerge" target="_blank">@emerge</a>.cc
+或加QQ详谈 498483439</p>
+<p>职位描述：
+1、负责某新概念智能硬件核心研发（基于标准node）
+2、动手尝试动手玩~</p>
+<p>优先选择：
+1、对智能硬件有了解优先 如Arduino，RaspPI；
+2、对网络安全有一定了解优先；
+3、熟悉Linux环境优先；
+4、充满激情热爱新事物敢于尝试者请直接找我！</p>
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">24 回复</span>
+    </div>
+    <div class="cell reply_area reply_item
+  " id="reply1" reply_id="53fd30ee7c1e22847833f642" reply_to_id="">
+  <a class="anchor" id="53fd30ee7c1e22847833f642"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/Pana" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(2)" title="Pana"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/Pana">Pana
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd30ee7c1e22847833f642">1楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-Pana">
+    <div class="markdown-text"><p>Node 新领域, 不错的尝试</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd30ee7c1e22847833f642">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd30ee7c1e22847833f642" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd30ee7c1e22847833f642" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply2" reply_id="53fd321c7c1e228478343aac" reply_to_id="">
+  <a class="anchor" id="53fd321c7c1e228478343aac"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/ringtail" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(3)" title="ringtail"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/ringtail">ringtail
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd321c7c1e228478343aac">2楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-ringtail">
+    <div class="markdown-text"><p>兼职要不要。</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd321c7c1e228478343aac">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd321c7c1e228478343aac" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd321c7c1e228478343aac" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply3" reply_id="53fd33c17c1e228478349d6d" reply_to_id="53fd321c7c1e228478343aac">
+  <a class="anchor" id="53fd33c17c1e228478349d6d"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/luan007" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(1)" title="luan007"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/luan007">luan007
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd33c17c1e228478349d6d">3楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-luan007">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/ringtail" target="_blank">@ringtail</a> 如果你喜欢，我们不介意~</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd33c17c1e228478349d6d">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd33c17c1e228478349d6d" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd33c17c1e228478349d6d" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply4" reply_id="53fd38532243147e7834747f" reply_to_id="">
+  <a class="anchor" id="53fd38532243147e7834747f"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/fenode" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(4)" title="fenode"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/fenode">fenode
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd38532243147e7834747f">4楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-fenode">
+    <div class="markdown-text"><p>想用它做什么？</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd38532243147e7834747f">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd38532243147e7834747f" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd38532243147e7834747f" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply5" reply_id="53fd3ad77c1e2284783645fd" reply_to_id="">
+  <a class="anchor" id="53fd3ad77c1e2284783645fd"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/nodejser" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(5)" title="nodejser"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/nodejser">nodejser
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd3ad77c1e2284783645fd">5楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-nodejser">
+    <div class="markdown-text"><p>这样真的好吗，还能好好招聘嘛，不要动不动就拿妹纸来诱惑我们，搞得像我们很缺妹纸一样…漂亮不，爆个照先再考虑应聘啊。。^<em>^ ^</em>^</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd3ad77c1e2284783645fd">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd3ad77c1e2284783645fd" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd3ad77c1e2284783645fd" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply6" reply_id="53fd3cd82243147e7835813e" reply_to_id="53fd38532243147e7834747f">
+  <a class="anchor" id="53fd3cd82243147e7835813e"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/luan007" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(1)" title="luan007"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/luan007">luan007
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd3cd82243147e7835813e">6楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-luan007">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/fenode" target="_blank">@fenode</a> 一款网关产品，片上搭载node来跑核心逻辑~</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd3cd82243147e7835813e">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd3cd82243147e7835813e" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd3cd82243147e7835813e" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply7" reply_id="53fd3ea47c1e22847837384c" reply_to_id="">
+  <a class="anchor" id="53fd3ea47c1e22847837384c"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/shanelau" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(6)" title="shanelau"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/shanelau">shanelau
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd3ea47c1e22847837384c">7楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn
+          fa-thumbs-o-up
+          invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-shanelau">
+    <div class="markdown-text"><p>敢用nodejs    厉害</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd3ea47c1e22847837384c">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd3ea47c1e22847837384c" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd3ea47c1e22847837384c" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply8" reply_id="53fd3f227c1e2284783755f4" reply_to_id="53fd3ea47c1e22847837384c">
+  <a class="anchor" id="53fd3f227c1e2284783755f4"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/luan007" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(1)" title="luan007"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/luan007">luan007
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd3f227c1e2284783755f4">8楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-luan007">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/kissliux" target="_blank">@kissliux</a> 敢来玩就更厉害了！求勾搭</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd3f227c1e2284783755f4">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd3f227c1e2284783755f4" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd3f227c1e2284783755f4" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply9" reply_id="53fd3f4e2243147e78361374" reply_to_id="53fd321c7c1e228478343aac">
+  <a class="anchor" id="53fd3f4e2243147e78361374"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/ringtail" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(3)" title="ringtail"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/ringtail">ringtail
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd3f4e2243147e78361374">9楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-ringtail">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/luan007" target="_blank">@luan007</a> 愿意搞一下。QQ：773913792</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd3f4e2243147e78361374">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd3f4e2243147e78361374" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd3f4e2243147e78361374" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply10" reply_id="53fd41f67c1e228478380d12" reply_to_id="53fd38532243147e7834747f">
+  <a class="anchor" id="53fd41f67c1e228478380d12"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/fenode" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(4)" title="fenode"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/fenode">fenode
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd41f67c1e228478380d12">10楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-fenode">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/luan007" target="_blank">@luan007</a> 做页面？</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd41f67c1e228478380d12">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd41f67c1e228478380d12" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd41f67c1e228478380d12" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply11" reply_id="53fd42117c1e228478381476" reply_to_id="53fd3ea47c1e22847837384c">
+  <a class="anchor" id="53fd42117c1e228478381476"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/fenode" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(4)" title="fenode"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/fenode">fenode
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd42117c1e228478381476">11楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-fenode">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/luan007" target="_blank">@luan007</a> 霸气侧漏，恐了。。。</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd42117c1e228478381476">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd42117c1e228478381476" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd42117c1e228478381476" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply12" reply_id="53fd4b542243147e7838d820" reply_to_id="">
+  <a class="anchor" id="53fd4b542243147e7838d820"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/nodejser" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(5)" title="nodejser"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/nodejser">nodejser
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd4b542243147e7838d820">12楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-nodejser">
+    <div class="markdown-text"><p>我们做的是一些物联网相关的产品，不过，硬件上是用单片机，上位机是node写的通讯程序。
+嵌入式操作系统+node，这个主意不错。</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd4b542243147e7838d820">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd4b542243147e7838d820" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd4b542243147e7838d820" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply13" reply_id="53fd4da52243147e78395e3a" reply_to_id="53fd4b542243147e7838d820">
+  <a class="anchor" id="53fd4da52243147e78395e3a"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/luan007" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(1)" title="luan007"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/luan007">luan007
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd4da52243147e78395e3a">13楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-luan007">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/nodejser" target="_blank">@nodejser</a> 可以透露方向嘛~ 有机会合作搞呀</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd4da52243147e78395e3a">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd4da52243147e78395e3a" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd4da52243147e78395e3a" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply14" reply_id="53fd54d92243147e783b085c" reply_to_id="">
+  <a class="anchor" id="53fd54d92243147e783b085c"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/yaochun" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(7)" title="yaochun"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/yaochun">yaochun
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd54d92243147e783b085c">14楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-yaochun">
+    <div class="markdown-text"><p>其实一点都不稀奇，倒是让有有点感伤。因为wifi-io 居然 也 被 某米收购了~~~</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd54d92243147e783b085c">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd54d92243147e783b085c" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd54d92243147e783b085c" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply15" reply_id="53fd764b7c1e228478445fcc" reply_to_id="53fd54d92243147e783b085c">
+  <a class="anchor" id="53fd764b7c1e228478445fcc"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/luan007" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(1)" title="luan007"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/luan007">luan007
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd764b7c1e228478445fcc">15楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-luan007">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/yaochun" target="_blank">@yaochun</a> 求勾搭~</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd764b7c1e228478445fcc">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd764b7c1e228478445fcc" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd764b7c1e228478445fcc" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply16" reply_id="53fd772d7c1e2284784496bc" reply_to_id="">
+  <a class="anchor" id="53fd772d7c1e2284784496bc"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/hainee" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(8)" title="hainee"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/hainee">hainee
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd772d7c1e2284784496bc">16楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-hainee">
+    <div class="markdown-text"><p>很有意思呢！！！！！</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd772d7c1e2284784496bc">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd772d7c1e2284784496bc" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd772d7c1e2284784496bc" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply17" reply_id="53fd7aad2243147e784399a1" reply_to_id="">
+  <a class="anchor" id="53fd7aad2243147e784399a1"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/nodejser" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(5)" title="nodejser"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/nodejser">nodejser
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd7aad2243147e784399a1">17楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-nodejser">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/luan007" target="_blank">@luan007</a>  主要是采集温湿度，ph,危险气体浓度，高压输电线路温度等等，基本上传感器可以采的，都可以做。</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd7aad2243147e784399a1">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd7aad2243147e784399a1" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd7aad2243147e784399a1" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply18" reply_id="53fd7c672243147e7843fcf2" reply_to_id="53fd7aad2243147e784399a1">
+  <a class="anchor" id="53fd7c672243147e7843fcf2"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/luan007" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(1)" title="luan007"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/luan007">luan007
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd7c672243147e7843fcf2">18楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-luan007">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/nodejser" target="_blank">@nodejser</a> 带感，有合作空间~！</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd7c672243147e7843fcf2">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd7c672243147e7843fcf2" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd7c672243147e7843fcf2" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply19" reply_id="53fd84007c1e228478479894" reply_to_id="">
+  <a class="anchor" id="53fd84007c1e228478479894"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/nodejser" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(5)" title="nodejser"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/nodejser">nodejser
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fd84007c1e228478479894">19楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-nodejser">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/luan007" target="_blank">@luan007</a>,我们也有控制，是基于web的，一般包括但不限于灌溉，喷头，风机，空调等等。当然也可以扩展到移动平台上。。</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fd84007c1e228478479894">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fd84007c1e228478479894" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fd84007c1e228478479894" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply20" reply_id="53fdfcf52243147e785eff83" reply_to_id="53fd84007c1e228478479894">
+  <a class="anchor" id="53fdfcf52243147e785eff83"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/luan007" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(1)" title="luan007"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/luan007">luan007
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fdfcf52243147e785eff83">20楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-luan007">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/nodejser" target="_blank">@nodejser</a> 嗯 暴露成restful的API，另一端把zigbee zwave什么的抽象出来</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fdfcf52243147e785eff83">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fdfcf52243147e785eff83" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fdfcf52243147e785eff83" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply21" reply_id="53fea7ee7c1e2284788449d7" reply_to_id="">
+  <a class="anchor" id="53fea7ee7c1e2284788449d7"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/anti-peng" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(9)" title="anti-peng"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/anti-peng">anti-peng
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fea7ee7c1e2284788449d7">21楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn
+          fa-thumbs-o-up
+          invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-anti-peng">
+    <div class="markdown-text"><p>唉，一直在玩arduino之类的开源硬件，可是就一个人在捣鼓 :(</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fea7ee7c1e2284788449d7">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fea7ee7c1e2284788449d7" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fea7ee7c1e2284788449d7" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply22" reply_id="53fec2ad7c1e22847889f2d4" reply_to_id="53fd3ea47c1e22847837384c">
+  <a class="anchor" id="53fec2ad7c1e22847889f2d4"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/shanelau" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(6)" title="shanelau"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/shanelau">shanelau
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53fec2ad7c1e22847889f2d4">22楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn
+          fa-thumbs-o-up
+          invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-shanelau">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/luan007" target="_blank">@luan007</a> 你们论坛社区什么的没，想关注下你们做的东西  微博也行</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53fec2ad7c1e22847889f2d4">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53fec2ad7c1e22847889f2d4" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53fec2ad7c1e22847889f2d4" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply23" reply_id="53ff33e57c1e228478a2b1e5" reply_to_id="53fea7ee7c1e2284788449d7">
+  <a class="anchor" id="53ff33e57c1e228478a2b1e5"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/luan007" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(1)" title="luan007"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/luan007">luan007
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#53ff33e57c1e228478a2b1e5">23楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-luan007">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/anti-peng" target="_blank">@anti-peng</a> 莫叹气，要不要一起来玩？加QQ啦</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="53ff33e57c1e228478a2b1e5">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_53ff33e57c1e228478a2b1e5" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="53ff33e57c1e228478a2b1e5" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+<div class="cell reply_area reply_item
+  " id="reply24" reply_id="540448a7e84941a571145ea5" reply_to_id="53fd38532243147e7834747f">
+  <a class="anchor" id="540448a7e84941a571145ea5"></a>
+
+  <div class="author_content">
+    <a href="https://cnodejs.org/user/yunnysunny" class="user_avatar">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/agent(10)" title="yunnysunny"></a>
+
+    <div class="user_info">
+      <a class="dark reply_author" href="https://cnodejs.org/user/yunnysunny">yunnysunny
+      </a>
+      <a class="reply_time" href="https://cnodejs.org/topic/53fd30647c1e22847833d7f5#540448a7e84941a571145ea5">24楼•8个月前</a>
+    </div>
+    <div class="user_action">
+      <span>
+        <i class="fa up_btn           fa-thumbs-o-up invisible" title="喜欢"></i>
+        <span class="up-count">
+          
+        </span>
+      </span>
+      
+      <span>
+        
+          <i class="fa fa-reply reply2_btn" title="回复"></i>
+        
+      </span>
+    </div>
+  </div>
+  <div class="reply_content from-yunnysunny">
+    <div class="markdown-text"><p><a href="https://cnodejs.org/user/luan007" target="_blank">@luan007</a> 类似于路由器，底层用c，上层用perl。</p>
+</div>
+  </div>
+  <div class="clearfix">
+    <div class="reply2_area">
+      
+      <form class="reply2_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+        <input type="hidden" name="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+        <input type="hidden" name="reply_id" value="540448a7e84941a571145ea5">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="span8 editor reply_editor" id="reply2_editor_540448a7e84941a571145ea5" name="r_content" rows="4" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 33px;"><div style="position: relative;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>&nbsp;<span style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code"></div><div class="CodeMirror-cursor">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary reply2_submit_btn submit_btn" type="submit" data-id="540448a7e84941a571145ea5" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+      </form>
+      
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+  
+  <div class="panel">
+    <div class="header">
+      <span class="col_fade">添加回复</span>
+    </div>
+    <div class="inner reply">
+      <form id="reply_form" action="https://cnodejs.org/53fd30647c1e22847833d7f5/reply" method="post">
+
+        <div class="markdown_editor in_editor">
+          <div class="markdown_in_editor">
+            <textarea class="editor" name="r_content" rows="8" style="display: none;"></textarea><div class="editor-toolbar"><a class="eicon-bold"></a><a class="eicon-italic"></a><i class="separator">|</i><a class="eicon-quote"></a><a class="eicon-unordered-list"></a><a class="eicon-ordered-list"></a><i class="separator">|</i><a class="eicon-link"></a><a class="eicon-image"></a><i class="separator">|</i><a class="eicon-info" href="http://lab.lepture.com/editor/markdown" target="_blank"></a><a class="eicon-preview"></a><a class="eicon-fullscreen"></a></div><div class="CodeMirror cm-s-paper"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none; font-size: 4px;"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 0px;"><div style="height: 1px;"></div></div><div class="CodeMirror-vscrollbar"><div style="width: 1px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="min-width: 41px; margin-left: 0px; min-height: 36px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>​</span></pre></div><div style="position: relative; z-index: 1; display: none;"></div><div class="CodeMirror-code"><pre>&nbsp;</pre></div><div class="CodeMirror-cursor" style="left: 4px; top: 5px; height: 17px;">&nbsp;</div><div class="CodeMirror-cursor CodeMirror-secondarycursor" style="display: none;">&nbsp;</div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 36px;"></div><div class="CodeMirror-gutters" style="display: none; height: 160px;"></div></div></div>
+
+            <div class="editor_buttons">
+              <input class="span-primary submit_btn" type="submit" data-loading-text="回复中.." value="回复">
+            </div>
+          </div>
+
+        </div>
+
+        <input type="hidden" name="_csrf" id="_csrf" value="a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs">
+      </form>
+    </div>
+  </div>
+  
+</div>
+
+<div class="replies_history" style="display: none;">
+  <div class="inner_content"></div>
+  <div class="anchor"></div>
+</div>
+
+
+
+<!-- markdown editor -->
+<script src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/editor.min.1ab56128.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    // 获取所有回复者name
+    var allNames = $('.reply_author').map(function (idx, ele) {
+      return $(ele).text().trim();
+    }).toArray();
+    allNames = _.uniq(allNames);
+    // END 获取所有回复者name
+
+    // 编辑器相关
+    $('textarea.editor').each(function(){
+      var editor = new Editor({
+        status: []
+      });
+      var $el = $(this);
+
+      editor.render(this);
+      //绑定editor
+      $(this).data('editor', editor);
+
+      var $input = $(editor.codemirror.display.input);
+      $input.keydown(function(event){
+        if (event.keyCode === 13 && (event.ctrlKey || event.metaKey)) {
+          event.preventDefault();
+          $el.closest('form').submit();
+        }
+      });
+
+      // at.js 配置
+      var codeMirrorGoLineUp = CodeMirror.commands.goLineUp;
+      var codeMirrorGoLineDown = CodeMirror.commands.goLineDown;
+      var codeMirrorNewlineAndIndent = CodeMirror.commands.newlineAndIndent;
+      $input.atwho({
+        at: '@',
+        data: allNames
+      })
+      .on('shown.atwho', function () {
+        CodeMirror.commands.goLineUp = _.noop;
+        CodeMirror.commands.goLineDown = _.noop;
+        CodeMirror.commands.newlineAndIndent = _.noop;
+      })
+      .on('hidden.atwho', function () {
+        CodeMirror.commands.goLineUp = codeMirrorGoLineUp;
+        CodeMirror.commands.goLineDown = codeMirrorGoLineDown;
+        CodeMirror.commands.newlineAndIndent = codeMirrorNewlineAndIndent;
+      });
+      // END at.js 配置
+
+    });
+    // END 编辑器相关
+
+    // 评论回复
+    $('#content').on('click', '.reply2_btn', function (event) {
+      var $btn = $(event.currentTarget);
+      var parent = $btn.closest('.reply_area');
+      var editorWrap = parent.find('.reply2_form');
+      parent.find('.reply2_area').prepend(editorWrap);
+      var textarea = editorWrap.find('textarea.editor');
+      var user = $btn.closest('.author_content').find('.reply_author').text().trim();
+      var editor = textarea.data('editor');
+      editorWrap.show('fast', function () {
+        var cm = editor.codemirror;
+        cm.focus();
+        if(cm.getValue().indexOf('@' + user) < 0){
+          editor.push('@' + user + ' ');
+        }
+      });
+    });
+
+    $('#content').on('click', '.reply2_at_btn', function (event) {
+      var $btn = $(event.currentTarget);
+      var editorWrap = $btn.closest('.reply2_area').find('.reply2_form');
+      $btn.closest('.reply2_item').after(editorWrap);
+      var textarea = editorWrap.find('textarea.editor');
+      var user = $btn.closest('.reply2_item').find('.reply_author').text().trim();
+      var editor = textarea.data('editor');
+      editorWrap.show('fast', function () {
+        var cm = editor.codemirror;
+        cm.focus();
+        if(cm.getValue().indexOf('@' + user) < 0){
+          editor.push('@' + user + ' ');
+        }
+      });
+    });
+    // END 评论回复
+
+    // 加入收藏
+    $('#collect_btn').click(function () {
+      var $me = $(this);
+      var action = $me.attr('action');
+      var data = {
+        topic_id: '53fd30647c1e22847833d7f5',
+        _csrf: 'a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs'
+      };
+      var $countSpan = $('.collect-topic-count');
+      $.post('/topic/' + action, data, function (data) {
+        if (data.status === 'success') {
+          if (action == 'collect') {
+            $me.text('取消收藏');
+            $me.attr('action', 'de_collect');
+          } else {
+            $me.text('加入收藏');
+            $me.attr('action', 'collect');
+          }
+          $me.toggleClass('span-success');
+        }
+      }, 'json');
+    });
+    // END 加入收藏
+
+    // 删除回复
+    $('#content').on('click', '.delete_reply_btn, .delete_reply2_btn', function (event) {
+      var $me = $(event.currentTarget);
+      if (confirm('确定要删除此回复吗？')) {
+        var reply_id = null;
+        if ($me.hasClass('delete_reply_btn')) {
+          reply_id = $me.closest('.reply_item').attr('reply_id');
+        }
+        if ($me.hasClass('delete_reply2_btn')) {
+          reply_id = $me.closest('.reply2_item').attr('reply_id');
+        }
+        var data = {
+          reply_id: reply_id,
+          _csrf: "a4Xte5RE--SJQMyW6QnuVHAW8-qDXTRqklRs"
+        };
+        $.post('/reply/' + reply_id + '/delete', data, function (data) {
+          if (data.status === 'success') {
+            if ($me.hasClass('delete_reply_btn')) {
+              $me.closest('.reply_item').remove();
+            }
+            if ($me.hasClass('delete_reply2_btn')) {
+              $me.closest('.reply2_item').remove();
+            }
+          }
+        }, 'json');
+      }
+      return false;
+    });
+    // END 删除回复
+
+    // 删除话题
+    $('.delete_topic_btn').click(function () {
+      var topicId = $(this).data('id');
+      if (topicId && confirm('确定要删除此话题吗？')) {
+        $.post('/topic/' + topicId + '/delete', { _csrf: $('#_csrf').val() }, function (result) {
+          if (!result.success) {
+            alert(result.message);
+          } else {
+            location.href = '/';
+          }
+        });
+      }
+      return false;
+    });
+    // END 删除话题
+
+    // 用户 hover 在回复框时才显示点赞按钮
+    $('.reply_area').hover(
+      function () {
+        $(this).find('.up_btn').removeClass('invisible');
+      },
+      function () {
+        var $this = $(this);
+        if ($this.find('.up-count').text().trim() === '') {
+          $this.find('.up_btn').addClass('invisible');
+        }
+      });
+    // END 用户 hover 在回复框时才显示点赞按钮
+
+
+  });
+
+</script>
+
+
+<script type="text/javascript">
+  (function(){
+    var timer = null; //对话框延时定时器
+    // 初始化 $('.replies_history')
+    var $repliesHistory = $('.replies_history');
+    var $repliesHistoryContent = $repliesHistory.find('.inner_content');
+    $repliesHistory.hide();
+    // END
+    // 鼠标移入对话框清除隐藏定时器；移出时隐藏对话框
+    $repliesHistory.on('mouseenter', function(){
+      clearTimeout(timer);
+    }).on('mouseleave', function(){
+      $repliesHistory.fadeOut('fast');
+    });
+    // 显示被 at 用户的本页评论
+    if ($('.reply2_item').length === 0) {
+      // 只在流式评论布局中使用
+
+      $('#content').on('mouseenter', '.reply_content a', function (e) {
+        clearTimeout(timer);
+        var $this = $(this);
+        if ($this.text()[0] === '@') {
+          var thisText = $this.text().trim();
+          var loginname = thisText.slice(1);
+          var offset = $this.offset();
+          var width = $this.width();
+          var mainOffset = $('#main').offset();
+          $repliesHistory.css('left', offset.left-mainOffset.left+width+10); // magic number
+          $repliesHistory.css('top', offset.top-mainOffset.top-10); // magic number
+          $repliesHistory.css({
+            'z-index': 1,
+          });
+          $repliesHistoryContent.empty();
+          var chats = [];
+          var replyToId = $this.closest('.reply_item').attr('reply_to_id');
+          while (replyToId) {
+            var $replyItem = $('.reply_item[reply_id=' + replyToId + ']');
+            var replyContent = $replyItem.find('.reply_content').text().trim();
+            if (replyContent.length > 0) {
+              chats.push([
+                $($replyItem.find('.user_avatar').html()).attr({
+                  height: '30px',
+                  width: '30px',
+                }), // avatar
+                (replyContent.length>300?replyContent.substr(0,300)+'...':replyContent), // reply content
+                '<a href="#'+replyToId+'" class="scroll_to_original" title="查看原文">↑</a>'
+              ]);
+            }
+            replyToId = $replyItem.attr('reply_to_id');
+          }
+          if(chats.length > 0) {
+            chats.reverse();
+
+            $repliesHistoryContent.append('<div class="title">查看对话</div>');
+            chats.forEach(function (pair, idx) {
+              var $chat = $repliesHistoryContent.append('<div class="item"></div>');
+              $chat.append(pair[0]); // 头像
+              $chat.append($('<span>').text(pair[1])); // 内容
+              $chat.append(pair[2]); // 查看原文 anchor
+            });
+            $repliesHistory.fadeIn('fast');
+          }else{
+            $repliesHistory.hide();
+          }
+        }
+      }).on('mouseleave', '.reply_content a', function (e) {
+        timer = setTimeout(function(){
+          $repliesHistory.fadeOut('fast');
+        }, 500);
+      });
+    }
+    // END 显示被 at 用户的本页评论
+  })();
+
+  // 点赞
+  $('.up_btn').click(function (e) {
+    var $this = $(this);
+    var replyId = $this.closest('.reply_area').attr('reply_id');
+    $.ajax({
+      url: '/reply/' + replyId + '/up',
+      method: 'POST',
+    }).done(function (data) {
+      if (data.success) {
+        $this.removeClass('invisible');
+        var currentCount = Number($this.next('.up-count').text().trim()) || 0;
+        if (data.action === 'up') {
+          $this.next('.up-count').text(currentCount + 1);
+          $this.addClass('uped');
+        } else {
+          if (data.action === 'down') {
+            $this.next('.up-count').text(currentCount - 1);
+            $this.removeClass('uped');
+          }
+        }
+      } else {
+        alert(data.message);
+      }
+    }).fail(function (xhr) {
+      if (xhr.status === 403) {
+        alert('请先登录，登陆后即可点赞。');
+      }
+    });
+  });
+  // END 点赞
+</script>
+
+</div><div class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editorToolImageTitle" aria-hidden="true"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="editorToolImageTitle">图片</h3></div><div class="modal-body"><div class="upload-img" style="height: 50px; padding: 60px 0px; text-align: center; border: 4px dashed rgb(221, 221, 221);"><div class="button webuploader-container" style="width: 86px; height: 40px; margin: 0px auto;"><div class="webuploader-pick">上传图片</div><div id="rt_rt_19kk1cbj81trt1uutcbq1otn1s1t1" style="position: absolute; overflow: hidden; bottom: auto; right: auto; width: 86px; height: 40px; top: 0px; left: 0px;"><input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></div><span class="tip" style="display: none;"></span><div class="alert alert-error hide"></div></div></div></div><div class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="editorToolImageTitle" aria-hidden="true"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="editorToolImageTitle">添加连接</h3></div><div class="modal-body"><form class="form-horizontal"><div class="control-group"><label class="control-label">标题</label><div class="controls"><input type="text" name="title" placeholder="Title"></div></div><div class="control-group"><label class="control-label">连接</label><div class="controls"><input type="text" name="link" value="http://" placeholder="Link"></div></div></form></div><div class="modal-footer"><button class="btn btn-primary" role="save">确定</button></div></div>
+<div id="backtotop" style="top: 319px; right: 0px; display: none;">回到顶部</div>
+<div id="footer">
+  <div id="footer_main">
+    <div class="links">
+      <a class="dark" href="https://cnodejs.org/rss">RSS</a>
+      |
+      <a class="dark" href="https://github.com/cnodejs/nodeclub/">源码地址</a>
+    </div>
+
+    <div class="col_fade">
+  <p>服务器搭建在
+    <a href="https://www.digitalocean.com/?refcode=eba02656eeb3" target="_blank" class="sponsor_outlink" data-label="digitalocean">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/digitalocean.png" title="digitalocean" alt="digitalocean" width="92px">
+    </a>
+  ，存储赞助商为
+    <a href="http://www.qiniu.com/?ref=cnode" target="_blank" class="sponsor_outlink" data-label="qiniu_bottom">
+      <img src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/qiniu.png" title="七牛云存储" alt="七牛云存储" width="115px">
+    </a>
+  </p>
+</div>
+
+
+  </div>
+</div>
+<div id="sidebar-mask"></div>
+
+
+<script>
+  // google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script',"/agent?&url=https%3A%2F%2Fwww.google-analytics.com%2Fanalytics.js",'ga');
+
+  ga('create', 'UA-41753901-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+<div style="display:none;">
+  <script src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/z_stat.php" language="JavaScript"></script><script src="./【北京招人_】NodeJS攻城狮来战智能硬件_ - CNode_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1254020586" target="_blank" title="站长统计">站长统计</a>
+</div>
+
+
+
+
+<div id="atwho-container"><div id="atwho-ground-c52184161430896653297"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-f74dadd11430896653305"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-8751253b1430896653308"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-8ed7d7401430896653310"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-4f9c5e401430896653312"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-045421ac1430896653314"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-e9ffc4b71430896653316"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-46c2b20d1430896653319"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-b3bcc64c1430896653320"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-b63f799c1430896653323"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-ba8410d81430896653325"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-6edbad321430896653330"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-b76a33021430896653332"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-ea0b6d851430896653335"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-c52fd8531430896653338"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-d495a7d21430896653340"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-4c456f291430896653342"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-de22067c1430896653345"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-d397a7911430896653348"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-71fe4e211430896653351"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-a95afa0f1430896653353"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-80082c391430896653356"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-6207c0701430896653357"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-2c3b06e21430896653360"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div><div id="atwho-ground-3e525f401430896653389"><div class="atwho-view" id="at-view-64"><ul class="atwho-view-ul"></ul></div></div></div></body></html>

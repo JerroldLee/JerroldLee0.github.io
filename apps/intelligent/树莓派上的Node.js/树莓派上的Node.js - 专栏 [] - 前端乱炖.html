@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)http://www.html-js.com/article/Nodejs-abnormal-laboratory-raspberry-PI-Nodejs -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="Shortcut Icon" href="http://htmljs.b0.upaiyun.com//images/logo.ico?123">
+    <link href="http://htmljs.b0.upaiyun.com//images/logo.ico?123" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/main.css" type="text/css">
+    <link rel="stylesheet" href="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/prettify.css" type="text/css">
+    <link rel="stylesheet" href="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/glyphicons.css" type="text/css">
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/jquery.js"></script>
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/htmljs.js"></script>
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/prettify.js"></script><meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://htmljs.b0.upaiyun.com//images/icon.png" rel="apple-touch-icon">
+    <meta name="keywords" content="前端, 前端开发, web前端, web前端开发, 前端开发工程师, 前端开发攻城师,设计, 开发, 前端资源, CSS, JavaScript, Ajax, jQuery, html,html5,css3,浏览器兼容, 前端开发工具, 前端招聘, jQuery API, CSS整形和优化工具 , JS压缩工具 , JS格式化工具 , CSS参考手册 ,HTML参考手册 , 多重搜索 , nodejs , node , boostrap , sublime">
+    <meta name="baidu-site-verification" content="OnKVgNu37S">
+    <script>if($.browser.msie<8){alert("请不要使用ie浏览本站！本站不支持ie10以下浏览器。")}</script>
+    <title>树莓派上的Node.js - 专栏 [] - 前端乱炖</title><meta name="description" content="前言最近入手了,最新版本的树莓派B+,发现在其上面运行Node.js,实在好玩!&lt;!--more--&gt;安装Node.js更新最新树莓派系统sudoapt-getupgradesudoapt">
+    <style>
+      #bdshare a{}
+      .entry-content img{border:1px solid #ddd;box-shadow: 0px 0px 2px #ddd;}
+    </style>
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/bootstrap-tooltip.js"></script>
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/bootstrap-scrollspy.js"></script>
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/tips.js"></script>
+    <link rel="stylesheet" href="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/tips.css" type="text/css">
+  <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/logger.js"></script><link href="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/bdsstyle.css" rel="stylesheet" type="text/css"></head>
+  <body id="article"><iframe frameborder="0" style="display: none;"></iframe>
+    <div id="header">
+      <div class="wrapper clearfix"><a href="http://www.html-js.com/" title="前端乱炖" class="logo"><span class="dun">炖</span></a>
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <div class="container">
+              <div class="nav-collapse collapse">
+                <ul class="nav left-nav">
+                  <li pageid="0" class=""><a href="http://www.html-js.com/"><i class="icon-home"></i>首页</a></li>
+                  <li pageid="1" class="active"><a href="http://www.html-js.com/article"><i class="icon-book-open"></i>专栏</a></li>
+                  <li pageid="7" class=""><a href="http://www.html-js.com/qa"><i class="icon-lightbulb"></i>问答</a></li>
+                  <li pageid="10" class=""><a href="http://www.html-js.com/topic"><i class="icon-group"></i>讨论区</a></li>
+                  <li pageid="20" class="hidden "><a href="http://www.html-js.com/talk"><i class="icon-conversation"></i>实时讨论</a></li>
+                  <li pageid="15" class="hidden "><a href="http://www.html-js.com/blog"><i class="icon-sampler"></i>博集</a></li>
+                  <li pageid="8" class="hidden "><a href="http://www.html-js.com/tag">标签</a></li>
+                  <li pageid="2" class=""><a href="http://www.html-js.com/job"><i class="icon-leaf"></i>招聘</a></li>
+                  <li pageid="2" class=""><a href="http://www.html-js.com/cards"><i class="icon-nameplate"></i>花名册</a></li>
+                  <li pageid="100" class=""><a href="http://www.imooc.com/course/list?from=luandun"><i class="icon-keynote"></i>免费教程</a></li>
+                  <li class="search">
+                    <form action="http://www.html-js.com/search" method="get" style="margin:0;"><i class="icon-search"></i>
+                      <input id="keyword" type="text" name="q" placeholder="搜索全站、站外内容" class="span2 input-large">
+                    </form>
+                  </li>
+                  <li pageid="6" class="hidden "><a href="http://www.html-js.com/book">免费送书</a></li>
+                </ul>
+                <ul class="right-nav">
+                  <li><a href="http://www.html-js.com/user/login?redirect=%2Farticle%2FNodejs-abnormal-laboratory-raspberry-PI-Nodejs">登录</a></li>
+                  <li><a href="http://www.html-js.com/talk"><i class="icon-conversation"></i>在线聊天</a></li>
+                  <li class="hidden sub-trigger"><a>其他功能</a>
+                    <ul class="sub-menu hidden">
+                      <li pageid="5" class=""><a href="http://www.html-js.com/act">活动</a></li>
+                      <li pageid="9" class=""><a href="http://www.html-js.com/tools"><i class="icon-classic-hammer hidden"></i>常用工具</a><span class="my-favs"></span></li>
+                      <li><a href="http://www.html-js.com/talk">
+                           
+                          实时讨论</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $(".sub-trigger").mouseenter(function(){
+          $(".sub-menu",this).removeClass("hidden")
+          }).mouseleave(function(){
+          $(".sub-menu",this).addClass("hidden")
+          })
+        })       
+    </script>
+    <div id="content" class="clearfix">
+      <div class="daen"></div>
+      <ul class="breadcrumb hidden">
+        <li><a href="http://www.html-js.com/">首页</a><span class="divider">/</span></li>
+        <li><a href="http://www.html-js.com/article">所有专栏</a><span class="divider">/</span></li>
+        <li><a href="http://www.html-js.com/article/column/92">Node.js非正常研究室</a><span class="divider">/</span></li>
+        <li class="active"><span>树莓派上的Node.js</span></li>
+      </ul>
+      <div class="title">
+        <div class="wrapper">
+          <div style="font-size: 30px;line-height:50px;" href="http://p.html-js.com/article/2231" title="树莓派上的Node.js" rel="bookmark" class="63">树莓派上的Node.js</div>
+          <div class="info">
+            <div class="line"><span class="author vcard item"><a rel="author" href="http://www.html-js.com/user/336" class="value url fn">游戏阿柴</a> 发布在<a href="http://www.html-js.com/article/column/92" class="value">Node.js非正常研究室</a></span><span class="item">2014年9月1日</span><span class="item"><span class="index">view：</span><span class="value">3143</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wapper">
+        <div class="content">
+          <div class="left">
+            <article id="post-2231" class="post">
+              <div class="wrapper">
+                <div class="entry-content">
+                  <div class="alert">在文章任何区域双击击即可给文章添加【评注】！浮到评注点上可以查看详情。<div class="checkbox" style="float:right;line-height:40px;color:#333;padding-top:3px;"><label><input type="checkbox" id="hide_tip">隐藏标注</label></div></div><a href="http://www.lagou.com/april/index.html?utm_source=AD_qianduanluandunyilu&utm_medium=jiaodiantu&utm_campaign=april"><img src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1429613845505-960 90.png"></a><h2>前言</h2>
+
+<p>最近入手了,最新版本的树莓派 B+, 发现在其上面运行Node.js,实在好玩!</p>
+
+&lt;!--more--&gt;
+
+<h2>安装Node.js</h2>
+
+<h3>更新最新树莓派系统</h3>
+
+<pre class=" language-javascript"><code class=" language-javascript">sudo apt<span class="token operator">-</span>get upgrade
+sudo apt<span class="token operator">-</span>get update</code></pre>
+
+<h3>安装Node.js</h3>
+
+<p>如果是以前的教程,可能是叫你去下载源码编译..以树莓派的性能来编译Node.js的源码,应该至少一个小时吧?</p>
+
+<p>幸运的而是官方已经提供了,编译的树莓派二进制包,所以就不要再去下源码编译了..</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">wget http<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>nodejs<span class="token punctuation">.</span>org<span class="token operator">/</span>dist<span class="token operator">/</span>v0<span class="token number">.10</span><span class="token punctuation">.</span><span class="token number">26</span><span class="token operator">/</span>node<span class="token operator">-</span>v0<span class="token number">.10</span><span class="token punctuation">.</span><span class="token number">26</span><span class="token operator">-</span>linux<span class="token operator">-</span>arm<span class="token operator">-</span>pi<span class="token punctuation">.</span>tar<span class="token punctuation">.</span>gz
+tar <span class="token operator">-</span>xvzf node<span class="token operator">-</span>v0<span class="token number">.10</span><span class="token punctuation">.</span><span class="token number">26</span><span class="token operator">-</span>linux<span class="token operator">-</span>arm<span class="token operator">-</span>pi<span class="token punctuation">.</span>tar<span class="token punctuation">.</span>gz
+node<span class="token operator">-</span>v0<span class="token number">.10</span><span class="token punctuation">.</span><span class="token number">26</span><span class="token operator">-</span>linux<span class="token operator">-</span>arm<span class="token operator">-</span>pi<span class="token operator">/</span>bin<span class="token operator">/</span>node <span class="token operator">--</span>version</code></pre>
+
+<p>接下来写进我们的环境变量</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">vi <span class="token punctuation">.</span>bash_profile</code></pre>
+
+<p>在里面写入</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">PATH<span class="token operator">=</span>$PATH<span class="token punctuation">:</span><span class="token operator">/</span>home<span class="token operator">/</span>pi<span class="token operator">/</span>node<span class="token operator">-</span>v0<span class="token number">.10</span><span class="token punctuation">.</span><span class="token number">26</span><span class="token operator">-</span>linux<span class="token operator">-</span>arm<span class="token operator">-</span>pi<span class="token operator">/</span>bin</code></pre>
+
+<p>在运行source 更新</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">source <span class="token punctuation">.</span>bash_profile</code></pre>
+
+<p>现在我们有Node命令了</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">node <span class="token operator">--</span>version</code></pre>
+
+<p>忽然,感慨当年先驱者为了在树莓派上运行上Node.js 各种折腾…现在真心方便.</p>
+
+<h4>一些意外</h4>
+
+<p>如果运行</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">sudo npm install <span class="token operator">-</span>g forever</code></pre>
+
+<p>发现,报找不到npm命令,那你需要吧node的运行目录写到sudo运行环境</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">sudo vi <span class="token operator">/</span>etc<span class="token operator">/</span>sudoers</code></pre>
+
+<p>找到</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">Defaults       secure_path<span class="token operator">=</span><span class="token string">"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"</span></code></pre>
+
+<p>在原来的基础上加上你的node环境</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">Defaults       secure_path<span class="token operator">=</span><span class="token string">"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/pi/node-v0.10.26-linux-arm-pi/bin"</span></code></pre>
+
+<p>现在运行,就不会报错了.</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">sudo npm install <span class="token operator">-</span>g forever</code></pre>
+
+<h2>远程控制Led 灯</h2>
+
+<p>环境搞定了,接下来就是开始编写我们的控制程序了!</p>
+
+<h3>gpio 库</h3>
+
+<p>有兴趣了解树莓派的,可以去下面这个link,了解一下树莓派的gpio口,为什么树莓派能够这么火,其魅力就是这gpio口了.</p>
+
+<blockquote>
+  <p><a href="https://github.com/rakeshpai/pi-gpio">https://github.com/rakeshpai/pi-gpio</a></p>
+</blockquote>
+
+<p>这个gpio库,更新挺及时的,已经支持B+了.</p>
+
+<p>默认情况下,要访问树莓派的gpio口是需要管理员权限的.所以,我建议在装多一个东西吧</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">git clone git<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>quick2wire<span class="token operator">/</span>quick2wire<span class="token operator">-</span>gpio<span class="token operator">-</span>admin<span class="token punctuation">.</span>git
+cd quick2wire<span class="token operator">-</span>gpio<span class="token operator">-</span>admin
+make
+sudo make install</code></pre>
+
+<p>对于我们的远程控制一个led灯的软件环境准备已经完成,接下来就开始写Node代码吧.</p>
+
+<p>最终效果可以移步下面这个link观看</p>
+
+<blockquote>
+  <p><a href="http://www.miaopai.com/show/xwnY1Sgn6IOOlIQLk9cSLw__.htm">http://www.miaopai.com/show/xwnY1Sgn6IOOlIQLk9cSLw__.htm</a></p>
+</blockquote>
+
+<h3>代码编写</h3>
+
+<pre class=" language-javascript"><code class=" language-javascript"><span class="token keyword">var</span> http <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">'http'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> gpio <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">'pi-gpio'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require<span class="token punctuation">(</span></span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">var</span> errHandler <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log<span class="token punctuation">(</span></span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+gpio<span class="token punctuation">.</span><span class="token function">open<span class="token punctuation">(</span></span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token string">"output"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log<span class="token punctuation">(</span></span><span class="token string">'已经打开'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+http<span class="token punctuation">.</span><span class="token function">createServer<span class="token punctuation">(</span></span><span class="token keyword">function</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">==</span> <span class="token string">'/led/open'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        res<span class="token punctuation">.</span><span class="token function">writeHead<span class="token punctuation">(</span></span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'text/plain'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        gpio<span class="token punctuation">.</span><span class="token function">write<span class="token punctuation">(</span></span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> errHandler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        res<span class="token punctuation">.</span><span class="token function">end<span class="token punctuation">(</span></span><span class="token string">'open'</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>url <span class="token operator">==</span> <span class="token string">'/led/close'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        res<span class="token punctuation">.</span><span class="token function">writeHead<span class="token punctuation">(</span></span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'text/plain'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        gpio<span class="token punctuation">.</span><span class="token function">write<span class="token punctuation">(</span></span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> errHandler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        res<span class="token punctuation">.</span><span class="token function">end<span class="token punctuation">(</span></span><span class="token string">'close'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    res<span class="token punctuation">.</span><span class="token function">writeHead<span class="token punctuation">(</span></span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'text/html'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    res<span class="token punctuation">.</span><span class="token function">end<span class="token punctuation">(</span></span>fs<span class="token punctuation">.</span><span class="token function">readFileSync<span class="token punctuation">(</span></span><span class="token string">'index.html'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">listen<span class="token punctuation">(</span></span><span class="token number">1984</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log<span class="token punctuation">(</span></span><span class="token string">'server runn at 1984'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+
+<p>你刚刚看到的视频效果,背后的代码不到50行…如果,写好一些.估计可以压缩不到20行..</p>
+
+<p>因为这代码没什么技术可言..所以,今天就到此为止了吧..</p><script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/tuiku.js"></script>
+                </div>
+                <div class="ads">
+                  <div style="width:700px;margin: 0 auto;" class="wrapper">
+                    <div style="margin:30px 0 10px 0;">
+                      <!--a(href="#{codeurl}",target="_blank",style="display:block;line-height:25px;") 【广告】#{codead}-->
+                      <!--a(href=" http://www.jobdeer.com/?fr=htmljs",target="_blank",style="display:block;line-height:25px;") 【广告】优秀的人才不找工作，都在「 JobDeer.com 」拍卖自己！-->
+                    </div><a href="http://www.html-js.com/topic/827" style="width:700px;height:100px;margin-top:20px;" class="ad-blank">
+                      <div class="ad-inner">广告位 点击查看投放指南</div></a>
+                  </div>
+                </div>
+                <div class="entry-meta">
+                  <p>本站专栏文章皆为原创，转载请注明出处（带有 前端乱炖 字样）和本文的显式链接(<a href="http://www.html-js.com/article/2231">http://www.html-js.com/article/2231</a>)，本站和作者保留随时要求删除文章的权利！</p>
+                </div>
+              </div>
+            <div class="tip-comments" style="display: none;"><ul class="comment-list"></ul><form class="tip-comment-form"><textarea placeholder="添加讨论…" class="tip-comment-textarea"></textarea><div class="form-control"><button class="tip-submit" type="submit">提交</button></div></form></div></article>
+            <div id="comment" class="comment module">
+              <div class="hd">评论</div>
+              <div class="bd">
+                <div class="publish">
+                  <textarea id="comment-text" placeholder="参与讨论。支持markdown语法" class="input-block-level"></textarea>
+                  <div id="comment-submit" class="btn comment-submit">发表评论</div>
+                </div>
+                <div class="comment-list">
+                  <div class="comment-item clearfix"><a class="headpic"><img data-original="http://tp1.sinaimg.cn/1693534972/50/5668262728/1" width="70" height="70" src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1" style="display: inline;"></a>
+                    <div class="comment-right">
+                      <div class="con"><span class="author vcard item"><a rel="author" href="http://www.html-js.com/user/845" class="value url fn">刘骥-JimLiu</a>
+                          <div class="hd-time">5个月前</div></span>
+                        <div class="html">赞了此文章！</div>
+                      </div>
+                      <div class="time"><a data-nick="刘骥-JimLiu" class="reply">回复</a></div>
+                    </div>
+                  </div>
+                  <div class="comment-item clearfix"><a class="headpic"><img data-original="http://tp1.sinaimg.cn/1312972820/50/22845827027/1" width="70" height="70" src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1(1)" style="display: inline;"></a>
+                    <div class="comment-right">
+                      <div class="con"><span class="author vcard item"><a rel="author" href="http://www.html-js.com/user/336" class="value url fn">游戏阿柴</a>
+                          <div class="hd-time">8个月前</div></span>
+                        <div class="html"><p><a href="http://www.html-js.com/user/2234">@林鸿havingFun</a> 话说..这个就是要保证….源软件最新而已…</p></div>
+                      </div>
+                      <div class="time"><a data-nick="游戏阿柴" class="reply">回复</a></div>
+                    </div>
+                  </div>
+                  <div class="comment-item clearfix"><a class="headpic"><img data-original="http://tp1.sinaimg.cn/1312972820/50/22845827027/1" width="70" height="70" src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1(1)" style="display: inline;"></a>
+                    <div class="comment-right">
+                      <div class="con"><span class="author vcard item"><a rel="author" href="http://www.html-js.com/user/336" class="value url fn">游戏阿柴</a>
+                          <div class="hd-time">8个月前</div></span>
+                        <div class="html"><p><a href="http://www.html-js.com/user/2234">@林鸿havingFun</a> 更新最新 ….我没写错啊…</p></div>
+                      </div>
+                      <div class="time"><a data-nick="游戏阿柴" class="reply">回复</a></div>
+                    </div>
+                  </div>
+                  <div class="comment-item clearfix"><a class="headpic"><img data-original="http://tp4.sinaimg.cn/1584017263/50/40018214800/1" width="70" height="70" src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1(2)" style="display: inline;"></a>
+                    <div class="comment-right">
+                      <div class="con"><span class="author vcard item"><a rel="author" href="http://www.html-js.com/user/2234" class="value url fn">林鸿havingFun</a>
+                          <div class="hd-time">8个月前</div></span>
+                        <div class="html"><p>什么安装最新系统。。两个命令一个是升级包的一个是更新软件源列表的。。</p></div>
+                      </div>
+                      <div class="time"><a data-nick="林鸿havingFun" class="reply">回复</a></div>
+                    </div>
+                  </div>
+                </div>
+                <script id="comment-tpl" type="text/template">
+                  <div class="comment-item clearfix"><a class="headpic"><img src="{{user_headpic}}" width="70" height="70"></a>
+                    <div class="comment-right">
+                      <div class="con"><span class="author vcard item"><a rel="author" href="/user/{{user_id}}" class="value url fn">{{user_nick}}：</a></span>
+                        <div class="html">{{{html}}}</div>
+                      </div>
+                      <div class="time">{{createdAt}}<a data-nick="{{user_nick}}" class="reply">回复</a></div>
+                    </div>
+                  </div>
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right"><a target="_blank" href="https://portal.qiniu.com/hb/?utm_campaign=hb&;utm_source=qdld&utm_medium=advposition&utm_content=png" style="width:280px;height:120px;display:block;" class="ad-blank"><img src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1430290454690-红包_280x120.png"></a>
+          <div style="padding:0;margin-top:20px;" class="module ad-blank"><img src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1417158556053-未标题-5.png"></div>
+          <div class="writer-and-column clearfix">
+            <div class="writer module">
+              <div class="hd">WRITTEN BY</div>
+              <!--a.head-pic(href="/user/#{writer.id}")-->
+              <!--  img(src='#{writer.head_pic}')-->
+              <div class="info"><a href="http://www.html-js.com/user/336" class="nick">游戏阿柴</a>
+                <div class="desc">酱油兼打杂的程序猿... http://blog.gfdsa.net/</div><a href="http://weibo.cn/1312972820" target="_blank" class="weibo">TA的新浪微博</a>
+              </div>
+            </div>
+            <div class="column module">
+              <div class="hd">PUBLISHED IN</div>
+              <div class="info"><a href="http://www.html-js.com/article/column/92" class="name">Node.js非正常研究室</a>
+                <div class="desc"><p>学习Node.js单单是用来建网站吗?那你就太小看Node.js的应用范围了,Node.js可以写命令行工具,可以控制你的家具,总之,除了Web应用,还可以干很多事情!</p></div>
+                <div class="action"><a href="http://www.html-js.com/article/column/1/rss" class="rssit btn small-btn"><i class="rss social"></i> 订阅</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="other-articles module">
+            <div class="hd">本专栏其他文章</div>
+            <div class="bd">
+              <div class="item"><a href="http://www.html-js.com/article/2231">树莓派上的Node.js</a>
+                <div class="others"><span class="time">时间:2014-09-01</span><span class="visit_count">浏览:3143</span><span class="zan_count">赞:4</span></div>
+              </div>
+              <div class="item"><a href="http://www.html-js.com/article/2089">JS 数组的奇妙用法</a>
+                <div class="others"><span class="time">时间:2014-06-09</span><span class="visit_count">浏览:3501</span><span class="zan_count">赞:4</span></div>
+              </div>
+              <div class="item"><a href="http://www.html-js.com/article/2037"> JavaScript 也来挑战ACM</a>
+                <div class="others"><span class="time">时间:2014-05-19</span><span class="visit_count">浏览:2539</span><span class="zan_count">赞:5</span></div>
+              </div>
+              <div class="item"><a href="http://www.html-js.com/article/1780">Let's start Cocos2d-html5 2 : Dynamic World !</a>
+                <div class="others"><span class="time">时间:2014-02-09</span><span class="visit_count">浏览:2997</span><span class="zan_count">赞:1</span></div>
+              </div>
+              <div class="item"><a href="http://www.html-js.com/article/1778"> Let's start Cocos2d-html5 1 : Hello World!</a>
+                <div class="others"><span class="time">时间:2014-02-08</span><span class="visit_count">浏览:2223</span><span class="zan_count">赞:2</span></div>
+              </div>
+              <div class="item"><a href="http://www.html-js.com/article/1753">用node开发repl应用</a>
+                <div class="others"><span class="time">时间:2014-01-20</span><span class="visit_count">浏览:2153</span><span class="zan_count">赞:9</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-action module">
+            <div class="wrapper">
+              <div class="actions"><a href="javascript:void(0);" class="zan action"><i class="icon-thumbs-up"></i><em>赞</em> <span>4</span></a><span class="zanlogs"><a href="http://www.html-js.com/user/845" data-original-title="人称吉姆/刘指导，geek程序员，2B青年，文艺屌丝，百度无线前端码民。jimliu.net" class="tooltip-trigger"><img data-original="http://tp1.sinaimg.cn/1693534972/50/5668262728/1" src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1" style="display: inline;"></a><a href="http://www.html-js.com/user/1612" data-original-title="感谢太阳又升起，继续点燃我的梦。" class="tooltip-trigger"><img data-original="http://tp3.sinaimg.cn/2804071454/50/40006703378/1" src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1(3)" style="display: inline;"></a><a href="http://www.html-js.com/user/34" data-original-title="专注前端技术和关爱前端人员情感问题20年 http://www.html-js.com" class="tooltip-trigger"><img data-original="http://tp2.sinaimg.cn/1734409185/50/40022299601/1" src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1(4)" style="display: inline;"></a></span>
+              </div>
+              <div class="actions"><a target="_blank" href="http://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.html-js.com%2Farticle%2F2231&title=%E5%88%86%E4%BA%AB%E4%B8%80%E7%AF%87@%E6%B8%B8%E6%88%8F%E9%98%BF%E6%9F%B4%20%E7%9A%84%E5%8E%9F%E5%88%9B%E6%96%87%E7%AB%A0%E3%80%90%E6%A0%91%E8%8E%93%E6%B4%BE%E4%B8%8A%E7%9A%84Node.js%E3%80%91%E6%9D%A5%E8%87%AA@%E5%89%8D%E7%AB%AF%E4%B9%B1%E7%82%96%20%E4%B8%93%E6%A0%8F%E3%80%8CNode.js%E9%9D%9E%E6%AD%A3%E5%B8%B8%E7%A0%94%E7%A9%B6%E5%AE%A4%E3%80%8D%20%E3%80%82%E5%89%8D%E7%AB%AF%E4%B9%B1%E7%82%96%E6%98%AF%E4%B8%80%E4%B8%AA%E4%B8%93%E4%B8%9A%E7%9A%84%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%8E%9F%E5%88%9B%E5%86%85%E5%AE%B9%E7%A4%BE%E5%8C%BA&pic=http://www.html-js.com/uploads/article_thumb/2231.png&appkey=659341943" class="action"><i class="icon-new-window"></i><em style="background:none !important;float:none;display:inline;padding:0;" class="bds_more">分享到微博</em></a><a href="javascript:void(0);" class="add_fav action"><em>收藏</em> <span>1</span></a>
+              </div>
+            </div>
+          </div>
+          <div id="fixed-modules" class="" style="position: relative; top: 0px;"><a target="_blank" href="http://www.appcan.cn/" style="width:280px;height:120px;display:block;" class="ad-blank"><img src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1430307535247-前端乱炖.gif"></a><a target="_blank" href="http://www.jiankongbao.com/signup?ref=htmljs" style="width:280px;height:120px;display:block;" class="ad-blank"><img src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1428643513061-前端乱炖-首页右方图280-120.jpg"></a>
+            <!--a.ad-blank(target="_blank",href="https://coding.net/marketing/codeinsight?hmsr=http%3A%2F%2Fwww.html-js.com%2F&hmmd=%E5%9B%BE%E7%89%87%E5%B9%BF%E5%91%8A&hmpl=CodeInsight&hmkw=&hmci=",style="width:280px;height:120px;display:block;")-->
+            <!--  img(src="http://htmljs.b0.upaiyun.com/uploads/1425371986895-coding.png")--><a target="_blank" href="https://100offer.com/join/dun" style="display:block;width:280px;height:180px;" class="ad-blank"><img src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/1420011571271-560x360.jpg" style="width:280px;"></a>
+          </div>
+        </div>
+      </div>
+      <p>
+        <script id="bdshare_js" data="type=tools&amp;uid=2555549" src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/bds_s_v2.js"></script>
+        
+        <script type="text/javascript">
+        var bds_config={"bdText":"分享一篇@游戏阿柴 的原创文章【树莓派上的Node.js】来自@前端乱炖 专栏「Node.js非正常研究室」 {{前端乱炖是国内最专业的前端知识原创内容社区}}","bdPic":"http://www.html-js.com/uploads/article_thumb/2231.png","snsKey":{'tsina':'659341943','tqq':'','t163':'','tsohu':''}}
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+        </script>
+      </p>
+      <script id="tip_tpl" type="text/template">
+        {{#tips}}
+          <li class="ng-scope single-comment pin-comment">
+            <div class="comment-body ng-binding" >{{content}}</div>
+            <div class="comment-meta">
+              <span class="author-name ng-binding">— {{user_nick}} </span>
+              <time class="create-time" >{{time}}</time>
+            </div>
+          </li>
+          {{/tips}}
+      </script>
+    </div>
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/mustache.js"></script>
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/messageTip.js"></script><div class="message-tip" style="display: none;">欢迎光临</div>
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/loadingTip.js"></script><div class="loading-tip">正在加载中。。。</div>
+    <script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/lazyload.js"></script>
+    <script>
+      $(window).scroll(function(){
+        if($(window).scrollTop()+$(window).height()>=$(".comment").offset().top){
+          $(".comment-layer").addClass("hidden")
+        }else{
+        $(".comment-layer").removeClass("hidden")
+        }
+        })
+      $(".comment-layer").click(function(){
+        $("html,body").animate({
+          scrollTop:$(".comment").offset().top-200
+          })
+        $(".comment textarea").focus()
+        })
+      var comment_tpl = $("#comment-tpl").html()
+      //- loadingTip.show("评论加载中")
+      //- $.ajax({
+      //-   url:"/comment/article_2231",
+      //-   type:"get",
+      //-   dataType:"json",
+      //-   success:function(data){
+      //-     loadingTip.hide("正在提交中")
+      //-       if(data.success){
+      //-       for(var i=0;i<data.comments.length;i++){
+      //-       var comment = data.comments[i]
+      //-         var html = Mustache.render(comment_tpl,comment);
+      //-         $(".comment-list").append(html)
+      //-         $(".reply").click(function(){
+      //-   $("#comment-text").val("@"+$(this).attr("data-nick")+" ").focus()
+      //-    $("#comment-text")[0].setSelectionRange($("#comment-text")[0].value.length, $("#comment-text")[0].value.length)
+      //-   })
+      //-       }
+      //-       }else{
+      //-       alert(data.info)
+      //-       }
+      
+      //-   }
+      //-   })
+      $(".headpic img").lazyload();
+      $(".tooltip-trigger img").lazyload();
+      $(".reply").click(function(){
+        $("#comment-text").val("@"+$(this).attr("data-nick")+" ").focus()
+         $("#comment-text")[0].setSelectionRange($("#comment-text")[0].value.length, $("#comment-text")[0].value.length)
+        })
+      $("#comment-submit").click(function(){
+        var text = $("#comment-text").val();
+        if(!text){
+          messageTip.show("请输入评论内容");
+        }else{
+          loadingTip.show("正在提交中")
+           HtmlJS.util.ajax("/comment/add",{
+              md:text,
+              target_id:"article_2231"
+           },"post",function(data){
+              loadingTip.hide()
+                if(data.success){
+                $("#comment-text").val("")
+                var html = Mustache.render(comment_tpl,data.comment);
+                  $(".comment-list").prepend(html)
+                }else{
+                  alert(data.info)
+                }
+           },function(){
+           
+            },null,function(){
+            HtmlJS.util.ajax("/comment/add",{
+              md:text,
+              target_id:"article_2231"
+            },"post",function(data){
+              loadingTip.hide()
+                if(data.success){
+                $("#comment-text").val("")
+                var html = Mustache.render(comment_tpl,data.comment);
+                  $(".comment-list").prepend(html)
+                }else{
+                  alert(data.info)
+                }
+            },function(){
+            
+            },null,function(){
+            
+          })
+          })
+        }
+        })
+        
+        $(".zan").click(function(){
+          var self = this;
+            HtmlJS.util.ajax("/article/2231/zan",{
+              score:$(self).attr("data-index")
+            },"post",function(data){
+              loadingTip.hide()
+                if(data.success){
+                
+                  messageTip.show("成功！")
+                    $("em",self).html("已赞")
+                    $("span",self).html($("span",self).html()*1+1)
+                }else{
+                  alert(data.info)
+                }
+            },function(){
+            
+            },null,function(){
+            HtmlJS.util.ajax("/article/2231/zan",{
+              score:$(self).attr("data-index")
+            },"post",function(data){
+              loadingTip.hide()
+                if(data.success){
+                  messageTip.show("成功！")
+                    $("em",self).html("已赞")
+                    $("span",self).html($("span",self).html()*1+1)
+                }else{
+                  alert(data.info)
+                }
+            },function(){
+            
+            },null,function(){
+            
+          })
+          })
+          })
+          $('.user').tooltip({
+          placement:"bottom"
+          });
+          $(".add_fav").click(function(){
+            var self=this;
+            HtmlJS.util.ajax("/user/fav",{
+              uuid:"4424a27a-cf94-40a7-959b-ff252b05cb90"
+            },"post",function(data){
+                loadingTip.hide()
+                if(data.success){
+                  messageTip.show("收藏成功！")
+                    $("em",self).html("已收藏")
+                     $("span",self).html($("span",self).html()*1+1)
+                }else{
+                  alert(data.info)
+                }
+            },function(){},null,function(){
+                HtmlJS.util.ajax("/user/fav",{
+                  uuid:"4424a27a-cf94-40a7-959b-ff252b05cb90"
+                },"post",function(data){
+                    loadingTip.hide()
+                    if(data.success){
+                      messageTip.show("收藏成功！")
+                         $("em",self).html("已收藏")
+                          $("span",self).html($("span",self).html()*1+1)
+                    }else{
+                      alert(data.info)
+                    }
+                },function(){
+                })
+            })
+            });
+            $(document).ready(function(){
+                if($(window).width()>600){
+                  new Tip().init({
+                      selector:".post",
+                      url:"/tip/add",
+                      uuid:"2231"
+                  })
+                }
+                
+            })
+            
+    </script>
+    <div id="footer">
+      <div class="wrapper">
+        <div class="module">
+          <div style="font-size:12px;line-height:20px;">Power By NodeJS，本站所有代码的地址在<a href="https://github.com/xinyu198736/htmljs" target="_blank">这里</a>  浙ICP备12047043号  <a href="http://www.html-js.com/friendlink">友情链接</a>  本站云存储由<a href="https://www.upyun.com/" target="_blank">又拍云存储</a>提供,性能分析由<a href="http://oneapm.com/" target="_blank">OneAPM</a>提供。</div>
+        </div>
+      </div>
+    </div>
+    <div id="coin-fixed"><span id="gotop"><i class="icon-airplane"></i></span><span class="my-favs"><i class="icon-heart"></i><a href="http://www.html-js.com/user/fav"> 我的收藏      </a></span>
+    </div>
+    <script>
+      try{
+        $('.tooltip-trigger').tooltip({
+              placement:"bottom"
+              });
+      }catch(e){}
+      
+    </script>
+    <!--  var _gaq = _gaq || [];-->
+    <!--  _gaq.push(['_setAccount', 'UA-36222024-3']);-->
+    <!--  _gaq.push(['_trackPageview']);-->
+    <!---->
+    <!--  (function() {-->
+    <!--    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;-->
+    <!--    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';-->
+    <!--    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);-->
+    <!--  })();-->
+    <div class="hidden">
+      <script>
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2fc2fae0509f820259c1760fce28d7d2' type='text/javascript'%3E%3C/script%3E"));
+        
+      </script><script src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=2fc2fae0509f820259c1760fce28d7d2" target="_blank"><img border="0" src="./树莓派上的Node.js - 专栏 [] - 前端乱炖_files/21.gif" width="20" height="20"></a>
+    </div>
+  
+  <!--include ../googlead-->
+</body></html>
