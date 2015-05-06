@@ -1,0 +1,981 @@
+/* block/reset.css start */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0}
+fieldset,img{border:0;}
+:focus{outline:0;}
+ol,ul{list-style:none;list-style-position:outside;}
+table{border-collapse:collapse;border-spacing:0;}
+address,caption,cite,code,dfn,em,i,strong,th,var,optgroup{font-style:normal;font-weight:normal;}
+body,button,input,select,textarea{font:12px/1.5 微软雅黑,arial,sans-serif;}
+button,input,select,textarea,h1,h2,h3,h4,h5,h6{font-size:100%;}
+body{color:#333;min-width: 1120px;}
+a{color:#333;text-decoration:none;}
+a:hover{color:#f60;text-decoration:underline;}
+a:hover em,a:hover i,a:hover span{cursor:pointer;}
+.cf:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.cf{*zoom:1;}
+/*** nav-top **/
+.wrap-nav-top,.top{ width: 100%; background: #F3F3F3; border-bottom: 1px solid #e3e3e3;}
+.wrap-nav-top .navibar,.top .navibar{width: 1120px;border-bottom: 0;background-color: #F3F3F3;}
+.wrap-nav-top .navibar-wrap,.top .navibar-wrap{width: 100%;}
+/*** ivy ***/
+.ivy270 img{display: block;margin: 10px 0;}
+.ivy1110 img{display: block;margin: 10px 0;}
+/*top reset*/
+#ajaxLogon{display: none;}
+/*** footer reset ***/
+.footer{border-top:1px solid #eee;}
+body #bottom .links{background: none;color: #777}
+body #bottom .links a{color: #777;}
+body #bottom a.bottom_a{color: #777;}
+body #bottom .mid {color: #777;}
+/*** guide fixed ***/
+* html,* html body{background-image:url(about:blank);background-attachment:fixed}
+/* block/reset.css end */
+/* block/layout.css start */
+.header{}
+.wraper{background-color: #f4f4f4;padding: 7px 0}
+.wrap{width: 1120px;margin: 0 auto; }
+.col-a{width: 814px;float: left;}
+.col-b{width: 294px;float: right;}
+.block{background-color: #fff;border: 1px solid #e8e8e8;margin-bottom: 11px;padding: 0 11px;border-radius: 2px;}
+/* block/layout.css end */
+/* block/module.css start */
+/* header */
+.header{;}
+.header .logo{float:left;margin-right:30px;_display:inline;}
+.header .logo img{vertical-align:top;}
+.header .forum{float:left;font-size:20px;line-height:60px;}
+.header .forum:hover{text-decoration:none;}
+.findforums{float: left;width: 55px;height: 20px; line-height: 20px;text-align: center;color: #fff;background-color: #ff9800;margin-left: 10px;margin-top: 20px;}
+.findforums:hover{color: #fff;text-decoration: none;}
+.findforumlist{background-color: rgba(0,0,0,0.35);filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#52000000', EndColorStr='#52000000');padding: 5px;}
+:root .findforumlist{filter:none;}
+.findforumlist .innerwrap{background-color: #fff;padding: 15px 10px 15px 30px;position: relative;}
+.findforumlist .btn-close{position: absolute;width: 13px;height: 13px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) -321px 0 no-repeat;top: 15px;right: 15px}
+.findforumlist .tabmenu{height: 30px; line-height: 30px;overflow: hidden;margin-bottom: 10px;}
+.findforumlist .menu{float: left;margin-right: 25px;_display: inline;cursor: pointer;color: #777;font-size: 24px;}
+.findforumlist .menu-current{color: #f70;}
+.findforumlist .tabview{}
+.findforumlist .view{display: none;height: 370px;overflow: auto;}
+.findforumlist .view a{color: #777;font-size: 14px;}
+.findforumlist .view a:hover{color: #f70;}
+.findforumlist .section{margin-bottom: 15px;}
+.findforumlist .section .tit{height: 40px; line-height: 40px;}
+.findforumlist .section .tit a{font-size: 16px;font-weight: bold;}
+.findforumlist .section .tit b{color: #c00;}
+.findforumlist .list li{float: left;width: 140px;height: 26px; line-height: 26px; overflow: hidden;}
+.otherforums{float:left;height:60px;line-height:60px;position:relative;cursor:pointer;z-index:150;}
+.otherforums .mark{display:block;width:97px;height:60px;padding:0 8px 0 20px;background-color:#fff;position:absolute;z-index:300;}
+.otherforums .mark i{display:inline-block;width:7px;height:4px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -342px -8px;vertical-align:middle;margin-left:4px;margin-right:2px;/*_position:relative;_top:7px;*/line-height: 0;font-size: 0;zoom: 1;}
+.otherforums .drop{width:300px;padding:10px 0 10px 20px;position:absolute;left:0px;top:54px;background-color:#fff;border:1px solid #e9e9e9;box-shadow:1px 1px 5px #cecece;display:none;}
+.otherforums .drop a{float:left;height:28px;line-height:28px;width:75px;}
+.otherforums .drop a.last{color:#cc0000;}
+.otherforums-hover .mark{padding:0 7px 0 19px;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;height:55px;}
+.otherforums-hover .mark i{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -342px -1px;}
+.otherforums-hover .drop{display:block;}
+.otherforums .mark,.otherforums-hover .mark{_height:20px;_line-height:20px;_padding-top:20px;_padding-bottom:15px;}
+.userlogin{float:right;}
+.userlogin .loading{height:60px;line-height:60px;}
+.unloginbox,.loginingbox{display:none;}
+.unloginbox li{float:left;height:60px;line-height:60px;}
+.unloginbox .mark{height:20px;line-height:20px;margin-top:20px;border-left:1px solid #fff;border-right:1px solid #e9e9e9;position:absolute;left:0px;top:0px;background-color:#fff;z-index:300;zoom:1;}
+.unloginbox .type{background-color:#fff;border:1px solid #e9e9e9;width:130px;position:absolute;left:0px;top:40px;display:none;padding:10px 0;z-index:300;border-top: 0;}
+.unloginbox .type a{display:block;height:30px;line-height:30px;padding-left:50px;overflow:hidden;background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png);background-repeat:no-repeat;}
+.unloginbox .type a.icon-pc{background-position:-307px -148px;}
+.unloginbox .type a.icon-qq{background-position:-307px -179px;}
+.unloginbox .type a.icon-weibo{background-position:-307px -210px;}
+.unloginbox .type a.icon-taobao{background-position:-307px -117px;}
+.unloginbox li.login{width:107px;position:relative;*z-index: 300;}
+.unloginbox li.login .mark{width:105px;}
+.unloginbox li.login .mark a{float:left;padding-left:50px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -307px -54px;}
+.unloginbox li.login .mark i{float:left;width:7px;height:4px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -342px -8px;margin-top:9px;margin-left:5px;overflow: hidden;}
+.unloginbox li.login-hover .mark{border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;margin-top:0px;padding-top:20px;padding-bottom:20px;}
+.unloginbox li.login-hover .mark i{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -342px -1px;}
+.unloginbox li.login-hover .type{display:block;}
+.unloginbox li.reg{width:64px;text-align:center;}
+.loginingbox{;}
+.loginingbox dl{position:relative;float:left;width:102px;height:60px;*z-index: 300}
+.loginingbox dt{width:100px;border-left:1px solid #fff;border-right:1px solid #fff;height:20px;line-height:20px;margin-top:20px;position:absolute;left:0px;top:0px;background-color:#fff;z-index:300;zoom:1;}
+.loginingbox dt a{float:left;padding-left:45px;}
+.loginingbox dt a:hover{text-decoration: none;}
+.loginingbox dt .arrow{float:left;width:7px;height:4px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -342px -8px;margin-top:9px;margin-left:5px;}
+.loginingbox dl.hover dt{border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;margin-top:0px;padding-top:20px;padding-bottom:20px;}
+.loginingbox dd{background-color:#fff;border:1px solid #e9e9e9;width:100px;position:absolute;left:0px;top:40px;display:none;padding:10px 0;z-index:300;border-top: 0;}
+.loginingbox dd a{display:block;height:30px;line-height:30px;padding-left:20px;overflow:hidden;}
+.loginingbox dd a:hover{background-color:#f0f0f0;text-decoration:none;color:#333;cursor:pointer;}
+.loginingbox dd a span{float:left;}
+.loginingbox dd a em{float:left;padding-left:12px;}
+.loginingbox dl.hover dd{display:block;}
+.loginingbox dl.hover .arrow{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -342px -1px;}
+.loginingbox dl.msg dt em{display:inline-block;position:absolute;left:64px;top:-4px;color:#fff;background-color:#f60;height:12px;line-height:12px;font-size:10px;font-weight:bold;padding:0 3px;font-family:verdana;-webkit-transform:scale(0.85) translate(2px,-1px);-o-border-radius:2px;-ms-border-radius:2px;border-radius:2px;white-space:nowrap;}
+.loginingbox .msg{width: 120px;}
+.loginingbox .msg dt{border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;padding-right: 14px;}
+.loginingbox .msg dt a{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -307px -96px;}
+.loginingbox .msg dd{width:114px;}
+.loginingbox .hover .msgmark em{top:16px;}
+.loginingbox .user{width:130px;margin-right:-1px;*z-index:300;}
+.loginingbox .msg{*z-index:300;}
+.loginingbox .user dt{width:128px;}
+.loginingbox .user dt a{padding-left:15px;width:90px;height:20px;overflow:hidden;word-break:break-all;}
+.loginingbox .user dt img{margin-right:10px;vertical-align:bottom;}
+.loginingbox .user dd{width:128px;}
+.loginingbox .set dt a{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -307px -75px;}
+.loginingbox .set dd{z-index:300;}
+.loginingbox .hover .setmark{margin-left:-1px;width:101px;}
+.loginingbox .hover .setmark a{margin-left:1px;}
+.loginingbox .hover .setlinks{left:-1px;width:101px;}
+.loginingbox .hover .usermark{margin-right:-1px;}
+.header .row-2{background-color:#ff7700;height:40px;line-height:40px;}
+.header .nav{float:left;height:40px;overflow:hidden;}
+.header .nav li,.header .nav a{float:left;}
+.header .nav a{color:#fff;float:left;font-size:16px;padding:0 10px;}
+.header .nav a:hover{background-color:#ee5500;color:#fff;text-decoration:none;}
+.header .search{float:right;width:295px;height:40px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat 0 0}
+.header .search .type{width: 62px;height: 30px; line-height: 30px;float: left;margin-top: 5px;position: relative;border-right: 1px solid #fbb280;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll 0 -82px;}
+.header .search .type dt{height: 30px;padding-left: 13px;color: #ff7700;font-size: 14px;cursor: pointer;*z-index: 1000}
+.header .search .type dd{width: 61px;border: 1px solid #fbb280;position: absolute;left: 0px;top: 0px;display: none;z-index: 1000;}
+.header .search .type dd a{display: block;height: 28px; line-height: 28px;background-color: #fff;color: #ff7700;padding-left: 13px;font-size: 14px;}
+.header .search .type dd a:hover, .header .search .type dd a.first:hover{background-color: #ffdec8;text-decoration: none;}
+.header .search .type dd a.first{background:#fff url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -298px -283px;}
+.header .search .ipt{border:0;background:none;width:190px;padding:0 4px;height:20px;line-height:20px;margin-left:4px;margin-top:10px;margin-right:4px;float:left;_display:inline;color:#333}
+.header .search .btn{float:left;width:17px;height:17px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat -296px 0;margin-top:12px}
+.header .searching{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat 0 -41px}
+.header .searching .btn{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat -296px -18px}
+
+/** crumb **/
+.crumb{height:24px;margin-bottom: 7px;vertical-align: middle;color: #999;font:12px/24px "Microsoft YaHei"}
+.crumb a.home{width: 16px;height: 13px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) -144px -116px no-repeat;overflow: hidden; margin-right: 5px;margin-left: 0;display: inline-block;vertical-align: middle;zoom: 1;*display: inline;*margin: 5px 5px 6px 0 ;}
+.crumb a,.crumb i{margin: 0 5px;}
+.crumb a{color: #777}
+.crumb i{color: #333;}
+.crumb a:hover{color: #f60;}
+.crumb a.btn-collect{width: 53px;height: 20px;display: inline-block;vertical-align: middle;zoom: 1;text-indent: -9999px;overflow: hidden;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) -78px -136px; no-repeat;*margin:2px 0}
+.crumb a.btn-collect:hover{background-position: -144px -136px;}
+.crumb a.collected{background-position: -78px -160px;}
+.crumb a.collected:hover{background-position: -144px -160px;}
+
+/** trag **/
+.trag{ width: 0; height: 0; overflow: hidden;border-width: 5px;vertical-align: middle;position: absolute; -webkit-transition:-webkit-transform .2s; transition:transform .2s;-moz-transform-origin: center 20%; -webkit-transform-origin: center 20%; -o-transform-origin: center 20%; -ms-transform-origin: center 20%; transform-origin: center 20%;  }
+.trag-gray-t{border-style: solid dashed dashed dashed; border-color: #777 transparent transparent transparent;}
+.trag-white-t{border-style: solid dashed dashed dashed; border-color: #fff transparent transparent transparent;}
+
+/*** btn-post ***/
+.fixblock .btn-post{margin-bottom: 0px;}
+.btn-post{width: 294px;position: relative; height: 37px;z-index: 150;margin-bottom: 10px;}
+.btn-post a{ display: block; }
+a.btn-post-top{ height: 37px; font: 16px/37px "Microsoft YaHei"; color: #fff; text-decoration: none; width: 92px; text-align: left; background: #0685e6; color: #fff; text-decoration: none; position: relative;padding-left: 110px; padding-right: 92px;border-radius: 2px;}
+a.btn-post-top:hover{color: #fff;text-decoration: none;}
+.btn-post-top .trag{top:17px;margin-left: 3px;}
+.btn-post-sub{ display: none;background-color: #fff;border-bottom: 1px solid #dadada;}
+.btn-post-sub li{position: relative;}
+.btn-post-sub .hot{position: absolute;left: 165px;top: 2px;width: 23px;height: 15px;display: block;overflow: hidden;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite_v2.png) no-repeat scroll -238px -133px;}
+.btn-post-sub a{font-size: 16px;height: 38px; line-height: 38px; text-decoration: none; display: block;text-align: left; padding-left: 110px;border-left: 1px solid #dadada;border-right: 1px solid #dadada;}
+.btn-post-sub a:hover{background: #0685e6;text-decoration: none;color: #fff;border-left: 1px solid #0685e6;border-right: 1px solid #0685e6;}
+.btn-post-hover .btn-post-top .trag{ -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -o-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+.btn-post-hover .btn-post-sub{ display: block; width: 100%; position: absolute; top: 100%;z-index: 150; }
+
+/*** area-pager ***/
+.area-pager .btn-next{ display: block; height: 43px; background: #f4f4f4; color: #999; text-align: center; font:16px/43px "Microsoft YaHei"; text-decoration: none;margin-bottom: 20px;}
+.area-pager .btn-next:hover,.area-pager .btn-next:active{ background: #e6e6e6; }
+.pager{float: left;}
+.pager span,.pager a,.pager .dot{ display: inline-block; *display: inline; *zoom: 1; margin-right: 5px; font:12px/18px "SimSun"; padding: 6px 12px;vertical-align: middle; }
+.pager span{ background: #f90; color: #fff; }
+.pager span.dot{background-color: #f4f4f4;color: #777;}
+.pager a{ background: #f4f4f4; color: #777; text-decoration: none; }
+.pager a:hover{ background: #e6e6e6; text-decoration: none; }
+.pager .ipt{border: 1px solid #ebebeb; color: #777; height: 28px; line-height: 28px; text-align: center; vertical-align: middle; width: 40px;}
+.pager span.total{background: none; color: #777; margin-right: 0; padding: 6px 5px;}
+
+/*** box **/
+.box{}
+.box-hd{height: 35px;line-height: 35px;overflow: hidden;padding-top: 8px;}
+.box-hd .mark{font-size: 16px;color: #f70;float: left;}
+.box-hd .mark-sub{float: right;}
+.box-hd .mark-sub a{font:12px/35px "Microsoft YaHei";color: #777;}
+.box-hd .mark-sub a:hover{color: #f60;}
+.box-bd{padding-bottom: 10px;}
+/*** box extend **/
+.box-b .box-hd{border: 0 none;height: 37px;}
+.box-b .txts{padding: 0 20px 5px 10px;overflow: hidden;}
+.box-c{margin: 0 0 20px;}
+.box-c .box-bd{padding: 8px 10px;}
+/*** ul txts **/
+.txts{padding-top: 5px;}
+.txts li{padding-left: 12px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) -338px -12px no-repeat; height: 26px;font:12px/26px "Microsoft YaHei";color: #333;overflow: hidden;}
+.box-side .txts li{_width: 220px;}
+
+
+
+
+/*** 相关产品 ***/
+.area-pdt-info{padding-top: 5px;}
+.area-pdt-info .area-pic{ float: left; display: inline; width: 98px; height: 73px; border: 1px solid #eee; overflow: hidden; margin-right: 15px; }
+.area-pdt-info .area-pic a{ display: block; height: 75px; width: 100px; text-align: center; margin: -1px; }
+.area-pdt-info .area-pic img{ vertical-align: middle; }
+.area-pdt-info .area-txt{ font:12px/22px "Microsoft YaHei"; }
+.area-pdt-info .area-txt .tit,.area-pdt-info .area-txt .price,.area-pdt-info .area-txt .others{ display: block; margin-bottom: 5px; }
+.area-pdt-info .area-txt .price{color: #999;}
+.area-pdt-info .area-txt .price .count{color: #f60;}
+.area-pdt-info .area-txt .others,.area-pdt-info .area-txt .others a{color: #999;text-decoration: none;}
+.area-pdt-info .area-txt .others a:hover{color: #f60;text-decoration: underline;}
+.area-pdt-info .area-txt .others i{margin: 0 10px;color: #dedede;}
+
+/*** 推荐阅读 */
+.slide-side-pic { width:270;height: 140px;position:relative; zoom:1;overflow: hidden;padding-top: 5px;}
+.slide-side-pic .slide-wrap {position:relative; zoom:1;}
+.slide-side-pic .slide { height:140px; overflow:hidden; position:relative}
+.slide-side-pic .slide li {width: 270px; float: left;position: relative;height: 140px;}
+.slide-side-pic .slide li img { vertical-align: top}
+.slide-side-pic .btn{position: absolute;width: 26px;height: 51px;top: 50%;margin-top: -25px;z-index:2;background:url(http://www1.pconline.com.cn/2014/index/images/bg_24.png) no-repeat; -webkit-transition:right .2s,left .2s;-moz-transition:right .2s,left .2s;-ms-transition:right .2s,left .2s;-o-transition:right .2s,left .2s;transition:right .2s,left .2s}
+.slide-side-pic .prev { background-position:0 0;left:-26px;}
+.slide-side-pic .next { background-position:-27px 0px;right:-26px;}
+.slide-side-pic .prev:hover{background-position: -54px 0;}
+.slide-side-pic .next:hover{background-position: -81px 0;}
+.slide-side-pic-hover .prev{left: 0px;}
+.slide-side-pic-hover .next{right: 0px;}
+.slide-side-pic .sTit{position: absolute;bottom: 0;left:0;width: 100%; display: block;height: 30px;line-height: 30px;color: #fff;text-decoration: none;text-align: center;background:rgba(0,0,0,0.5);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#78000000,endColorstr=#78000000)}
+:root .slide-side-pic .sTit{filter:none;}
+.slide-side-pic .sTit a{color: #fff;text-decoration: none;}
+.slide-side-pic .sTit a:hover {color: #f60; text-decoration: underline;}
+
+.area-blocks{margin:25px 0;}
+.area-block-inner{margin-top: 30px;margin-bottom:25px;height: 110px;overflow: hidden;}
+
+/*** 论坛热贴  ***/
+.block-hotlist .box-hd .toc{float: left;margin-right: 20px;font-size:16px;color: #333;cursor: pointer;}
+.block-hotlist .box-hd .current{color: #f60;}
+.block-hotlist .contentdiv{width: 790px;overflow: hidden;}
+.block-hotlist .contentdiv .txts{margin-right: -20px}
+.block-hotlist .contentdiv .txts li{float: left;margin-right:20px;margin-bottom: 0;width: 230px;overflow: hidden;word-break:keep-all;word-wrap:normal;white-space: nowrap;-o-text-overflow: ellipsis;text-overflow: ellipsis;}
+/*** 论坛热词  ***/
+.block-hotword {height: 105px;overflow: hidden;}
+.block-hotword a{padding: 0;background: none;float: left;margin:5px 15px 4px 0;white-space: nowrap;color: #777;text-decoration: none;}
+.block-hotword a:hover{color: #f70;text-decoration: underline;}
+/*** 论坛说明  ***/
+.block-foruminfo{line-height: 22px; color: #999;padding: 5px 0;}
+
+
+/*** guide ***/
+.guide{width: 60px;margin-left: 570px;position: fixed;left: 50%;bottom: 134px;_position: absolute;_top: expression(documentElement.scrollTop+documentElement.clientHeight - this.clientHeight - 134+'px');display: none;}
+.guide a{display: block;width: 60px;height: 50px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite_v2.png) no-repeat;margin-top: 10px;text-decoration: none;font:16px/50px "Microsoft YaHei";text-align: center;color: #fff;border-radius: 2px;}
+.guide a span{display: none;text-align: center;}
+.guide a:hover{text-decoration: none;background-color: #f90;color: #fff;}
+.guide a:hover span{display: block;width: 60px;background: #f90;}
+.guide .find{background-position: -84px -236px;}
+.guide .report{background-position:-146px -236px;}
+.guide .edit{background-position: -83px -185px;}
+.guide .top{background-position: -145px -185px;}
+
+/*** list-admin ***/
+.list-admin .tit{float: left;color: #777;}
+.list-admin .item{font:12px/27px "Microsoft YaHei";}
+.list-admin .item:after{content:"\20";clear: both;display: block;height: 0;overflow: hidden;}
+.list-admin .item{*zoom: 1;}
+.list-admin a{float: left;margin-right: 15px;color: #333;text-decoration: none;}
+.list-admin a:hover{color: #f60;text-decoration: underline;}
+.icon-admin{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/list-spride.png) -38px 0px no-repeat; display: inline-block;width: 16px;height: 17px;vertical-align: middle;margin-right: 5px;*margin: 9px 5px 9px 0;line-height: 0;font-size: 0;}
+
+/*** exif ***/
+.exifinfo{display: none;}
+.exifbox{position: absolute;height: 30px; line-height: 30px;width: 40px;}
+.exifbox a{color: #f70;}
+.exifbox .mark{display: block;text-align: center;height: 30px;background-color:rgba(0,0,0,0.5);color: #fff;cursor: pointer;filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#7f000000', EndColorStr='#7f000000');}
+.exifctn{position: absolute;width: 220px;line-height: 22px;padding: 10px 0 10px 18px;left: -10px;bottom: -10px;background-color:rgba(0,0,0,0.7);color: #fff;display: none;filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#b2000000', EndColorStr='#b2000000');}
+:root .exifctn,:root .exifbox .mark{filter:none;}
+.exifbox-show .exifctn{display: block;}
+.exifbox-show .mark{display: none;}
+
+/*** poptip ***/
+.poptip{position: absolute;background-color: #fff8f2;border: 1px solid #fae1cd;padding: 5px 25px 5px 10px;line-height: 20px;border-radius: 2px;z-index: 1000}
+.poptip em{display: block;position: absolute;overflow: hidden;}
+.poptip .btn{width: 7px;height: 7px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/common-sprite.png) no-repeat scroll -18px 0;top: 10px;right: 10px;cursor: pointer;}
+.poptip .corner{width: 17px;height: 14px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/common-sprite.png) no-repeat scroll 0 0;left: 16px;bottom:-14px;}
+/* block/module.css end */
+ /* block/unit.css start */
+/*角色图标*/
+/* 1=版主 2=版副 3=嘉宾 4=达人 5=站长 */
+.roleicon{ display:inline-block; width:45px; height:15px; overflow:hidden; background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite_v2.png)}
+.roleicon-1{ background-position:-63px -99px}
+.roleicon-2{ background-position:-109px -99px}
+.roleicon-3{ background-position:-155px -99px}
+.roleicon-4{ width:27px; height:16px; background-position:-203px -82px}
+.floorlist .roleicon-4{width:63px; height:15px; background-position:-195px -116px}
+.roleicon-5{ background-position:-201px -99px}
+/*水印图标*/
+/* a=精华1 b=精华2 1=编辑推荐 2=首页推荐*/
+.watericon{ display:block; position:absolute; z-index:50; overflow:hidden; background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png); top:0px}
+.watericon-a,.watericon-b{ width:105px; height:78px}
+.watericon-a{ background-position:0 0; right:0px}
+.watericon-b{ background-position:-105px 0; right:110px}
+.watericon-1{ width:152px; height:94px; background-position:0 -79px; top:80px; right:0px}
+.watericon-2{ width:152px; height:86px; background-position:0 -174px; top:80px; right:150px}
+.watericon-3{ width:152px; height:86px; background-position:0 -174px; top:80px; right:150px}
+/*帖子类型图标*/
+/* 1=精华1 2=精华2 3=热帖 4=新帖 5=推荐 6=锁帖 7=评分 */
+.typeicon{ display:inline-block; width:27px; height:16px; overflow:hidden; background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite_v2.png)}
+.typeicon-1{ background-position:-63px -82px}
+.typeicon-2{ background-position:-91px -82px}
+.typeicon-3{ background-position:-119px -82px}
+.typeicon-4{ background-position:-147px -82px}
+.typeicon-5{ background-position:-175px -82px}
+.typeicon-6{ background-position:-231px -82px;width: 14px;height: 16px;}
+.typeicon-7{ background-position:-246px -82px}
+.typeicon-pk{background-position: -247px -99px;}
+.typeicon-vote{background-position: -210px -132px;}
+.typeicon-reward{background-position: -275px -99px;}
+.typeicon-reward2{background-position: -259px -116px;}
+.typeicon-active{background-position: -274px -82px;}
+.typeicon-trade{background-position: -262px -132px;}
+/*小三角*/
+.triangle{ display:inline-block; width:7px; height:4px; overflow:hidden; background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite_v2.png) no-repeat scroll -342px -8px}
+.triangle-up{ background-position:-342px -1px}
+.triangle-down{ background-position:-342px -8px}
+/*按钮*/
+#f_controls .toolwrap a,.editorbtn{ display:inline-block; width:18px; height:18px; margin-right:5px; background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite_v2.png); border:1px solid #fafafa; vertical-align:middle}
+#f_controls .toolwrap a:hover,#f_controls .toolwrap a.hover,.editorbtn:hover{ background-color:#fefefe; border:1px solid #7fcae1;color: #333;}
+#swfwrapubb{ left: 96px; bottom: 100%; top:auto; }
+#swfwrapubb .before { position: absolute; width: 10px; height: 9px; background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite_v2.png) -184px -116px; left: 35px; top: 100%; }
+.editorbtn-post{ display:inline-block; width:70px; height:26px; line-height:26px; background-color:#f70; color:#fff; font-size:14px; text-align:center}
+.editorbtn-post:hover{ color:#fff; text-decoration:none}
+.editorbtn-sending,.editorbtn-sending:hover{ background-color:#a3a3a3; cursor:default}
+#f_bold{ background-position:0 -115px}
+#f_forecolor{ background-position:-18px -115px}
+#f_url{ background-position:-36px -115px}
+#f_sml,.editorbtn-emo{ background-position:-54px -115px}
+#f_image,.editorbtn-img{ background-position:-72px -115px}
+/*广告位*/
+.ivybox{width:1120px;line-height:0;font-size:0;margin: 0 auto}
+.ivybox img,.ivybox object,.ivybox embed,.ivybox iframe{vertical-align:top;display:block;margin:5px auto;}
+.ivybox object embed{margin:0}
+.area-main .col-a .ivybox{width: 814px;}
+.area-main .col-b .ivybox{width: 294px;}
+/* block/unit.css end */
+/*** function(block/function.css) ****/
+.clearfix:after{content: "\20";display: block;clear: both;height: 0;line-height: 0;overflow: hidden;}
+.clearfix{*zoom:1;}
+.fl{float: left;}
+.fr{float: right;}
+.bfc{overflow: hidden;zoom: 1;}
+.toe{overflow: hidden;word-break:keep-all;word-wrap:normal;white-space: nowrap;-o-text-overflow: ellipsis;text-overflow: ellipsis;*white-space: normal;*word-break:break-all;}
+/* block/skin.css start */
+/*color*/
+.orange, a.orange, a.orange:hover{ color:#f70 !important; }
+.gray-1, a.gray-1{ color:#777 !important; }
+a.gray-1:hover{ color:#f70 !important; }
+.gray-2, a.gray-2{ color:#a7a7a7 !important; }
+a.gray-2:hover{ color:#f70 !important; }
+a.online, a.online:hover{ color:#f70 !important; }
+/* block/skin.css end */
+/** popbox **/
+.popbox-container_{width:386px; background-color: #fff;border: 1px solid #ccc;box-shadow:0 0 10px rgba(0, 0, 0, 0.3);z-index: 1000;border-radius: 5px;}
+.pop-header{ padding:0 13px; height: 40px; border-bottom: 1px solid #dfdfdf; font:14px/40px "Microsoft YaHei"; color: #333; cursor: move;}
+.pop-header:after{ content:""; display: block; height: 0; overflow: hidden; clear: both; }
+.pop-header{ zoom: 1; }
+.pop-header-title{ float: left; }
+.pop-header-close{ float: right; width: 13px; height: 13px; background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) -321px 0 no-repeat; margin-top: 14px; }
+.pop-footer{ height: 30px; padding: 13px; text-align: right; }
+.pop-section{ padding:0 13px; }
+.tips-info{ font:14px/24px "Microsoft YaHei"; margin:10px 0; }
+.tips-error,.tips-warming{ font:12px/24px "Microsoft YaHei"; margin:10px 0; color: #c00; display: none;word-wrap:break-word;}
+/** popbox-info **/
+.pop-info .tips-info{ text-align: center; color: #333; padding:30px 13px; }
+/** popbox-admin **/
+.form-wrap{ background: #fff; font:14px/24px "Microsoft YaHei";}/*表单父容器*/
+.radio-item,.checkbox-item,.select-item,.input-item,.search-item,.date-item{ margin: 12px 0; }/*统一表单单元间距*/
+.radio-item input,.checkbox-item input,.radio,.checkbox{ margin-right: 3px; padding:0; width:13px; height:13px; font:13px Helvetica, Arial, sans-serif; vertical-align:-1px; *vertical-align:middle; _vertical-align:2px; }/*radio、checkbox的垂直居中*/
+/*单选单元样式*/
+.radio-item .tit{ display: block; }
+.radio-item label,.checkbox-item label{ margin-right: 10px;display: inline-block; }
+/*select样式重置*/
+select{ height:22px; line-height: 18px; font-size: 12px; padding: 2px 0; outline: none;border: 1px solid #ccc;}
+/*输入框单元样式*/
+.radio-item label,.checkbox-item label{ margin-right: 10px; }
+.input-item input{padding: 4px;border: 1px solid #CCCCCC;	font:12px/1.5 Helvetica,Arial,sans-serif;vertical-align: middle;width: 50px;}
+input.text-long{width: 250px;}
+.search-item{position: relative;*z-index: 100;}
+.search-result{background-color: #fff; border: 1px solid #ccc; left: 124px; padding: 5px 10px; position: absolute; top: 27px; width: 440px; z-index: 100; display: none;}
+.search-result .hd{text-align: right;}
+.search-result .bd{height: 200px;overflow: auto;font-size: 12px;}
+.search-tip{text-align: center;padding-top: 80px;display: block;}
+.selectitem{height: 24px; line-height: 24px; overflow: hidden;}
+.selectitem span {float: left;}
+.selectitem .btn{float: right;}
+#JsearchForum{display: none;}
+#JsearchBtn{width: 55px;height: 26px;text-align: center;background: #f3f3f3;border: 1px solid #d0d0d0;display: inline-block;vertical-align: middle;line-height: 26px;text-decoration: none;}
+#Jdateinput{border: 1px solid #ccc;height: 20px;}
+/*确定按钮样式*/
+.pop-submit,.pop-cancel,.pop-confirm{ width: 70px; height: 29px; border: none; background: #f90; text-align: center; font:14px/30px "Microsoft YaHei"; color:#fff; display: inline-block; zoom: 1; text-decoration: none;margin-left: 10px;border-radius: 3px;}
+.pop-submit:hover,.pop-cancel:hover,.pop-confirm:hover{color: #fff;text-decoration: none;}
+.pop-submit:hover,.pop-confirm:hover{background-color: #ff7700;}
+.pop-cancel{margin-left: 10px;background-color: #b2b2b2;}
+.pop-sending{background-color: #dcdcdc;cursor: default;}
+/*操作原因模块*/
+.reason-box{padding: 0 13px}
+.reason-box .hd{height: 30px; line-height: 30px;overflow: hidden;}
+.reason-box .hd .mark{font-size: 14px;}
+.selectreason{border: 1px solid #ccc;padding: 6px 8px;margin-bottom: 10px;height: 72px;overflow: auto;}
+.selectreason a{display: block;height: 24px; line-height: 24px;overflow: hidden;}
+.selectreason a:hover{text-decoration: none;background-color: #f4f4f4;}
+.textarea-box .box-hd{height: 24px; line-height: 24px; overflow: hidden;margin-bottom: 10px;color: #333;}
+.textarea-box .box-hd .mark{float: left;}
+.textarea-box .box-hd .mark-sub{float: right;}
+.JSelect{ width: 20px; height: 20px; position: relative; border: 1px solid #cccccc; background: #fbfbfb; cursor: pointer; display: inline-block;vertical-align: -6px;*z-index: 10;}
+.JSelect .trag{ top:8px; left:5px; }
+.JSelectDrop{ position: absolute; width: 48px; padding:5px 10px; border: 1px solid #cccccc; background: #fbfbfb; top: 100%; left:-1px; margin-top: -1px; display: none;line-height: 20px;font-size: 12px;z-index: 10;}
+.JSelectDrop li a{display: block;}
+.JSelect-hover .JSelectDrop{display: block;}
+#JReasonArea,.textarea-box .textarea{ width: 348px; height: 50px; padding:5px; resize:none; font:12px/150% "Microsoft YaHei"; vertical-align: top;border: 1px solid #ccc;}
+
+/*高亮色块定制样式*/
+em.color-block{display: inline-block;vertical-align: middle;width: 20px;height: 20px;line-height: 20px;color: #fff;text-align: center;}
+em.colorc00{background-color: #c00}
+em.color039{background-color: #039}
+em.black{background-color: #000}
+/*授勋弹窗tab及勋章多选列表定制样式*/
+.medal-item input,.medel-item img{vertical-align: middle;}
+.tab-medal .pagination{margin-bottom: 10px;}
+.tab-medal .pagination:after{content:"";display: block;height: 0;clear: both;overflow: hidden;}
+.tab-medal .pagination{zoom: 1;}
+.tab-medal .pagination i{float: left;}
+.tab-medal .pagination a{text-decoration: none;font-size: 12px;margin-left: 15px;}
+.tab-medal .pagination a.current{color: #f60;}
+.tab-medal .listWrap{position: relative;}
+.tab-medal .contentdiv{height: 180px;overflow: auto;display: none;}
+.medal-item{height: 30px; line-height: 30px;padding: 5px 0;}
+.medal-item label{cursor: pointer;}
+.his-item {margin: 12px 0;}
+.his-item .tit{display: block;}
+.his-item ul{background: #fafafa;}
+.his-item .btnlink{color: #c00;}
+.tip-empty{text-align: center;padding: 40px 0 20px;}
+/*评分定制样式*/
+.ipt-setgrade{width: 68px;height: 20px; line-height: 20px;border: 1px solid #ccc;padding:0 5px;position: relative;}
+.sel-setgrade{width: 100px;margin-left: -78px;}
+.pop-cancelgrade #JReasonArea{width: 460px;}
+.table-item{font-size: 12px;margin-bottom: 15px;max-height: 150px;overflow-y: auto;overflow-x: hidden;_height:150px;}
+.table-item #JReasonArea{width: 560px;}
+.table-item table{width: 100%;}
+.table-item td,.table-item th,.table-item input{vertical-align: middle;text-align: left;}
+.table-item td,.table-item th{border-bottom: 1px solid #eee;}
+.table-item th{padding-top: 5px;font-weight: bold;}
+.table-item td{padding: 3px 0;}
+.table-item .col-ipt{width: 30px;}
+.table-item .col-user{width: 90px;}
+.table-item .col-date{width: 120px;}
+.table-item .col-count{width: 90px;}
+.table-item .col-reason{}
+/*发私信定制样式*/
+.messageBox{}
+.messageBox .captch{float: left;}
+.messageBox .ipt-captch{border: 1px solid #ccc;width: 50px;padding: 0 5px;height: 18px; line-height: 18px;margin-right: 5px;}
+.messageBox .img-captcha{margin-right: 5px;top: 5px;position: relative;}
+.messageBox .pop-submit{float: right;}
+/*活动报名定制样式*/
+.pop-activeform .input-item{text-align: right;}
+.pop-activeform .input-item em{color: #f70;margin-right: 4px;vertical-align: bottom;}
+.pop-activeform input.text-long{width: 268px;}
+.pop-activeform .textarea{border: 1px solid #ccc;vertical-align: top; width: 268px; height: 80px; padding: 4px;}
+.pop-activeform .pop-footer{padding-top: 0px;}
+/*记录*/
+.search-select{margin-bottom: 10px;max-height:100px;_height:100px;overflow: auto;}
+.record-item{max-height: 100px;overflow-y: auto;overflow-x: hidden;_height:100px;}
+/*提示*/
+.pop-loading{text-align: center;padding: 20px}
+.pop-alert{height: 100px; line-height: 100px;text-align: center;font-size: 18px;}
+  
+/******************** topic.css start *******************/
+.block-topic{padding-bottom: 20px;}
+/*.area-main{margin-bottom:25px}*/
+.floorname{float:right;padding: 0 5px;cursor: pointer;height: 18px; line-height: 18px;background-color: #f4f4f4;color: #999;border: 1px solid #f4f4f4;}
+.floorname-top{color:#f70;}
+.floorname.zeroclipboard-is-hover{border: 1px solid #f70;}
+.hidecont{height:0px;overflow:hidden}
+.hidecont span.txt{display:block;font-size:16px;font-weight:bold;color:#f60}
+.hidecont-hide{height:auto;width:375px;border:1px solid #ffb978;margin:10px 0;text-align:center;padding:12px 0}
+.hidecont-show{height:auto;margin:10px 0}
+.hidecont-show .txt-top{border-bottom:1px dashed #333;margin-bottom:12px;padding-bottom:6px}
+.hidecont-show .txt-btm{border-top:1px dashed #333;margin-top:12px;padding-top:6px}
+.medalbox{height:20px;position:relative}
+.medalbox .inner{position:absolute;left:0px;top:0px;background-color:#fff;height:20px;overflow:hidden;z-index:100}
+.medalbox img{float:left;margin-right:5px;margin-bottom:5px;_display:inline;opacity:0.7;filter:alpha(opacity=70)}
+.medalbox img:hover{opacity:1;filter:alpha(opacity=100)}
+.medalbox .btn{float:left;width:18px;height:18px;border:1px solid #ccc;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -90px -115px;margin-bottom: 5px;}
+.medalbox .btn-on{background-position:-125px -115px}
+.medalbox-open .btn{display: none;}
+.medalbox-open .inner{height:auto;border:1px solid #d8d8d8;padding:10px 5px 5px 10px;left:-11px;top:-11px;box-shadow:0px 0px 4px #c4c4c4;z-index: 105}
+.medalbox-open .inner img{opacity:1;filter:alpha(opacity=100)}
+.levelbox{height:14px;line-height:14px;border:1px solid #7accfe;position:relative}
+.levelbox span{float:left;padding:0 10px;cursor:pointer}
+.levelbox .mark{color:#fff;background-color:#7accfe}
+.levelbox .txt{color:#7accfe;background-color:#fff}
+.levelbox .des{display:none;position:absolute;z-index:110;width:220px;background-color:#fff;border:1px solid #dadada;left:0px;top:-62px;padding:4px 8px;line-height:22px;}
+.levelbox .des em{display:block;color:#777}
+.levelbox em.des-tit{font-size:14px;color:#333}
+.levelbox .arrow{display:none;width:9px;height:5px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png) no-repeat scroll 0 -281px;position:absolute;z-index:110;left:50%;margin-left:-4px;top:-9px;}
+.level-hover .des,.level-hover .arrow{display:block}
+.replyfloor .levelbox span{padding: 0 5px;}
+.Jroleicon{position: relative;overflow: visible;cursor: pointer;*z-index: 600;}
+.Jroleicon .arrow{display:none;width:9px;height:5px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png) no-repeat scroll 0 -281px;position:absolute;z-index:610;left:50%;margin-left:-4px;top:-9px;overflow: hidden;}
+.Jroleicon .des{display:none;position:absolute;z-index:600;width:170px;background-color:#fff;border:1px solid #dadada;left:-75px;top:0px;padding:4px 8px;line-height:22px;}
+.Jroleicon .des li{height: 22px; line-height: 22px; overflow: hidden;}
+.applink{position:relative}
+.applink .appcode{position: absolute;width: 115px;height: 115px;background-color: #fff;padding: 10px;border: 1px solid #dadada;z-index: 10;left: 50%;margin-left: -68px;top: -145px;display: none;}
+.applink-hover .appcode{display: block;}
+.applink .appcode i{display: block;width: 20px;height: 10px;position: absolute;left: 50%;margin-left: -10px;bottom: -10px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png) no-repeat scroll -41px -281px;}
+.mainfloor{border-bottom:2px solid #e4e4e4;padding-bottom:20px;margin-bottom: 20px;}
+.mainfloor-lock{color: #c00; font-size: 14px; margin-bottom: 15px;margin-top: 15px;}
+.mainfloor-lock i{margin: 0 10px;font-size: 12px;}
+.mainfloor-tool{font-size: 14px;margin-bottom: 15px;}
+.mainfloor-hd{padding-bottom:15px;margin:15px 0;border-bottom: 1px solid #e3e3e3;}
+.mainfloor-user{width:70px;float:left;margin-right:15px;position: relative;_display:inline;*z-index: 660;}
+.mainfloor-cont{float:left;width:705px}
+.mainfloor-cont .tit{height:20px;line-height:20px;overflow:hidden;margin-bottom:8px;word-break:break-all;}
+.mainfloor-cont .tit .lockicon{display: inline-block;width: 14px;height: 20px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png) no-repeat scroll -263px -120px;vertical-align: top;margin-right: 8px;}
+.mainfloor-cont .tit a{font-size:16px;word-break:break-all;font-weight: bold;}
+.mainfloor-cont .replyfloor-info{margin-bottom:8px;}
+
+.mainfloor-info{height:20px;line-height:20px}
+.mainfloor-info .subinfo{float:left;color:#999}
+.mainfloor-info .subinfo .icon{display: inline-block;vertical-align: middle;margin-right: 5px;}
+.mainfloor-info .subinfo .icon-view{width: 17px;height: 20px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -284px -230px;}
+.mainfloor-info .subinfo .icon-reply{width: 14px;height: 20px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -286px -250px;margin-left: 20px;}
+.mainfloor-info .subinfo span{float:left;margin-right:20px;_display:inline}
+.mainfloor-info .subinfo a{color:#999}
+.mainfloor-info .subinfo a:hover{color: #f70;}
+.mainfloor-info .gotofloor{float:right;color: #999;}
+.mainfloor-info .gotofloor .ipt{border:1px solid #e3e3e3;height:14px;line-height:14px;width:30px;text-align:center;color:#999;margin-right:4px;}
+.mainfloor-info .gotofloor .btn{display:inline-block;width:15px;height:14px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -109px -115px;vertical-align:middle}
+.mainfloor-info .floorname{margin-right:10px;_display:inline}
+.mainfloor-bd{}
+.waterwrap{height:0px;line-height:0px;position:relative}
+.mainfloor-score{margin-bottom: 20px;}
+.mainfloor-score .hd{margin-left: -11px;}
+.replyfloor .mainfloor-score{margin: 10px 0;}
+.mainfloor-score .datatable{width:100%}
+.mainfloor-score th,.mainfloor-score td{padding:10px 0;text-align:left;vertical-align:middle}
+.mainfloor-score thead th{border-bottom:1px solid #dddddd}
+.mainfloor-score thead .btn{float:right}
+.mainfloor-score thead .btn em{vertical-align:middle;margin-left:3px}
+.mainfloor-score tbody td{border-bottom:1px dashed #e2e2e2}
+.mainfloor-score tbody td.user{width: 200px;}
+.mainfloor-score tbody td.score{width: 85px;}
+.mainfloor-score tbody td.date{width: 140px;}
+.mainfloor-score tbody td.cancel{width: 50px;text-align: right;}
+.mainfloor-score tfoot td.total{width: 100px;text-align: right;}
+.mainfloor-score tfoot td.more{text-align: center;}
+.mainfloor-score tfoot td.more span{vertical-align: middle;margin-right: 5px;}
+.mainfloor-score .user img{vertical-align:middle;margin-right:10px}
+.mainfloor-score .date{color:#777}
+.mainfloor-score .txt{color:#999}
+.mainfloor .replyfloor-action{float: none;text-align: right;}
+.mainfloor .replyfloor-action a{color: #f70;}
+.replyfloor:hover .replyfloor-action a{color: #f70;}
+/*正文 */
+.topiccontent,.replycontent{font-size: 16px;line-height:1.8;word-wrap:break-word;word-break:break-all;overflow-x: hidden;}
+.topiccontent{margin-bottom:20px;width: 790px;min-height: 200px;_height:200px;}
+.replycontent{padding:8px 0;width: 705px;min-height: 100px;_height:100px;}
+.topiccontent img,.replycontent img{margin: 5px 0;}
+.topiccontent img.LazyloadImg,.replycontent img.LazyloadImg{margin: 10px 0;cursor: pointer;}
+.topiccontent a,.replycontent a{color: #144ee1;text-decoration: underline;}
+.topiccontent a:hover,.replycontent a:hover{color: #f70;}
+.wysiwygTable td,.replycontent td{padding: 3px;border: 1px solid #ddd;}
+/*修改记录*/
+.topicModify{margin-bottom: 10px;color: #999;line-height: 24px;}
+/*签名档*/
+.signbox{color: #999;margin-top: 15px;}
+.signbox-hd{height:20px;line-height:20px;overflow: hidden;margin-bottom: 8px;}
+.signbox-hd .mark{float: left;height: 20px;background-color: #fff;padding-left: 20px;padding-right: 8px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -283px -271px;}
+.signbox-hd .line{overflow: hidden;zoom: 1;border-bottom:1px dashed #e3e3e3;height: 10px; line-height: 10px;}
+.signbox-bd{line-height: 20px;height:40px;overflow: hidden;}
+.signbox-bd img{max-height: 150px;}
+.signbox-bd b{font-weight: normal;}
+.litype_1,.litype_2{margin: 10px 0;}
+.litype_1 li{list-style: decimal inside none;}
+.litype_2 li{list-style: disc inside none;}
+/*验证码*/
+.captchabox{float:left}
+.captchabox .ipt{border:1px solid #ccc;height:22px;line-height:22px;padding:0 3px;vertical-align:middle;width:50px}
+.captchabox img{height:22px;margin:0 8px;vertical-align:middle}
+.captchabox a{color:#05a}
+/*精彩回复*/
+.topreplybox{margin-bottom: 20px;}
+.topreplybox a{color: #999;}
+.topreplybox a:hover{color: #f70;}
+.topreplybox .hd{margin-bottom: 20px;margin-left: -11px;}
+.topreplybox .hd .mark,.mainfloor-score .hd .mark{display: inline-block;height: 25px; line-height: 25px;width: 135px;padding-left: 5px;color: #ff9900;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png) no-repeat scroll -143px -275px}
+.topreplybox .bd{padding-left: 5px;}
+.topreplybox .last{margin-bottom: 0px;}
+.topreplyitem{height: 36px; line-height: 36px; overflow: hidden;margin-bottom: 10px;}
+.topreplyitem a,.topreplyitem span{float: left;margin-right: 15px;_display: inline;}
+.topreplyitem span{max-width: 465px;_width:465px;}
+.topreplyitem .face{margin-right: 10px;}
+.topreplyitem .face img{vertical-align: top;}
+.topreplyitem .name{color: #f70;}
+.topreplyitem .link-cancel{float: right;}
+/*引用*/
+.cite{display: block;background-color: #fafafa;padding: 15px 50px 10px;line-height: 24px;margin-bottom: 10px;zoom:1;margin-top: 4px;font-size: 12px;color: #999;}
+.cite:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.cite .cite_sign{display: block;height: 25px;}
+.cite img{margin: 0}
+.cite a{color: #f70;text-decoration: none;}
+.cite .cite_sign_l{float: left;display: inline;margin-left: -30px;margin-top: -8px;_margin-left: -20px;}
+.cite .cite_sign_r{float: right;margin-right: -25px;*margin-top: -20px;}
+/*投票*/
+.votecontent{margin-bottom: 20px;}
+.votecontent .hd{height: 36px; line-height: 36px; overflow: hidden;}
+.votecontent .hd .mark{color: #f70;font-size: 16px;margin-right: 5px;}
+.votecontent .hd .info{color: #999;}
+.votecontent .hd i{margin: 0 8px;}
+.votecontent .bd{}
+.voteitems{margin-bottom: 30px;}
+.vote-form .voteitem{cursor: pointer;}
+.voteitem{position: relative;margin-top: 10px;background-color: #f4f4f4;}
+.voteitem:hover,.voteitems .sel{background-color: #e6e6e6;}
+.voteitem .txt{line-height: 35px;font-size: 14px;padding:0 10px;word-wrap:break-word;word-break:break-all;}
+.voteitem .state{display: block;width: 25px;height: 25px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -169px -104px;position: absolute;right: 0px;top: 0px;overflow: hidden;}
+.voteitems .sel .state{background-position: -169px -79px;}
+.vote-result .txt{width: 500px;float: left;}
+.vote-result .result{float: left;height: 35px; line-height: 35px; overflow: hidden;}
+.vote-result .result span{float: left;}
+.vote-result .result .bar{height: 10px;line-height: 10px;overflow: hidden;background-color: #dddddd;border-radius: 2px;margin-top: 12px;width: 150px;margin-right: 10px;}
+.vote-result .result .bar i{display: block;height: 10px; line-height: 10px; overflow: hidden;background-color: #f70;border-radius: 2px;}
+.vote-result .result .percent{margin-right: 5px;}
+.vote-result .result .num{color: #777;}
+.vote-action{height: 35px; line-height: 35px;}
+.vote-action .btn{display: inline-block;width: 100px;height: 35px;text-align: center;color: #fff;background-color: #f70;margin-right: 10px;margin-left: 345px;border-radius: 3px;font-size: 16px;vertical-align: middle;}
+.vote-action .btn-disable{background-color: #ccc;cursor: default;}
+.vote-action .btn:hover{text-decoration: none;}
+.vote-action .info{color: #999;vertical-align: middle;}
+.vote-action .info .icon{display: inline-block;width: 16px;height: 16px;vertical-align: middle;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -194px -79px;margin-right: 5px;overflow: hidden;}
+.vote-action .info em{vertical-align: middle;}
+.vote-action .info-wrong{font-size: 14px;text-align: center;color: #f70;}
+.vote-action .info-wrong .icon{display: inline-block;width: 12px;height: 12px;vertical-align: middle;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -153px -262px;margin-right: 5px;}
+#JshowVoteResult {max-height: 100px;overflow: auto;}
+#JshowVoteResult a{display: block;}
+#JgetVoteResult,#JgetVoteResult option{width: 300px;}
+/*pk*/
+.pkContent{width:790px;height:198px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/pk-sprite.png) no-repeat scroll 0 0;margin-bottom:10px}
+.pkContent .pkside{width:300px;float:left;padding-top:50px}
+.pkContent .txt{line-height:24px;height:48px;overflow:hidden;font-size:16px;margin-bottom:40px}
+.pkContent .action{text-align:center}
+.pkContent .btn{display:inline-block;width:138px;height:37px;line-height:37px;color:#fff;font-size:16px}
+.pkContent a.btn:hover{color:#fff;text-decoration:none}
+.pkContent .redside{margin-left:30px;_display:inline}
+.pkContent .redside .btn{background-color:#f70305}
+.pkContent .blueside .btn{background-color:#0685e6}
+.pkContent .pkside .btn-disable{background-color:#dddddd;cursor:default}
+.pkContent .blueside{margin-left:130px;_display:inline}
+.pkForm{width:788px;height:160px;position:relative;margin-bottom:20px;display:none}
+.pkForm .btn-close{display:inline-block;width:13px;height:13px;position:absolute;right:10px;top:10px}
+.pkForm .textarea-wrap{padding-top:33px;padding-left:20px;padding-right:20px;margin-bottom:10px}
+.pkForm textarea{width:736px;height:60px;padding:5px}
+.pkForm .placehold{color: #777;}
+.pkForm .action{text-align:right;padding:0 20px;overflow: hidden;}
+.pkForm .btn-send{display:inline-block;width:70px;height:26px;line-height:26px;color:#fff;text-align:center;float: right;}
+.pkForm .btn-send:hover{color:#fff;text-decoration:none}
+.pkForm .btn-sending{background-color:#dcdcdc;cursor:default}
+.pkForm-redside{background-color:#fef0f0;border:1px solid #ffe7e7}
+.pkForm-redside textarea{border:1px solid #ffe7e7}
+.pkForm-redside .btn-close{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/pk-sprite.png) no-repeat scroll 0 -230px}
+.pkForm-redside .btn-send{background-color:#f70305}
+.pkForm-blueside{background-color:#e4f5ff;border:1px solid #d3efff}
+.pkForm-blueside textarea{border:1px solid #d3efff}
+.pkForm-blueside .btn-close{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/pk-sprite.png) no-repeat scroll -14px -230px}
+.pkForm-blueside .btn-send{background-color:#0685e6}
+.pkBar{width:790px;height:30px;line-height:30px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/pk_bar4.png) no-repeat scroll 0 0;margin-bottom:40px;text-align:center;overflow: hidden;}
+.pkBar .count{color:#fff;font-size:16px;font-weight:bold;font-family:Arial}
+.pkBar .redside{float:left;height:30px;position:relative;background-color:#f70204}
+.pkBar .blueside{overflow:hidden;zoom:1}
+.pkBar .barcorner{display:block;width:15px;height:30px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/pk-sprite.png) no-repeat scroll -28px -230px;position:absolute;left:0px;top:0px}
+.pkBar .barsplit{display:block;width:15px;height:30px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/pk-sprite.png) no-repeat scroll -69px -230px;position:absolute;right:-7px;top:0px}
+.pkReply{margin-bottom:20px}
+.pkReply .redside{width:360px;float:left}
+.pkReply .blueside{width:360px;float:right}
+.pkReply .hd{height:30px;line-height:30px;text-align:center;position:relative;font-size:14px}
+.pkReply .hd .arrow{display:block;width:21px;height:11px;position:absolute;left:50%;top:-11px;margin-left:-10px}
+.pkReply .bd{padding:0 10px;height:278px;overflow:hidden}
+.pkReply .item{border-bottom:1px solid #f0f0f0;padding-top:14px;padding-bottom:10px;overflow:hidden}
+.pkReply .item .face{float:left}
+.pkReply .item .face img{vertical-align:top}
+.pkReply .item .ctn{overflow:hidden;zoom:1;padding-left:8px}
+.pkReply .item .info1{height:18px;line-height:18px;overflow:hidden}
+.pkReply .item .username{float:left;color:#f70}
+.pkReply .item .fname{float:right;color:#a7a7a7}
+.pkReply .item .txt{height:25px;line-height:25px;overflow:hidden;word-wrap:break-word;word-break:break-all;}
+.pkReply .item .info2{height:25px;line-height:25px;overflow:hidden;color:#a7a7a7}
+.pkReply .item .date{float:left}
+.pkReply .item .link{float:right;color:#a7a7a7}
+.pkReply .empty{height: 280px; line-height: 280px;text-align: center;font-size: 14px;}
+.pkReply .redside .empty{color: #ff7700;}
+.pkReply .blueside .empty{color: #396eb9;}
+.pkReply .redside .hd{background-color:#fef0f0;color:#ff7700}
+.pkReply .redside .hd .arrow{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/pk-sprite.png) no-repeat scroll -44px -230px}
+.pkReply .redside .bd{border-left:2px solid #fef0f0;border-right:2px solid #fef0f0;border-bottom:2px solid #fef0f0}
+.pkReply .blueside .hd{background-color:#e4f5ff;color:#396eb9}
+.pkReply .blueside .hd .arrow{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/pk-sprite.png) no-repeat scroll -44px -242px}
+.pkReply .blueside .bd{border-left:2px solid #e4f5ff;border-right:2px solid #e4f5ff;border-bottom:2px solid #e4f5ff}
+.pkReply .pagerwrap{padding:15px 0}
+.pkReply .pagerwrap a{display:inline-block;width:163px;height:30px;line-height:30px;background-color:#f4f4f4;text-align:center;color:#777;font-size:14px}
+.pkReply .pagerwrap a:hover{color:#777;text-decoration:none;background-color:#e6e6e6}
+.pkReply .pagerwrap .btn-prev{float:left}
+.pkReply .pagerwrap .btn-next{float:right}
+.pkpoint{font-size:14px;height:18px;line-height:20px;overflow:hidden;margin-top:8px}
+.pkpoint-red{color:#f70204}
+.pkpoint-blue{color:#396eb9}
+/*悬赏*/
+.rewardbox{height:20px;line-height:20px;overflow:hidden;margin-bottom:10px;font-size: 16px;}
+.rewardbox i{color:#999;margin:0 10px;font-size: 10px;}
+.rewardbox em{color:#f70;margin: 0 3px;}
+.rewardbox .state{display:inline-block;background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png);background-repeat:no-repeat}
+.rewardbox .state-0{background-position:-279px -140px;padding-left: 12px;color: #58c26f;}
+.rewardbox .state-1{background-position:-279px -120px;padding-left: 20px;color: #f70;}
+.rewardbox .price{padding-left:25px;display:inline-block;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -279px -160px}
+.bestreply{display:block;width:82px;height:16px;position:absolute;top:-19px;left:0px;text-indent:-999em;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png) no-repeat scroll -61px -264px}
+/*活动*/
+.activecontennt{padding-top: 5px;margin-bottom: 15px;}
+.active-cover{width: 185px;height: 250px;position: relative;float: left;margin-right: 20px;_display: inline;overflow: hidden;}
+.active-cover img{position: absolute;}
+.active-ctn{width: 330px;float: left;font-size: 14px;}
+.active-items{line-height: 18px;}
+.active-items li{margin-bottom: 10px;}
+.active-items .mark{color: #999;float: left;width: 80px;}
+.active-items .txt{float: left;width: 250px;}
+.active-count{float: right;padding-top: 60px;text-align: center;}
+.active-action{}
+.active-action .btn{display: inline-block;width: 110px;height: 35px;color: #fff;line-height: 35px;text-align: center;background-color: #f70;border-radius: 3px;margin-right: 10px;font-size: 16px;}
+.active-action .btn-disable{background-color: #cccccc;}
+.active-action .btn:hover{text-decoration: none;}
+.active-action .tip{line-height: 35px;color: #f70;}
+.active-action .tip .icon{display: inline-block;width: 12px;height: 12px;vertical-align: top;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -153px -262px;margin-right: 5px;position: relative;top: 13px;}
+.active-count .item{float: left;width: 99px;margin-left: 28px;_display: inline;margin-bottom: 5px;}
+.active-count .item-count{width: 99px;height: 99px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -174px -175px;margin-bottom: 5px;}
+.active-count .item-count span{display: block;overflow: hidden;zoom:1;}
+.active-count .item-count .mark{color: #999;padding-top: 22px;font-size: 14px;}
+.active-count .item-count .txt{font-size: 28px;color: #f70;line-height: 35px;}
+.active-count .item-link{}
+.active-count .item-link a{margin: 0 5px;}
+/*二手交易*/
+.tradecontent{padding-top: 5px;margin-bottom: 15px;}
+.trade-info{font-size: 14px;line-height: 18px;margin-bottom: 15px;}
+.trade-info .data-table{width: 100%;}
+.trade-info .hide{display: none;}
+.trade-info td{padding: 6px 0;vertical-align: top;}
+.trade-info .mark{width: 85px;color: #999;}
+.trade-info .txt{width: 290px;padding-right: 15px;}
+.trade-info .price{color: #f70;font-size: 26px;}
+.trade-info .contactInfo{color: #f70;}
+.trade-info .contactInfo a{display: inline-block;width: 50px;height: 18px;text-align: center;background-color: #f4f4f4;font-size: 12px;}
+.trade-action{text-align: right;}
+.trade-action .btn{display: inline-block;padding-left: 30px;padding-right: 10px;height: 25px; line-height: 25px;border: 1px solid #ececec;color: #777;background-image: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png);background-color: #f5f5f5;background-repeat: no-repeat;}
+.trade-action .btn:hover{text-decoration: none;color: #f70;}
+.trade-action .btn-close{background-position: -274px -180px;}
+.trade-action .btn-open{background-position: -274px -205px;}
+.trade-tip{border: 1px dashed #e3e3e3;padding: 10px 15px;}
+.trade-tip .hd{color: #f70;height: 24px; line-height: 24px;margin-bottom: 5px;}
+.trade-tip .hd .mark{vertical-align: middle;}
+.trade-tip .hd .icon{display: inline-block;width: 12px;height: 12px;vertical-align: middle;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite_v2.png) no-repeat scroll -153px -262px;margin-right: 5px;}
+.trade-tip .bd{line-height: 24px;}
+
+
+/*楼层*/
+.floorlist{}
+.floor .online{color: #f70;}
+.replyfloor{padding:22px 0;border-bottom:2px solid #e3e3e3}
+.floor-last{border-bottom: 0;}
+.replyfloor-user{float:left;margin-right:15px;width:70px;padding-top:3px}
+.replyfloor-user .role{padding-top:8px;text-align: center;display: block;}
+.replyfloor-user .facewrap{display:block;width:70px;height:70px;position:relative;*z-index: 610;}
+.userboard{background-color:#fff;border:1px solid #d4dad1;position:absolute;top:0px;left:85px;width:320px;z-index:110;display:none}
+.userboard .arrow{display:block;width:16px;height:70px;overflow:hidden;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png) no-repeat scroll -153px -79px;position:absolute;left:-16px;top:0px;z-index:50}
+.userboard-bd{padding:18px 18px 0 18px}
+.userboard-cont .face{float:left;width:50px;text-align:center;margin-right:10px;_display:inline}
+.userboard-cont .userid{margin-left: 10px;}
+.userboard-cont .count{float:left}
+.userboard-cont .count .name{height:16px;line-height:16px;overflow:hidden;margin-bottom:8px}
+.userboard-cont .count li{float:left;width:55px;height:26px;border-right:1px solid #ccc;overflow:hidden;text-align:center;color:#777;line-height:12px}
+.userboard-cont .count span{display:block}
+.userboard-cont .count .num{margin-bottom:2px}
+.userboard-cont .count li.first span{/*text-align:left*/}
+.userboard-cont .count li.last{border-right:0}
+.userboard-cont .count li.last span{/*text-align:right*/}
+.userboard-info{height:40px;line-height:40px;overflow:hidden;color:#777}
+.userboard-info .level{float:left}
+.userboard-info .date{float:right}
+.userboard-ft{height:27px;padding:10px 18px;background-color:#f2f2f2;overflow:hidden}
+.userboard-ft .btn{width:79px;height:27px;line-height:27px;text-align:center;color:#fff;float: left;}
+.userboard-ft .btn:hover{text-decoration:none;color: #fff;}
+.userboard-ft .btn .icon{display:inline-block;width:15px;height:13px;background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png);vertical-align:middle;margin-right:5px}
+.userboard-ft .btn em{display:inline-block}
+.userboard-ft .btn-focus{background-color:#ff9900;margin-right: 7px;_display: inline;}
+.userboard-ft .btn-focus:hover{background-color:#ff7700}
+.userboard-ft .btn-focus .icon{width:13px;height:16px;background-position:-27px -281px}
+.userboard-ft .btn-focused{color: #999;background-color: #e1e1e1;}
+.userboard-ft .btn-focused:hover{color:#777;background-color: #e1e1e1;}
+.userboard-ft .btn-message{background-color:#0685e6}
+.userboard-ft .btn-message:hover{background-color:#0672df}
+.userboard-ft .btn-message .icon{width:15px;height:15px;background-position:-11px -281px}
+.replyfloor-cont{float:left;width:705px}
+.replyfloor-info{height:20px;line-height:20px;color: #999;}
+.replyfloor-info a{color: #999;}
+.replyfloor-info a:hover{color: #f70;}
+.replyfloor-info .username{color: #333;}
+.replyfloor-info .username,.replyfloor-info .roleicon,.replyfloor-info .levelbox,.replyfloor-info .date,.replyfloor-info .postfrom,.replyfloor-info .userlink{float:left;margin-right:10px;_display:inline}
+.replyfloor-info .medalbox{float:left;margin-right:5px;_display:inline}
+.replyfloor-info .levelbox,.replyfloor-info .roleicon{margin-top:2px}
+.replyfloor-ft{height:18px;line-height:18px;color:#a7a7a7}
+.replyfloor-ft a{color:#a7a7a7}
+.replyfloor-ft a:hover{color:#f70}
+.replyfloor-ft .subinfo{float:left}
+.replyfloor-ft .subinfo span,.replyfloor-ft .subinfo .postfrom{float:left;margin-right:10px}
+.replyfloor-action{float:right}
+.replyfloor-action a{color: #a7a7a7;display:inline-block;padding:0 4px;}
+.replyfloor-action a:hover{color: #f70;}
+.replyfloor-action .replybtn-open{background-color:#fafafa;color:#f70;padding-top:5px;margin-top:-5px}
+.replyfloor-reward{float:right;margin-right: 5px;}
+.replyfloor-reward .ipt{height:15px;line-height:15px;width:40px;margin-right:5px;border:1px solid #7f9db9;text-align:center;vertical-align:middle}
+.replyfloor-reward .btn{display:inline-block;width:65px;height:17px;overflow:hidden;line-height:17px;text-align:center;color:#fff;background-color:#ff9900;margin-right:8px;vertical-align:middle}
+.replyfloor-reward .btn:hover{color:#fff;text-decoration:none}
+.replyfloor-reward .setbest{display:inline-block;padding-right:8px;margin-right:8px;height:12px;line-height:12px;border-right:1px solid #fafafa;color:#336699}
+.replyfloor-reward .price{padding-left:25px;display:inline-block;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png) no-repeat scroll -279px -161px}
+.replyfloor-reward .price em{color:#f70;font-weight: bold;margin-right: 3px;}
+.replyfloor-form{background-color:#fafafa;padding:12px 20px}
+.replyfloor-form .hd{height:32px;line-height:32px}
+.replyfloor-form .bd{margin-bottom:10px}
+.replyfloor-form .textarea{width:653px;height:100px;padding:5px;border:1px solid #dfdfdf}
+.mainfloor .replyfloor-form .textarea{width: 738px;}
+.replyfloor-form .ft{text-align:right}
+.replyfloor-form .ft .advancepost{margin-right:10px}
+.replyfloor-form .editorbtn-emo,.replyfloor-form .editorbtn-img{position:relative;z-index:160;}
+.replyfloor-form .editorbtn-emo:hover{color:#333}
+.replyfloor-form .editorbtn-img .swf-sp{display: block;position: absolute;width: 18px;height: 18px;top: 0;left: 0;}
+.popupimgbox{position: absolute;top: 30px;left: -30px;width: 118px;padding: 20px 15px 10px;background: #fff;border: 1px solid #dadada;cursor:default;text-align: center;z-index:160;display: none;}
+.popupimgbox img,.popupimgbox span{display: block;margin: 0 auto;}
+.popupimgbox .before{position: absolute;width: 10px;height: 9px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) -172px -116px;left: 35px;top: -8px;}
+.popupimgbox .close{position: absolute;width: 10px;height: 9px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) -160px -116px;top: 4px;right: 4px;cursor: pointer;}
+.popupimgbox .loading{padding-top:26px;padding-bottom:10px;background:url(http://www1.pconline.com.cn/itbbs/2012/images/loadingpic.gif) center 8px no-repeat}
+.popupimgbox .uploadpersen{color:#777;line-height:20px}
+.popupimgbox .uploadbar{height:7px;overflow:hidden;display:inline-block;width:68px;background:url(http://www1.pconline.com.cn/itbbs/2012/images/bg_uploadBar.png) left top no-repeat}
+.popupimgbox .uploadbar i{height:7px;background:url(http://www1.pconline.com.cn/itbbs/2012/images/bg_uploadBar.png) 0px -7px no-repeat;line-height:7px;overflow:hidden;display:inline-block;float:left}
+.popupimgbox .uploadtip{color:#f90;margin:0 -10px;margin-top:6px}
+#ubbUploadWrap{left:96px;bottom:100%;top:auto}
+#ubbUploadWrap .before{background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) -184px -116px;left:35px;top:100%}
+.uploadimgwrap{width:118px;overflow:hidden}
+.popupembox{width:400px;text-align:left;position:absolute;top:17px;right:-150px;background-color:#fff;border:1px solid #ccc;border-radius:2px;box-shadow:1px 1px 3px #666666;padding:10px;display:none;z-index:160}
+.popupembox-hd{border-bottom:1px solid #ccc;height:25px;overflow:visible;padding-left:10px}
+.popupembox-hd .mark{display:inline-block;line-height:24px;height:24px;border-left:1px solid #ccc;border-right:1px solid #ccc;border-top:1px solid #ccc;border-bottom:1px solid #fff;margin-bottom:-1px;position:relative;font-weight:bold;padding:0 10px}
+.popupembox-list img{cursor:pointer;padding:5px}
+.replyfloor-lock .replyfloor-user .userface{display: block;width:70px;height:70px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll 0 -133px}
+.replyfloor-lock .replyfloor-user .userwrap{display: block;text-align: center;}
+.replyfloor-lock .locktxt{color:#a7a7a7}
+.replyfloor-lock .locktxt .txt{color:#333;height:26px;line-height:26px;display:inline-block;padding-left:25px;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png) no-repeat scroll -307px -241px}
+.fastreply{}
+.fastreply-bd{position:relative;margin-bottom:10px}
+.fastreply-ft{}
+.fastreply-ft .editorbtn-post{float:right}
+.unloginboard{display:none;width:790px;height:183px;position:absolute;left:0px;top:0px;z-index:100}
+.unloginboard .txt{padding-top:75px;padding-left: 75px;}
+.unloginboard .loginlink{background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png);background-repeat:no-repeat;display:inline-block;line-height:21px;padding-left:20px;margin-left:10px}
+.unloginboard .login-QQ{background-position:-326px -183px}
+.unloginboard .login-weibo{background-position:-326px -215px}
+.unloginboard .login-taobao{background-position:-326px -122px}
+.ubbeditor{border:1px solid #c0c0c0}
+.ubbeditor-edit{float: left;width: 580px;border-right: 1px solid #c0c0c0;margin-right: 15px;}
+.ubbeditor-emo{float: left;width: 178px;}
+.ubbeditor-emo .hd{height: 24px; line-height: 24px;border-bottom: 1px solid #c0c0c0;}
+.ubbeditor-emo .bd{width: 178px;overflow: hidden;padding-top: 10px;}
+.ubbeditor-emo .inner{width: 190px;background: url(http://www1.pconline.com.cn/bbs/2014/forum/images/fastemo.png) no-repeat scroll 0 0;}
+.ubbeditor-emo a{float: left;width: 30px;height: 30px;margin-right: 7px;margin-bottom: 6px;}
+.ubbeditor-tools{background-color:#f2f2f2;border-bottom:1px solid #c0c0c0;padding:2px 10px;height:20px;line-height:20px;overflow:hidden}
+.ubbeditor-tools .toolwrap{float:left}
+.ubbeditor-tools .editorbtn{float:left}
+.fastreply .editorbtn-img{float: none;}
+.ubbeditor-tools .advancemode{float:right}
+.ubbeditor-body{background-color:#fff}
+.ubbeditor-body .textArea{width:570px;height:110px;padding:5px;border:0;background-color:#fff;vertical-align: top;}
+/*汽泡*/
+.posttoptip{display: none;}
+/*楼层广告*/
+.floorad{float: right;width:175px;height: 20px; line-height: 20px; overflow: hidden;padding-right:10px;text-align: right;}
+.floorad-red a{color:#c00;}
+/*快速回复弹出层样式*/
+#f_editortoolbar .px{ border:1px solid; border-color:#999999 #CCCCCC #CCCCCC #999999; height:20px; margin:5px 0px 10px 0px;}
+#f_editortoolbar .pn{color:#000;text-decoration:none;width:52px;border:1px solid #DDD;text-align:center;border-radius:3px;background:#FFFFFF;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEE));background:-moz-linear-gradient(0% 90% 90deg, #EEE, #FFF); color:#333; cursor:pointer; padding:2px 0px;}
+#smiliesdiv,#f_forecolor_menu,#f_image_menu,#f_url_menu{ padding:10px; border:1px solid #ccc; background-color:#fff; border-radius:2px; box-shadow:1px 1px 3px #666666; -moz-box-shadow:1px 1px 3px #666666;}
+#smiliesdiv_table td{ padding:5px;}
+#smiliesdiv{ width:410px;}
+.slg{ border-bottom:1px solid #ccc; height:25px; padding-left:10px; overflow:visible;}
+.slg ul{ margin:0; padding:0; border:0;}
+.slg ul li{ float:left; position:relative; margin-bottom:-1px; border:1px solid; border-color:#ccc #ccc #fff; height:24px; line-height:24px;}
+.slg ul li a{ display:inline-block; padding:0px 10px; font-weight:bold; line-height:24px; text-decoration:none; color:#333; margin:0; float:none; border:0; height:auto;}
+#f_forecolor_menu input{ padding:0px 5px; cursor:pointer; float:none;}
+#f_menus #f_editortoolbar .pbn,#f_menus #f_editortoolbar .pns{ line-height:24px;}
+#f_menus .colorbox{ width:auto;}
+#smiliesdiv_table img{ cursor:pointer;}
+.colorbox input { border: 0 none; cursor: pointer; height: 12px; margin: 2px; padding: 0; width: 12px;}
+.uploadFix,body .Editor .uploadFix{position: fixed;top:0px;}
+.uploadCommon{position:static;top:auto;width:auto;}
+.mTop{margin-top:auto;}
+.pblockW{ width:980px; position:relative; zoom:1;}
+/*弹出iframe*/
+.popiframe{width:700px;height:380px;background-color:#fff;border:1px solid #ccc;box-shadow:0 0 10px rgba(0,0,0,0.3);z-index:1000;border-radius:5px;overflow:hidden;position:fixed;left:50%;top:50%;margin-left:-350px;margin-top:-190px;/*display:none;*/}
+.popiframe .pop-header{cursor: default;}
+.pop-loading{text-align:center;height:340px;line-height:340px;font-size:14px}
+* html .popiframe{position:absolute;margin-top:expression(0 - parseInt(this.offsetHeight / 2)+(TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop)+'px')}
+/*工具条*/
+.fixblockwrap{height: 126px;}
+.fixblock-fix{width :294px;position:fixed;z-index:150;top:0px;left:50%;margin-left: 266px;}
+.fixcms-fix{width :294px;position:fixed;z-index:140;top:-193px;left:50%;margin-left: 266px;}
+.topictools{background-color:#fff;padding:14px 0 14px 30px;border-left: 1px solid #e8e8e8;border-right: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;}
+.topictools .toolbtn{float:left;text-align:center;width:60px;overflow:hidden;height: 50px;}
+.topictools .toolbtn,.topictools .toolbtn span{cursor:default}
+.topictools .toolbtn-active,.topictools .toolbtn-active span{cursor:pointer}
+.topictools .toolbtn:hover{text-decoration:none}
+.topictools .icon{display:block;width:30px;height:30px;overflow:hidden;margin:0 auto 5px;background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png)}
+.topictools .mark{display:block;overflow:hidden;color:#a7a7a7;height:15px;line-height:15px;}
+.toolbtn-active .mark{color:#333}
+.toolbtn-active:hover .mark{color:#f70}
+.toolbtn-reply .icon{background-position:-210px 0}
+.toolbtn-reply-active .icon{background-position:-240px 0}
+.toolbtn-reply-active:hover .icon{background-position:-270px 0}
+.toolbtn-fav .icon{background-position:-210px -30px}
+.toolbtn-fav-active .icon{background-position:-240px -30px}
+.toolbtn-fav-active:hover .icon,.topictools .collected .icon{background-position:-270px -30px}
+.toolbtn-score .icon{background-position:-210px -60px}
+.toolbtn-score-active .icon{background-position:-240px -60px}
+.toolbtn-score-active:hover .icon{background-position:-270px -60px}
+.toolbtn-share .icon{background-position:-240px -90px}
+.toolbtn-share:hover .icon{background-position:-270px -90px}
+.topictools .sharewrap{float:left;width:60px;height:47px;position:relative}
+.topictools .sharewrap .toolbtn{border-right:0}
+.bdsharebox{display:none;position:absolute;right:-27px;top:62px;background-color:#fff;border:1px solid #dedede;padding:10px;width:181px;height:26px}
+.bdsharebox .arrow{display:block;width:60px;height:16px;position:absolute;right:26px;top:-16px;overflow:hidden;background:url(http://www1.pconline.com.cn/bbs/2014/forum/images/topic-sprite.png) no-repeat scroll 0 -264px;z-index:50}
+.bdsharebox .sharebtn{float:left;width:26px;height:26px;overflow:hidden;margin:0px 5px 0px 0px;padding:0px;_display:inline;opacity:0.7;filter:alpha(opacity=70);background-image:url(http://www1.pconline.com.cn/bbs/2014/forum/images/sprite.png)}
+.bdsharebox .sharebtn:hover{text-decoration:none;opacity:1;filter:alpha(opacity=100)}
+.bdsharebox .sharebtn-weixin{background-position:0 -204px}
+.bdsharebox .sharebtn-qzone{background-position:-27px -204px}
+.bdsharebox .sharebtn-sina{background-position:-54px -204px}
+.bdsharebox .sharebtn-tweibo{background-position:0 -231px}
+.bdsharebox .sharebtn-renren{background-position:-27px -231px}
+.bdsharebox .sharebtn-kaixin{background-position:-54px -231px;margin-right:0px}
+/*楼层管理*/
+.adminboard{background-color:#fafafa;line-height:28px;padding:6px 20px;margin-top:20px}
+.mainfloor-bd .adminboard{margin: 0 0 10px 85px;}
+.adminboard-cont{float:left;width:600px}
+.adminboard-cont a{margin-right:10px}
+.adminboard-action{float:right}
+.adminboard label,.adminboard-select label{cursor:pointer}
+.adminboard label span,.adminboard-select label span{vertical-align:middle}
+.adminboard .chk,.adminboard-select .chk{vertical-align:middle;margin-right:3px;*margin-right:0px}
+.adminboard-select{position:absolute;background-color:#fff;border:1px solid #dadada;width:250px;padding:0 10px;height:30px;line-height:30px;overflow:hidden;display: none;}
+.adminboard-select .count{float:left;margin-right:30px;_display:inline}
+.adminboard-select .count em{font-weight:bold;color:#f70;margin:0 2px}
+.adminboard-select .links{float:left}
+.adminboard-select .links em{color:#a7a7a7;margin:0 10px}
+.adminboard-select label{float:right}
+
+/** side **/
+.box-histopic .txts li{_width: 250px;}
+
+/*moduls reset*/
+.area-pager{margin-bottom: 25px;}
+/**************** topic.css end *********************/
