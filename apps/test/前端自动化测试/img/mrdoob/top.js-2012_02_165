@@ -1,0 +1,147 @@
+/*@Describe 负责和用户中心交互的工作，禁止在该js中写入任何其他业务js @author wuwenqi guojunhui @date 2010-12-15 CookieUtil.js抽取*/
+document.writeln("<style>#uc_menu.click{ background-color:#fff;background:url(http://image.72xuan.com/dev/v3/common/images/ui_headertop.gif) no-repeat 58px -110px;border:solid 1px #ccc; border-bottom:none;border-top:none;padding-right:15px; padding-left:7px;}#jihuo_close.hover{background:url(http://image.72xuan.com/dev/v3/common/images/ui_headertop.gif) no-repeat -19px -55px;}</style>");
+document.writeln("<div id=\"TopNav\" style=\"background:url(http://image.72xuan.com/dev/v3/common/images/ui_headertop.gif) repeat-x left top;height:30px; float:none; clear:both; margin-bottom:10px;z-index:6000;\"><div id=\"HeadTop\" style=\"width:950px; height:28px; margin:0 auto; line-height:28px; text-align:left; color:#999;\"><span id=\"QuickLinks\" style=\"background:url(http://image.72xuan.com/dev/v3/common/images/ui_headertop.gif) no-repeat left -31px;padding-left:13px;display:inline-block;height:28px;float:right;\"><a href=\"http://www.72xuan.com/faq/\" target=\"_blank\">软件帮助</a></span>您好，<span style=\"position:relative\"><span  id=\"user\" href=\"#\" target=\"_blank\"></span><div id=\"jihuo_bar\" style=\"position:absolute;top:20px;left:0px;color:#333;height:18px;width:170px;line-height:18px;background-color:#fffcf0;border:solid 1px #ccc;padding:0px 5px;text-align:left; display:none;\"><table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" ><tr><td>您的账户暂未激活 <a href=\"javascript:active();\" class=\"font_f60\">立即激活</a></td><td width=\"10\" id=\"jihuo_close\" style=\"background:url(http://image.72xuan.com/dev/v3/common/images/ui_headertop.gif) no-repeat -10px -55px; cursor:pointer;\"></td></tr></table></div><div id=\"jihuo_jt\" style=\"position:absolute; top:15px; left:10px; width:9px; height:6px; line-height:0px;background:url(http://image.72xuan.com/dev/v3/common/images/ui_headertop.gif) no-repeat left -60px;display:none;\"></div></span> &nbsp;欢迎来七十二炫装修网！<span id=\"status\"></span><span id=\"uc_menu\" style=\"color:#333;cursor:pointer; position:relative; padding-right:16px; padding-left:8px;background:url(http://image.72xuan.com/dev/v3/common/images/ui_headertop.gif) no-repeat 58px -80px;display:none;z-index:6001;\" >用户中心<div style=\"display:none;position:absolute;width:65px;background-color:#fff;height:auto;left:-1px;top:27px;border:solid 1px #ccc;border-top:none;text-align:left;padding-left:5px;\"><a style=\"display:block; height:20px; line-height:20px;\" href=\"javascript:modifypass();\">修改密码</a><a style=\"display:block; height:20px; line-height:20px;\" href=\"javascript:modifyinfo();\">修改资料</a><a style=\"display:block; height:20px; line-height:20px;\" href=\"javascript:invite();\">邀请用户</a></div></span></div></div></div>");
+function getCookie(name){var start = document.cookie.indexOf( name + "=" );var len = start + name.length + 1;if ( ( !start ) && ( name != document.cookie.substring( 0, name.length ))){return null;}if ( start == -1 ) return null;var end = document.cookie.indexOf( ';', len );if ( end == -1 ) end = document.cookie.length;return unescape( document.cookie.substring( len, end));}
+/*base64.js抽取*/
+function base64decode(str) {
+	var base64DecodeChars = [
+    -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+    -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+    -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, 63,
+    52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -1, -1, -1,
+    -1,  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14,
+    15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1,
+    -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+    41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1
+];
+    var c1, c2, c3, c4;
+    var i, j, len, out;
+    len = str.length;
+    i = j = 0;
+    out = [];
+    while (i < len) {
+        /* c1 */
+        do {
+            c1 = base64DecodeChars[str.charCodeAt(i++) & 0xff];
+        } while (i < len && c1 == -1);
+        if (c1 == -1) break;
+
+        /* c2 */
+        do {
+            c2 = base64DecodeChars[str.charCodeAt(i++) & 0xff];
+        } while (i < len && c2 == -1);
+        if (c2 == -1) break;
+
+        out[j++] = String.fromCharCode((c1 << 2) | ((c2 & 0x30) >> 4));
+
+        /* c3 */
+        do {
+            c3 = str.charCodeAt(i++) & 0xff;
+            if (c3 == 61) return out.join('');
+            c3 = base64DecodeChars[c3];
+        } while (i < len && c3 == -1);
+        if (c3 == -1) break;
+
+        out[j++] = String.fromCharCode(((c2 & 0x0f) << 4) | ((c3 & 0x3c) >> 2));
+
+        /* c4 */
+        do {
+            c4 = str.charCodeAt(i++) & 0xff;
+            if (c4 == 61) return out.join('');
+            c4 = base64DecodeChars[c4];
+        } while (i < len && c4 == -1);
+        if (c4 == -1) break;
+        out[j++] = String.fromCharCode(((c3 & 0x03) << 6) | c4);
+    }
+    return out.join('');
+}
+/*用户中心top.js业务变更*/
+// 加入收藏夹
+function addFavorite(){if(window.sidebar && "object" == typeof(window.sidebar) && "function" == typeof(window.sidebar.addPanel)){window.sidebar.addPanel('72炫装修网','http://www.72xuan.com/','');}else if(document.all && "object" == typeof( window.external)) {window.external.addFavorite('http://www.72xuan.com/','72炫装修网');}}
+//设为首页
+function setHome(obj){var url = 'http://www.72xuan.com';try{obj.style.behavior='url(#default#homepage)';obj.setHomePage(url);}catch (e){if(window.netscape){try{netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");}catch (e){alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");}var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);prefs.setCharPref('browser.startup.homepage',url);}}}
+//页面初始化时候被执行
+function  topShow(){
+	var cookie_sign = getCookie("Xuan_auth");
+	var flag = false;//登录状态,true为登录
+	var user = null;
+	if(cookie_sign != null){
+	var cookieValue = base64decode(cookie_sign);
+	var userInfo = decodeURIComponent(cookieValue.split(":")[0]);
+	//解析状态
+	var info = userInfo.split(',');
+	if(info.length != 6){
+flag = false;
+	}else{
+var name = info[1];
+var loginstatus = info[4];
+var activation = info[5];
+user = name;
+if(loginstatus == 1){
+	flag = true;
+	if(activation == 0){
+//未激活
+	activateShow();
+	}else{
+	activateHide();
+	}
+}
+	}
+}
+
+	if(flag)
+	{
+	document.getElementById('user').innerHTML = name;
+	document.getElementById('status').innerHTML = '[ <a href="javascript:exit();">退出</a>] ';
+	var uc_menu = document.getElementById('uc_menu');
+	uc_menu.style.display = 'inline-block';
+	if(window.addEventListener){
+	uc_menu.addEventListener("mouseover",showDiv,false);
+	uc_menu.addEventListener("mouseout",hideDiv,false);
+
+	}else{
+	uc_menu.attachEvent("onmouseover",showDiv);
+	uc_menu.attachEvent("onmouseout",hideDiv);
+	}
+	}else{
+	document.getElementById('user').innerHTML = '';
+	document.getElementById('status').innerHTML = '[<a href="javascript:login();" rel="nofollow">请登录</a>] [<a  rel="nofollow" class="font_f60" href="javascript:register();">免费注册</a>] ';
+	//移除事件
+	var uc_menu = document.getElementById('uc_menu');
+	var child = uc_menu.children[0];
+	if(window.removeEventListener){
+	uc_menu.removeEventListener("mouseover",showDiv,false);
+	uc_menu.removeEventListener("mouseout",hideDiv,false);
+	}else{
+	uc_menu.detachEvent("onmouseover",showDiv);
+	uc_menu.detachEvent("onmouseout",hideDiv);
+	}
+	}
+}
+//显示和隐藏
+function showDiv(){var uc_menu = document.getElementById('uc_menu');uc_menu.children[0].style.display = 'block';}
+function hideDiv(){var uc_menu = document.getElementById('uc_menu');uc_menu.children[0].style.display = 'none';}
+function show(obj){obj.style.display = 'block';}
+function hide(obj){obj.style.display = 'none';}
+function activateShow(){var jihuo_bar = document.getElementById('jihuo_bar');var jihuo_jt = document.getElementById('jihuo_jt');var jihuo_close = document.getElementById('jihuo_close');
+//绑定事件
+if(window.addEventListener){jihuo_close.addEventListener("click",activateHide,false);}else{uc_menu.attachEvent("click",activateHide);}show(jihuo_bar);show(jihuo_jt);	}
+function activateHide(){var jihuo_bar = document.getElementById('jihuo_bar');var jihuo_jt = document.getElementById('jihuo_jt');hide(jihuo_bar);hide(jihuo_jt);}
+//方法接口一览
+//立即激活
+function active(){window.location = 'http://www.72xuan.com/user/ucenter/gotoactivate.action?appId=1&url=' + window.location.href;}
+//修改密码
+function modifypass(){window.location  = 'http://www.72xuan.com/user/ucenter/gotomodifypass.action?appId=1&url=' + window.location.href;}
+//修改个人资料
+function modifyinfo(){window.location = 'http://www.72xuan.com/user/ucenter/gotomodifyinfo.action?appId=1&url=' + window.location.href;}
+//邀请用户
+function invite(o){window.location = 'http://www.72xuan.com/user/ucenter/gotoinvite.action?appId=1&url=' + window.location.href;}
+//登录
+function login(){window.location = 'http://www.72xuan.com/user/ucenter/gotologin.action?appId=1&url=' + window.location.href;}
+//退出
+function exit(){window.location = 'http://www.72xuan.com/user/ucenter/gotoexit.action?appId=1&url=' + window.location.href;}
+//注册
+function register(){window.location = 'http://www.72xuan.com/user/ucenter/gotoregister.action?appId=1&url=' + window.location.href;}
+//帮助
+function help(){window.location = 'http://www.72xuan.com/faq/';}
+topShow();

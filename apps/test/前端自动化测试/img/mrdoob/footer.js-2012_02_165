@@ -1,0 +1,5 @@
+document.writeln("<div id=\"footer\" style=\"width:950px; margin:10px auto 20px auto;position:relative;text-align:center;z-index:1;line-height:20px;position:relative;font-size:12px;font-family:Arial, Helvetica, sans-serif\"><a style=\"color:#333;text-decoration:none;\" href=\"http://www.72xuan.org/\">关于我们</a> | <a style=\"color:#333;text-decoration:none;\" href=\"http://www.72xuan.org/jobs/index.html\">加入我们</a> | <a style=\"color:#333;text-decoration:none;\" href=\"http://www.72xuan.com/faq/\">帮助中心</a> |");
+document.writeln("技术服务热线：86-010-62577272<br/>");
+document.writeln("京ICP备08008518号 京ICP证080285  Copyright &copy; 2012 72XUAN Corporation, All Rights Reserved <br />");
+document.writeln("北京市公安局海淀分局网络备案号：1101081884 <span style=\"display:block;position:absolute;width:150px;height:50px;left: 760px;top:0;\"><a target=\"_blank\" href=\"http://www.itrust.org.cn/yz/wx.asp?wm=1666921914\"><img style=\"border-width:0;\" title=\"中国互联网协会\" alt=\"中国互联网协会\" src=\"http://image.72xuan.com/dev/v3/common/images/itrust.gif\"/></a> </span></div>");
+document.writeln("<script src='http://image.72xuan.com/dev/v3/common/js/duilian.js'></script>");
