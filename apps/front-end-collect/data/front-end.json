@@ -148,6 +148,42 @@
               "size": 5000,
               "url": "http://beforweb.com/",
               "description": "关注移动应用及互联网产品、用户体验设计、前端开发"
+            },
+            {
+              "name": "React Native 中文版",
+              "size": 5000,
+              "url": "http://wiki.jikexueyuan.com/project/react-native/",
+              "description": "React Native 中文版"
+            },
+            {
+              "name": "Golang中文社区",
+              "size": 5000,
+              "url": "http://studygolang.com/",
+              "description": "Golang中文社区"
+            },
+            {
+              "name": "FIS",
+              "size": 5000,
+              "url": "http://fis.baidu.com/index.html",
+              "description": "FIS前端工具框架"
+            },
+            {
+              "name": "前端乱炖",
+              "size": 5000,
+              "url": "http://www.html-js.com/",
+              "description": "前端乱炖"
+            },
+            {
+              "name": "react中文社区",
+              "size": 5000,
+              "url": "http://react-china.org/",
+              "description": "react中文社区"
+            },
+            {
+              "name": "ECMAScript入门",
+              "size": 5000,
+              "url": "http://es6.ruanyifeng.com/",
+              "description": "ECMAScript入门"
             }
           ]
         },
@@ -226,6 +262,30 @@
               "size": 4500,
               "url": "http://www.nczonline.net/",
               "description": "html5,css3,javascript"
+            },
+            {
+              "name": "fff",
+              "size": 4500,
+              "url": "http://fff.cmiscm.com/#!/main",
+              "description": "fff"
+            },
+            {
+              "name": "codepen",
+              "size": 4500,
+              "url": "http://codepen.io/",
+              "description": "codepen"
+            },
+            {
+              "name": "dailyjs",
+              "size": 4500,
+              "url": "http://dailyjs.com/",
+              "description": "dailyjs"
+            },
+            {
+              "name": "angular2",
+              "size": 4500,
+              "url": "https://angular.io/",
+              "description": "angular2"
             }
           ]
         }
